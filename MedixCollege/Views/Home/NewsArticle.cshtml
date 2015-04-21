@@ -1,0 +1,20 @@
+﻿@{
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+<div class="col-sm-12">
+    <div>
+        <h2 class="contentPageH1">@ViewBag.Title</h2>
+    </div>
+
+    <div class="spacer-top">
+        <h3 class="date spacer-top contentH2">
+            @ViewBag.NewsDate.ToString("MMMM d, yyyy")
+        </h3>
+        <hr />
+        <p>
+            @Html.Raw(ViewBag.NewsBody)
+        </p>
+    </div>
+</div>
+

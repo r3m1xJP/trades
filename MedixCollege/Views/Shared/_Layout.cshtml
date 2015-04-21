@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="@ViewBag.PageDescription" />
+
+    <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/0dadfbd7-4931-4174-ae59-acc837e29491.css" />
+
+    <title>Medix College - @ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        function popup(url) {
+            params = 'width=' + screen.width;
+            params += ', height=' + screen.height;
+            params += ', top=0, left=0'
+            params += ', fullscreen=yes';
+
+            newwin = window.open(url, 'Medix Store', params);
+            if (window.focus) { newwin.focus() }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="col-sm-4">
+                @if (ViewBag.MedixOnline != null && ViewBag.MedixOnline)
+                {
+                    <a href="/home"><img src="~/Content/images/MedixOnlineLogo.png" class="mainLogo img-responsive" alt="Medix College Online Logo" /></a>
+                }
+                else
+                {
+                    <a href="/home"><img src="~/Content/images/medixCollegeHeader.gif" class="mainLogo img-responsive" alt="Medix College Logo" /></a>
+                }
+            </div>
+            <div class="col-sm-8">
+                <div class="pull-right"><span class="blueColor"><span class="glyphicon glyphicon-earphone"></span></span> <span class="blueColor">1(866) 962-7685</span></div>
+                <div class="clearfix"></div>
+                <div>
+                    <gcse:search></gcse:search>
+                </div>
+                <div class="clearfix"></div>
+                <div class="pull-right socialMediaList">
+                    <a href="https://www.facebook.com/MedixCollege?ref=hl"><img src="~/Content/images/facebook.gif" height="25" width="25" alt="Facebook logo" /></a>
+                    <a href="https://plus.google.com/+MedixcollegeCa/posts"><img src="~/Content/images/googleplus.gif" height="25" width="25" alt="Google+ Logo" /></a>
+                    <a href="https://www.youtube.com/user/medixcollegelondon"><img src="~/Content/images/youtube.gif" height="25" width="25" alt="Youtube logo" /></a>
+                    <a href="https://twitter.com/medix_college"><img src="~/Content/images/twitter.gif" height="25" width="25" alt="Twitter Logo" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar-header mainNav">
+                <button type="button" class="navbar-toggle pull-left hamburger-icon" data-toggle="collapse" data-target=".navbar-collapse.mobile">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse mobile">
+                <ul class="nav navbar-nav pull-left visible-xs">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HOME <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("News Directory", "NewsDirectory", "Home")</li>
+                            <li>@Html.ActionLink("Referral Program", "ReferralProgram", "Home")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DISCOVER MEDIX<span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("About Medix", "Index", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Medix History", "History", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Virtual Tour", "VirtualTour", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Laptop Initiative", "LaptopInitiative", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Transcript Request", "TranscriptRequest", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Careers at Medix", "CareersAtMedix", "DiscoverMedix")</li>
+                            <li><a href="javascript: void(0)" onclick="popup('http://careercollegegroup.canpromo.com/Products.htm?CD=553')">Online Store</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PROGRAMS <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
+                            <li>@Html.ActionLink("Community Service Worker", "CommunityServiceWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Child & Youth Addictions", "ChildYouthAddictionsWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Developmental Service Worker", "DevelopmentalServiceWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Early Childcare Assistant", "EarlyChildCareAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Intra-Oral Dental Assistant", "IntraOralDentalAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Massage Therapy", "MassageTherapy", "Programs")</li>
+                            <li>@Html.ActionLink("Massage Therapy Advanced Standing", "MassageTherapyAdvancedStanding", "Programs")</li>
+                            <li>@Html.ActionLink("Medical Lab Assitant/Tech", "MedicalLabAssistantTechnician", "Programs")</li>
+                            <li>@Html.ActionLink("Medical Office Administrator", "MedicalOfficeAdministrator", "Programs")</li>
+                            <li>@Html.ActionLink("Personal Support Worker", "PersonalSupportWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Pharmacy Assistant", "PharmacyAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Fitness and Health Promotion", "FitnessHealthPromotion", "Programs")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CERTIFICATES <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
+                            <li>@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
+                            <li>@Html.ActionLink("Addictions & Special Populations", "Index", "Certificates")</li>
+                            <li>@Html.ActionLink("Basic World Treatment", "BasicWoundTreatment", "Certificates")</li>
+                            <li>@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
+                            <li>@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
+                            <li>@Html.ActionLink("English as a Second Language", "EnglishSecondLanguage", "Certificates")</li>
+                            <li>@Html.ActionLink("English Skills for Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
+
+                            <li>@Html.ActionLink("First Aid and CPR", "FirstAidCPR", "Certificates")</li>
+                            <li>@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
+                            <li>@Html.ActionLink("Home Child Care Management", "HomeChildCareManagement", "Certificates")</li>
+                            <li>@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
+                            <li>@Html.ActionLink("Developmental Disabilities & Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
+                            <li>@Html.ActionLink("Intro to Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
+                            <li>@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
+                            <li>@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
+                            <li>@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADMISSIONS <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Admissions Home", "Index", "Admissions")</li>
+                            <li>@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
+                            <li>@Html.ActionLink("OSAP", "OSAP", "Admissions")</li>
+                            <li>@Html.ActionLink("Second Career", "SecondCareer", "Admissions")</li>
+                            <li>@Html.ActionLink("Out of Province Options", "OutOfProvinceStudents", "Admissions")</li>
+                            <li>@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</li>
+                            <li>@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</li>
+                            <li>@Html.ActionLink("RESP", "RegisteredEducationSavingsPlans", "Admissions")</li>
+                            <li>@Html.ActionLink("Employment Ontario", "EmploymentOntario", "Admissions")</li>
+                            <li>@Html.ActionLink("Monthly Payment Plan", "MonthlyPaymentPlan", "Admissions")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAREER SERVICES <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Career Services Home", "Index", "CareerServices")</li>
+                            <li>@Html.ActionLink("Hire a Grad", "HireAGrad", "CareerServices")</li>
+                            <li>@Html.ActionLink("Medix Advantage", "MedixAdvantage", "CareerServices")</li>
+                            <li>@Html.ActionLink("Job Search Tips", "JobSearchTips", "CareerServices")</li>
+                            <li>@Html.ActionLink("Resume Tips", "ResumeTips", "CareerServices")</li>
+                            <li>@Html.ActionLink("Interview Tips", "InterviewTips", "CareerServices")</li>
+                            <li>@Html.ActionLink("Professional Tips", "ProfessionalTips", "CareerServices")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAMPUSES <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("All Campuses", "Index", "Campuses")</li>
+                            <li>@Html.ActionLink("Brampton", "Brampton", "Campuses")</li>
+                            <li>@Html.ActionLink("Brantford", "Brantford", "Campuses")</li>
+                            <li>@Html.ActionLink("Kitchener", "Kitchener", "Campuses")</li>
+                            <li>@Html.ActionLink("London", "London", "Campuses")</li>
+                            <li>@Html.ActionLink("Scarborough", "Scarborough", "Campuses")</li>
+                            <li>@Html.ActionLink("Toronto", "Toronto", "Campuses")</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MEDIX ONLINE <span class="caret pull-right"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("About Medix Online", "Index", "MedixOnline")</li>
+                            <li>@Html.ActionLink("Medix Online Programs", "Index", "MedixOnline")</li>
+                            <li>@Html.ActionLink("Schedules and Fees", "SchedulesAndFees", "MedixOnline")</li>
+                            <li>@Html.ActionLink("E-Learning", "ELearning", "MedixOnline")</li>
+                            <li>@Html.ActionLink("Advantages", "Advantages", "MedixOnline")</li>
+                            <li>@Html.ActionLink("Contact Medix Online", "ContactMedixOnline", "MedixOnline")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Request Info", "Index", "Home")</li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse mainNav">
+                <div class="container hidden-xs">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HOME <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                <li>@Html.ActionLink("News Directory", "NewsDirectory", "Home")</li>
+                                <li>@Html.ActionLink("Referral Program", "ReferralProgram", "Home")</li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DISCOVER MEDIX <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("About Medix", "Index", "DiscoverMedix")</li>
+                                <li>@Html.ActionLink("Medix History", "History", "DiscoverMedix")</li>
+                                <li>@Html.ActionLink("Virtual Tour", "VirtualTour", "DiscoverMedix")</li>
+                                <li>@Html.ActionLink("Laptop Initiative", "LaptopInitiative", "DiscoverMedix")</li>
+                                <li>@Html.ActionLink("Transcript Request", "TranscriptRequest", "DiscoverMedix")</li>
+                                <li>@Html.ActionLink("Careers at Medix", "CareersAtMedix", "DiscoverMedix")</li>
+                                <li><a href="javascript: void(0)" onclick="popup('http://careercollegegroup.canpromo.com/Products.htm')">Online Store</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PROGRAMS <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
+                                <li>@Html.ActionLink("Community Service Worker", "CommunityServiceWorker", "Programs")</li>
+                                <li>@Html.ActionLink("Child & Youth Addictions", "ChildYouthAddictionsWorker", "Programs")</li>
+                                <li>@Html.ActionLink("Developmental Service Worker", "DevelopmentalServiceWorker", "Programs")</li>
+                                <li>@Html.ActionLink("Early Childcare Assistant", "EarlyChildCareAssistant", "Programs")</li>
+                                <li>@Html.ActionLink("Intra-Oral Dental Assistant", "IntraOralDentalAssistant", "Programs")</li>
+                                <li>@Html.ActionLink("Massage Therapy", "MassageTherapy", "Programs")</li>
+                                <li>@Html.ActionLink("Massage Therapy Advanced Standing", "MassageTherapyAdvancedStanding", "Programs")</li>
+                                <li>@Html.ActionLink("Medical Lab Assitant/Tech", "MedicalLabAssistantTechnician", "Programs")</li>
+                                <li>@Html.ActionLink("Medical Office Administrator", "MedicalOfficeAdministrator", "Programs")</li>
+                                <li>@Html.ActionLink("Personal Support Worker", "PersonalSupportWorker", "Programs")</li>
+                                <li>@Html.ActionLink("Pharmacy Assistant", "PharmacyAssistant", "Programs")</li>
+                                <li>@Html.ActionLink("Fitness and Health Promotion", "FitnessHealthPromotion", "Programs")</li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CERTIFICATES <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
+                                <li>@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
+                                <li>@Html.ActionLink("Addictions & Special Populations", "Index", "Certificates")</li>
+                                <li>@Html.ActionLink("Basic World Treatment", "BasicWoundTreatment", "Certificates")</li>
+                                <li>@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
+                                <li>@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
+                                <li>@Html.ActionLink("English as a Second Language", "EnglishSecondLanguage", "Certificates")</li>
+                                <li>@Html.ActionLink("English Skills for Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
+                                <li>@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
+                                <li>@Html.ActionLink("First Aid and CPR", "FirstAidCPR", "Certificates")</li>
+                                <li>@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
+                                <li>@Html.ActionLink("Home Child Care Management", "HomeChildCareManagement", "Certificates")</li>
+                                <li>@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
+                                <li>@Html.ActionLink("Developmental Disabilities & Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
+                                <li>@Html.ActionLink("Intro to Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
+                                <li>@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
+                                <li>@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
+                                <li>@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ADMISSIONS <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("Admissions Home", "Index", "Admissions")</li>
+                                <li>@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
+                                <li>@Html.ActionLink("OSAP", "OSAP", "Admissions")</li>
+                                <li>@Html.ActionLink("Second Career", "SecondCareer", "Admissions")</li>
+                                <li>@Html.ActionLink("Out of Province Options", "OutOfProvinceStudents", "Admissions")</li>
+                                <li>@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</li>
+                                <li>@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</li>
+                                <li>@Html.ActionLink("RESP", "RegisteredEducationSavingsPlans", "Admissions")</li>
+                                <li>@Html.ActionLink("Employment Ontario", "EmploymentOntario", "Admissions")</li>
+                                <li>@Html.ActionLink("Monthly Payment Plan", "MonthlyPaymentPlan", "Admissions")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAREER SERVICES <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("Career Services Home", "Index", "CareerServices")</li>
+                                <li>@Html.ActionLink("Hire a Grad", "HireAGrad", "CareerServices")</li>
+                                <li>@Html.ActionLink("Medix Advantage", "MedixAdvantage", "CareerServices")</li>
+                                <li>@Html.ActionLink("Job Search Tips", "JobSearchTips", "CareerServices")</li>
+                                <li>@Html.ActionLink("Resume Tips", "ResumeTips", "CareerServices")</li>
+                                <li>@Html.ActionLink("Interview Tips", "InterviewTips", "CareerServices")</li>
+                                <li>@Html.ActionLink("Professional Tips", "ProfessionalTips", "CareerServices")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CAMPUSES <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("All Campuses", "Index", "Campuses")</li>
+                                <li>@Html.ActionLink("Brampton", "Brampton", "Campuses")</li>
+                                <li>@Html.ActionLink("Brantford", "Brantford", "Campuses")</li>
+                                <li>@Html.ActionLink("Kitchener", "Kitchener", "Campuses")</li>
+                                <li>@Html.ActionLink("London", "London", "Campuses")</li>
+                                <li>@Html.ActionLink("Scarborough", "Scarborough", "Campuses")</li>
+                                <li>@Html.ActionLink("Toronto", "Toronto", "Campuses")</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">MEDIX ONLINE <span class="glyphicon glyphicon-triangle-bottom GLPsize"></span></i></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>@Html.ActionLink("About Medix Online", "Index", "MedixOnline")</li>
+                                <li>@Html.ActionLink("Medix Online Programs", "Index", "MedixOnline")</li>
+                                <li>@Html.ActionLink("Schedules and Fees", "SchedulesAndFees", "MedixOnline")</li>
+                                <li>@Html.ActionLink("E-Learning", "ELearning", "MedixOnline")</li>
+                                <li>@Html.ActionLink("Advantages", "Advantages", "MedixOnline")</li>
+                                <li>@Html.ActionLink("Contact Medix Online", "ContactMedixOnline", "MedixOnline")</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <div class="form-overlay">
+        <div class="container">
+            <span class="close form-overlay-close"><i class="fa fa-close"></i></span>
+            <div id="applyNowWrapper" class="popup-form-wrapper">
+                <div class="spacer-top text-center">
+                    <label class="popup-form-header">APPLY NOW</label>
+                </div>
+                <div class="popup-form col-lg-6 col-lg-offset-3">
+                    <form id="applyNowForm" name="applyNowForm" method="post" action="/home/applynow">
+                        <input type="hidden" name="ORGID" value="240" />
+                        <input type="hidden" name="MailListID" value="240001" />
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control pull-right" name="Email" for="formemail" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="CampusID" id="applyNowCampusList">
+                                <option value="0">Select</option>
+                                <option value="246">Brampton</option>
+                                <option value="243">Brantford</option>
+                                <option value="242">Kitchener</option>
+                                <option value="244">London</option>
+                                <option value="241">Scarborough</option>
+                                <option value="240">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="ProgramID" id="applyNowProgramList">
+                                <option class="0 246 243 242 244 241 240" value="0">Select</option>
+                                <option class="0" value="38882">Anatomy &amp; Physiology</option>
+                                <option class="0 243 241" value="39877">Child and Youth Care with Addictions Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="632">Community Service Worker</option>
+                                <option class="0 246 243 241 240" value="39478">CPR &amp; First Aid</option>
+                                <option class="0 246 243 242 244 241 240" value="818">Dental Level 2</option>
+                                <option class="0 246 243 242 244 241 240" value="38883">Dental Office Procedures (abel dent)</option>
+                                <option class="0 246 243 242 244 241 240" value="634">Developmental Service Worker</option>
+                                <option class="0 246 243 241 240" value="38526">Early Childhood Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="642">ECG</option>
+                                <option class="0 246 244 241 240" value="37255">Fitness &amp; Health Promotion</option>
+                                <option class="0 246 244 241 240" value="39162">Intramuscular Injection</option>
+                                <option class="0 246 243 242 244 241 240" value="627">Intra-Oral Dental Assistant </option>
+                                <option class="0 246 242 244 241 240" value="629">Massage Therapy</option>
+                                <option class="0 246 242 244 241 240" value="633">Medical Laboratory Assistant / Technician</option>
+                                <option class="0 246 243 242 244 241 240" value="630">Medical Office Administrator</option>
+                                <option class="0" value="1170">Medical Terminology</option>
+                                <option class="0" value="38887">Medical Transcription</option>
+                                <option class="0 246 243 242 244 241 240" value="39415">Mental Health &amp; Addictions</option>
+                                <option class="0" value="1169">OHIP Billing</option>
+                                <option class="0 246 243 242 244 241 240" value="631">Personal Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="628">Pharmacy Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="636">Phlebotomy</option>
+                                <option class="0" value="1167">Principles of Nutrition</option>
+                                <option class="0 246 243 242 244 241 240" value="643">PSW Upgrading</option>
+                                <option class="0" value="1171">Thought Patterns</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="MediaGroupID">
+                                <option value="0">Select</option>
+                                <option value="91063">HIGH SCHOOL</option>
+                                <option value="90080">INTERNET</option>
+                                <option value="90081">NEWSPAPER</option>
+                                <option value="91092">OUTREACH</option>
+                                <option value="90213">RADIO</option>
+                                <option value="90083">REFERRAL</option>
+                                <option value="91044">SIGNS</option>
+                                <option value="91241">SUBWAY</option>
+                                <option value="90082">TELEVISION</option>
+                                <option value="90825">TRADE SHOWS</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
+                        </div>
+                        <div class="small-text spacer-top text-center">
+                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                        </div>
+                        <div class="text-center">
+                            <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="requestCatalogueWrapper" class="popup-form-wrapper">
+                <div class="spacer-top text-center">
+                    <label class="popup-form-header">Request Catalogue</label>
+                </div>
+                <div class="popup-form col-lg-6 col-lg-offset-3">
+                    <form id="requestCatalogueForm" name="requestCatalogueForm" method="post" action="/home/requestcatalogue">
+                        <input type="hidden" name="ORGID" value="240" />
+                        <input type="hidden" name="MailListID" value="240001" />
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control pull-right" name="Email" for="formemail" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="CampusID" id="requestCatalogueCampusList">
+                                <option value="0">Select</option>
+                                <option value="246">Brampton</option>
+                                <option value="243">Brantford</option>
+                                <option value="242">Kitchener</option>
+                                <option value="244">London</option>
+                                <option value="241">Scarborough</option>
+                                <option value="240">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="ProgramID" id="requestCatalogueProgramList">
+                                <option class="0 246 243 242 244 241 240" value="0">Select</option>
+                                <option class="0" value="38882">Anatomy &amp; Physiology</option>
+                                <option class="0 243 241" value="39877">Child and Youth Care with Addictions Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="632">Community Service Worker</option>
+                                <option class="0 246 243 241 240" value="39478">CPR &amp; First Aid</option>
+                                <option class="0 246 243 242 244 241 240" value="818">Dental Level 2</option>
+                                <option class="0 246 243 242 244 241 240" value="38883">Dental Office Procedures (abel dent)</option>
+                                <option class="0 246 243 242 244 241 240" value="634">Developmental Service Worker</option>
+                                <option class="0 246 243 241 240" value="38526">Early Childhood Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="642">ECG</option>
+                                <option class="0 246 244 241 240" value="37255">Fitness &amp; Health Promotion</option>
+                                <option class="0 246 244 241 240" value="39162">Intramuscular Injection</option>
+                                <option class="0 246 243 242 244 241 240" value="627">Intra-Oral Dental Assistant </option>
+                                <option class="0 246 242 244 241 240" value="629">Massage Therapy</option>
+                                <option class="0 246 242 244 241 240" value="633">Medical Laboratory Assistant / Technician</option>
+                                <option class="0 246 243 242 244 241 240" value="630">Medical Office Administrator</option>
+                                <option class="0" value="1170">Medical Terminology</option>
+                                <option class="0" value="38887">Medical Transcription</option>
+                                <option class="0 246 243 242 244 241 240" value="39415">Mental Health &amp; Addictions</option>
+                                <option class="0" value="1169">OHIP Billing</option>
+                                <option class="0 246 243 242 244 241 240" value="631">Personal Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="628">Pharmacy Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="636">Phlebotomy</option>
+                                <option class="0" value="1167">Principles of Nutrition</option>
+                                <option class="0 246 243 242 244 241 240" value="643">PSW Upgrading</option>
+                                <option class="0" value="1171">Thought Patterns</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="MediaGroupID">
+                                <option value="0">Select</option>
+                                <option value="91063">HIGH SCHOOL</option>
+                                <option value="90080">INTERNET</option>
+                                <option value="90081">NEWSPAPER</option>
+                                <option value="91092">OUTREACH</option>
+                                <option value="90213">RADIO</option>
+                                <option value="90083">REFERRAL</option>
+                                <option value="91044">SIGNS</option>
+                                <option value="91241">SUBWAY</option>
+                                <option value="90082">TELEVISION</option>
+                                <option value="90825">TRADE SHOWS</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
+                        </div>
+                        <div class="small-text spacer-top text-center">
+                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                        </div>
+                        <div class="text-center">
+                            <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="askQuestionWrapper" class="popup-form-wrapper">
+                <div class="spacer-top text-center">
+                    <label class="popup-form-header">Ask a Question</label>
+                </div>
+                <div class="popup-form col-lg-6 col-lg-offset-3">
+                    <form id="askQuestionForm" name="askQuestionForm" method="post" action="/home/askquestion">
+                        <input type="hidden" name="ORGID" value="240" />
+                        <input type="hidden" name="MailListID" value="240001" />
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control pull-right" name="Email" for="formemail" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="CampusID" id="askQuestionCampusList">
+                                <option value="0">Select</option>
+                                <option value="246">Brampton</option>
+                                <option value="243">Brantford</option>
+                                <option value="242">Kitchener</option>
+                                <option value="244">London</option>
+                                <option value="241">Scarborough</option>
+                                <option value="240">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="ProgramID" id="askQuestionProgramList">
+                                <option class="0 246 243 242 244 241 240" value="0">Select</option>
+                                <option class="0" value="38882">Anatomy &amp; Physiology</option>
+                                <option class="0 243 241" value="39877">Child and Youth Care with Addictions Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="632">Community Service Worker</option>
+                                <option class="0 246 243 241 240" value="39478">CPR &amp; First Aid</option>
+                                <option class="0 246 243 242 244 241 240" value="818">Dental Level 2</option>
+                                <option class="0 246 243 242 244 241 240" value="38883">Dental Office Procedures (abel dent)</option>
+                                <option class="0 246 243 242 244 241 240" value="634">Developmental Service Worker</option>
+                                <option class="0 246 243 241 240" value="38526">Early Childhood Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="642">ECG</option>
+                                <option class="0 246 244 241 240" value="37255">Fitness &amp; Health Promotion</option>
+                                <option class="0 246 244 241 240" value="39162">Intramuscular Injection</option>
+                                <option class="0 246 243 242 244 241 240" value="627">Intra-Oral Dental Assistant </option>
+                                <option class="0 246 242 244 241 240" value="629">Massage Therapy</option>
+                                <option class="0 246 242 244 241 240" value="633">Medical Laboratory Assistant / Technician</option>
+                                <option class="0 246 243 242 244 241 240" value="630">Medical Office Administrator</option>
+                                <option class="0" value="1170">Medical Terminology</option>
+                                <option class="0" value="38887">Medical Transcription</option>
+                                <option class="0 246 243 242 244 241 240" value="39415">Mental Health &amp; Addictions</option>
+                                <option class="0" value="1169">OHIP Billing</option>
+                                <option class="0 246 243 242 244 241 240" value="631">Personal Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="628">Pharmacy Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="636">Phlebotomy</option>
+                                <option class="0" value="1167">Principles of Nutrition</option>
+                                <option class="0 246 243 242 244 241 240" value="643">PSW Upgrading</option>
+                                <option class="0" value="1171">Thought Patterns</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
+                        </div>
+                        <div class="small-text spacer-top text-center">
+                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                        </div>
+                        <div class="text-center">
+                            <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="tourCampusWrapper" class="popup-form-wrapper">
+                <div class="spacer-top text-center">
+                    <label class="popup-form-header">Tour a Campus</label>
+                </div>
+                <div class="popup-form col-lg-6 col-lg-offset-3">
+                    <form id="tourCampusForm" name="tourCampusForm" method="post" action="/home/tourcampus">
+                        <input type="hidden" name="ORGID" value="240" />
+                        <input type="hidden" name="MailListID" value="240001" />
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control pull-right" name="Email" for="formemail" />
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="CampusID" id="tourCampusCampusList">
+                                <option value="0">Select</option>
+                                <option value="246">Brampton</option>
+                                <option value="243">Brantford</option>
+                                <option value="242">Kitchener</option>
+                                <option value="244">London</option>
+                                <option value="241">Scarborough</option>
+                                <option value="240">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="ProgramID" id="tourCampusProgramList">
+                                <option class="0 246 243 242 244 241 240" value="0">Select</option>
+                                <option class="0" value="38882">Anatomy &amp; Physiology</option>
+                                <option class="0 243 241" value="39877">Child and Youth Care with Addictions Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="632">Community Service Worker</option>
+                                <option class="0 246 243 241 240" value="39478">CPR &amp; First Aid</option>
+                                <option class="0 246 243 242 244 241 240" value="818">Dental Level 2</option>
+                                <option class="0 246 243 242 244 241 240" value="38883">Dental Office Procedures (abel dent)</option>
+                                <option class="0 246 243 242 244 241 240" value="634">Developmental Service Worker</option>
+                                <option class="0 246 243 241 240" value="38526">Early Childhood Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="642">ECG</option>
+                                <option class="0 246 244 241 240" value="37255">Fitness &amp; Health Promotion</option>
+                                <option class="0 246 244 241 240" value="39162">Intramuscular Injection</option>
+                                <option class="0 246 243 242 244 241 240" value="627">Intra-Oral Dental Assistant </option>
+                                <option class="0 246 242 244 241 240" value="629">Massage Therapy</option>
+                                <option class="0 246 242 244 241 240" value="633">Medical Laboratory Assistant / Technician</option>
+                                <option class="0 246 243 242 244 241 240" value="630">Medical Office Administrator</option>
+                                <option class="0" value="1170">Medical Terminology</option>
+                                <option class="0" value="38887">Medical Transcription</option>
+                                <option class="0 246 243 242 244 241 240" value="39415">Mental Health &amp; Addictions</option>
+                                <option class="0" value="1169">OHIP Billing</option>
+                                <option class="0 246 243 242 244 241 240" value="631">Personal Support Worker</option>
+                                <option class="0 246 243 242 244 241 240" value="628">Pharmacy Assistant</option>
+                                <option class="0 246 243 242 244 241 240" value="636">Phlebotomy</option>
+                                <option class="0" value="1167">Principles of Nutrition</option>
+                                <option class="0 246 243 242 244 241 240" value="643">PSW Upgrading</option>
+                                <option class="0" value="1171">Thought Patterns</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="MediaGroupID">
+                                <option value="0">Select</option>
+                                <option value="91063">HIGH SCHOOL</option>
+                                <option value="90080">INTERNET</option>
+                                <option value="90081">NEWSPAPER</option>
+                                <option value="91092">OUTREACH</option>
+                                <option value="90213">RADIO</option>
+                                <option value="90083">REFERRAL</option>
+                                <option value="91044">SIGNS</option>
+                                <option value="91241">SUBWAY</option>
+                                <option value="90082">TELEVISION</option>
+                                <option value="90825">TRADE SHOWS</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
+                        </div>
+                        <div class="small-text spacer-top text-center">
+                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                        </div>
+                        <div class="text-center">
+                            <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-fluid bottom-nav">
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2 class="contentH3-blue">ABOUT MEDIX</h2>
+                        <p class="contentp">For over 40 years Medix College has been providing industry leading Health Care career training for those looking to become medical professionals. Currently Medix College has six campuses across Ontario with each of the featuring state-of-the-art facilities. Medix college believes in helping students to achieve quality education quickly.</p>
+                        <p class="contentp">Every year hundreds of Medix graduates are added to the Canadian healthcare workforce. Medix is the clear choice for those looking to change their life today.</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h2 class="contentH3-blue">PROGRAMS</h2>
+                        <ul>
+                            <li>@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
+                            <li>@Html.ActionLink("Community Service Worker", "CommunityServiceWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Child & Youth Addictions", "ChildYouthAddictionsWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Developmental Service Worker", "DevelopmentalServiceWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Early Childcare Assistant", "EarlyChildCareAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Intra-Oral Dental Assistant", "IntraOralDentalAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Massage Therapy", "MassageTherapy", "Programs")</li>
+                            <li>@Html.ActionLink("Massage Therapy Advanced Standing", "MassageTherapyAdvancedStanding", "Programs")</li>
+                            <li>@Html.ActionLink("Medical Lab Assitant/Tech", "MedicalLabAssistantTechnician", "Programs")</li>
+                            <li>@Html.ActionLink("Medical Office Administrator", "MedicalOfficeAdministrator", "Programs")</li>
+                            <li>@Html.ActionLink("Personal Support Worker", "PersonalSupportWorker", "Programs")</li>
+                            <li>@Html.ActionLink("Pharmacy Assistant", "PharmacyAssistant", "Programs")</li>
+                            <li>@Html.ActionLink("Fitness and Health Promotion", "FitnessHealthPromotion", "Programs")</li>
+                            <li>@Html.ActionLink("Medix Online Programs", "MedixOnline", "Programs")</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 hidden-xs">
+                        <h2 class="contentH3-blue">CERTIFICATES</h2>
+                        <ul>
+                            <li>@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
+                            <li>@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
+                            <li>@Html.ActionLink("Addictions & Special Populations", "Index", "Certificates")</li>
+                            <li>@Html.ActionLink("Basic World Treatment", "BasicWoundTreatment", "Certificates")</li>
+                            <li>@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
+                            <li>@Html.ActionLink("English as a Second Language", "EnglishSecondLanguage", "Certificates")</li>
+                            <li>@Html.ActionLink("English Skills for Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
+                            <li>@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
+                            <li>@Html.ActionLink("First Aid and CPR", "FirstAidCPR", "Certificates")</li>
+                            <li>@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
+                            <li>@Html.ActionLink("Home Child Care Management", "HomeChildCareManagement", "Certificates")</li>
+                            <li>@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
+                            <li>@Html.ActionLink("Developmental Disabilities & Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
+                            <li>@Html.ActionLink("Intro to Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
+                            <li>@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
+                            <li>@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
+                            <li>@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h2 class="contentH3-blue">LOCATIONS</h2>
+                        <ul>
+                            <li>@Html.ActionLink("Brampton", "Brampton", "Campuses")</li>
+                            <li>@Html.ActionLink("Brantford", "Brantford", "Campuses")</li>
+                            <li>@Html.ActionLink("Kitchener", "Kitchener", "Campuses")</li>
+                            <li>@Html.ActionLink("London", "London", "Campuses")</li>
+                            <li>@Html.ActionLink("Scarborough", "Scarborough", "Campuses")</li>
+                            <li>@Html.ActionLink("Toronto", "Toronto", "Campuses")</li>
+                            <li>@Html.ActionLink("Medix Online", "Index", "MedixOnline")</li>
+                        </ul>
+                        <h2 class="contentH3-blue">QUICK LINKS</h2>
+                        <ul>
+                            <li>@Html.ActionLink("Site Map", "SiteMap", "Home")</li>
+                            <li>@Html.ActionLink("Privacy Policy", "PrivacyPolicy", "Home")</li>
+                            <li>@Html.ActionLink("Accessibility Policy", "AccessibilityPolicy", "Home")</li>
+                            <li>@Html.ActionLink("Careers at Medix", "CareersAtMedix", "DiscoverMedix")</li>
+                            <li>@Html.ActionLink("Hire a Medix Grad", "HireAMedixGrad", "Home")</li>
+                            <li>@Html.ActionLink("Virtual Tours", "VirtualTours", "Home")</li>
+                            <li><a href="javascript: void(0)" onclick="popup('http://careercollegegroup.canpromo.com/Products.htm?CD=553')">Online Store</a></li>
+                            <li>@Html.ActionLink("Social Media", "SocialMedia", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br />
+        </div> <!-- /.bottom-nav -->
+
+        <div class="footer-banner">
+
+            <div class="container">
+                <img class="center-block" src="~/Content/images/CCGLogo.png" alt="The Career College Group logo." />
+            </div>
+        </div>
+    </footer> <!-- /footer -->
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('.form-overlay-close').click(function () {
+            $('.form-overlay').slideUp(600);
+        });
+
+        $('#applyNowCampusList, requestCatalogueCampusList, askQuestionCampusList, tourCampusCampusList').change(function () {
+            var campusId = $('#applyNowCampusList option:selected').val();
+
+            $.each($("#applyNowProgramList option"), function (index, value) {
+                if ($(value).hasClass(campusId) !== true) {
+                    $(value).hide();
+                } else {
+                    $(value).show();
+                }
+            });
+        });
+
+        $('#requestCatalogueCampusList').change(function () {
+            var campusId = $('#requestCatalogueCampusList option:selected').val();
+
+            $.each($("#requestCatalogueProgramList option"), function (index, value) {
+                if ($(value).hasClass(campusId) !== true) {
+                    $(value).hide();
+                } else {
+                    $(value).show();
+                }
+            });
+        });
+
+        $('#askQuestionCampusList').change(function () {
+            var campusId = $('#askQuestionCampusList option:selected').val();
+
+            $.each($("#askQuestionProgramList option"), function (index, value) {
+                if ($(value).hasClass(campusId) !== true) {
+                    $(value).hide();
+                } else {
+                    $(value).show();
+                }
+            });
+        });
+
+        $('#tourCampusCampusList').change(function () {
+            var campusId = $('#tourCampusCampusList option:selected').val();
+
+            $.each($("#tourCampusProgramList option"), function (index, value) {
+                if ($(value).hasClass(campusId) !== true) {
+                    $(value).hide();
+                } else {
+                    $(value).show();
+                }
+            });
+        });
+
+
+        (function () {
+            var cx = '001285344238673767645:v6k9euiazcu';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//www.google.com/cse/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+    });
+</script>

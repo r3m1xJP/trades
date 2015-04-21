@@ -1,0 +1,146 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "Programs";
+}
+
+
+
+<div class="leftMenuWrapper col-sm-3 custom-collapse">
+    <button class="btn-brand-white collapse-toggle visible-xs" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-programs">
+        <span class=""><span class="glyphicon glyphicon-align-justify"></span></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <ul class="leftMenu list-unstyled collapse" id="side-menu-programs">
+        <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Child Youth Addictions Worker", "ChildYouthAddictionsWorker", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Community Service Worker", "CommunityServiceWorker", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Developmental Service Worker", "DevelopmentalServiceWorker", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Early Child Care Assistant", "EarlyChildCareAssistant", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Fitness Health Promotion", "FitnessHealthPromotion", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intra Oral Dental Assistant", "IntraOralDentalAssistant", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Massage Therapy", "MassageTherapy", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Massage Therapy Advanced Standing", "MassageTherapyAdvancedStanding", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Medical Lab Assistant Technician", "MedicalLabAssistantTechnician", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Medical Office Administrator", "MedicalOfficeAdministrator", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Personal Support Worker", "PersonalSupportWorker", "Programs")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Pharmacy Assistant", "PharmacyAssistant", "Programs")</li>
+        <br />
+        <li class="item btn btn-brand btn-block" id="askQuestion">Ask a Question</li>
+        <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
+    </ul>
+    <br />
+</div>
+
+<div class="col-sm-9 pull-right">
+    <div class="contentBody">
+        <div class="row">
+            <div class="col-sm-8 mid-padding">
+                @RenderBody()
+            </div>
+
+            <div class="col-sm-4 formWrapper overquestionsForm">
+                <br />
+                <h1 class="contentH1 text-center">
+                    <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Ask a Question
+                </h1>
+                <form id="programsQuestionsForm" name="programsQuestionsForm" method="post" class="questionsForm" action="/home/askquestionprogram">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="246">Brampton</option>
+                            <option value="243">Brantford</option>
+                            <option value="242">Kitchener</option>
+                            <option value="244">London</option>
+                            <option value="241">Scarborough</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option value="0">Select</option>
+                            <option value="38882">Anatomy &amp; Physiology</option>
+                            <option value="39877">Child and Youth Care with Addictions Support Worker</option>
+                            <option value="632">Community Service Worker</option>
+                            <option value="39478">CPR &amp; First Aid</option>
+                            <option value="818">Dental Level 2</option>
+                            <option value="38883">Dental Office Procedures (abel dent)</option>
+                            <option value="634">Developmental Service Worker</option>
+                            <option value="38526">Early Childhood Assistant</option>
+                            <option value="642">ECG</option>
+                            <option value="37255">Fitness &amp; Health Promotion</option>
+                            <option value="39162">Intramuscular Injection</option>
+                            <option value="627">Intra-Oral Dental Assistant </option>
+                            <option value="629">Massage Therapy</option>
+                            <option value="633">Medical Laboratory Assistant / Technician</option>
+                            <option value="630">Medical Office Administrator</option>
+                            <option value="1170">Medical Terminology</option>
+                            <option value="38887">Medical Transcription</option>
+                            <option value="39415">Mental Health &amp; Addictions</option>
+                            <option value="1169">OHIP Billing</option>
+                            <option value="631">Personal Support Worker</option>
+                            <option value="628">Pharmacy Assistant</option>
+                            <option value="636">Phlebotomy</option>
+                            <option value="1167">Principles of Nutrition</option>
+                            <option value="643">PSW Upgrading</option>
+                            <option value="1171">Thought Patterns</option>
+
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<script>
+    $(document).ready(function () {
+        $('#applyOnline').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#applyNowWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+
+        $('#requestCatalogue').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#requestCatalogueWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+
+        $('#askQuestion').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#askQuestionWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+    });
+</script>

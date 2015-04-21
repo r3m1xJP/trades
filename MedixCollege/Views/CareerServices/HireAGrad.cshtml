@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/CareerServices/_CareerServicesLayout.cshtml";
+}
+
+<h2>Hire a Medix Graduate</h2>
+<p>Please fill out the form below to contact us about hiring a student or posting a job opportunity.</p>
+<div class="col-lg-6">
+    <form id="hireAGradForm" name="hireAGradForm" method="post" action="/home/hireAGrad">
+        <input type="hidden" name="ORGID" value="240" />
+        <input type="hidden" name="MailListID" value="240011" />
+        <div class="input-group spacer-top">
+            <label class="pull-left">Contact First Name: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control pull-right" name="FirstName">
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">Contact Last Name: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control pull-right" name="LastName">
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">Organization Name: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control pull-right" name="OrganizationName">
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">Email Address: <span class="text-danger">*</span></label>
+            <input type="text" class="form-control pull-right" name="EmailAddress">
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">PhoneNumber: <span class="text-danger"></span></label>
+            <input type="text" class="form-control pull-right" name="PhoneNumber">
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">Purpose:</label>
+            <select name="custfield21" id="custfield21" class="form-control pull-right">
+                <option value="0">Select</option>
+                <option value="Hiring a student">Hiring a student</option>
+                <option value="Posting a job">Posting a job</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="input-group spacer-top">
+            <label class="pull-left">Is there anything you would like to tell us?</label>
+            <textarea class="form-control pull-right" name="Comment1"></textarea>
+        </div>
+        <div class="text-center">
+            <input id="hireAGradSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+        </div>
+    </form>
+</div>
