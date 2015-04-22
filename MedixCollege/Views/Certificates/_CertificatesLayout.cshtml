@@ -3,7 +3,9 @@
 }
 
 @{
-    ViewBag.Title = "Certificates";
+    ViewBag.Title = "Certificate Programs at Medix College";
+    ViewBag.PageDescription = "Learn more about the Certificate programs and continuing education options at Medix College.";
+
 }
 
 <div class="leftMenuWrapper col-sm-3 custom-collapse">
@@ -15,39 +17,44 @@
     </button>
 
     <ul class="leftMenu list-unstyled collapse" id="side-menu-certificates">
-        <li class="item contentH1-white">@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Basic Wound Treatment", "BasicWoundTreatment", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("English Second Language", "EnglishSecondLanguage", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("English Skills - Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("First Aid & CPR", "FirstAidCPR", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Home Childcare Management", "HomeChildCareManagement", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Intro - Developmental Disabilities Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Intro - Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Mental Health Addictions", "MentalHealthAddictions", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
+        <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Basic Wound Treatment", "BasicWoundTreatment", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("English Second Language", "EnglishSecondLanguage", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("English Skills - Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("First Aid & CPR", "FirstAidCPR", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Home Childcare Management", "HomeChildCareManagement", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intro - Developmental Disabilities Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intro - Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Mental Health Addictions", "MentalHealthAddictions", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
 
         <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
-        <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Information</li>
-        <li class="item btn btn-brand btn-block" id="applyOnline">Apply Online</li>
+        <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
     </ul>
     <br />
 </div>
+
+
 <div class="col-sm-9 pull-right">
     <div class="contentBody">
         <div class="row">
             <div class="col-sm-8 mid-padding">
                 @RenderBody()
             </div>
-            <div class="col-sm-4 formWrapper no-padding">
-                <h5 class="text-center"><i class="fa fa-envelope"></i> Questions About Certificates?</h5>
-                <form id="programsQuestionsForm" name="programsQuestionsForm" class="questionsForm" method="post" action="/home/askquestioncertificate">
+
+            <div class="col-sm-4 formWrapper overquestionsForm">
+                <br />
+                <h1 class="contentH1 text-center">
+                    <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Ask a Question
+                </h1>
+                <form id="programsQuestionsForm" name="programsQuestionsForm" method="post" class="questionsForm" action="/home/askquestionprogram">
                     <input type="hidden" name="ORGID" value="240" />
                     <input type="hidden" name="MailListID" value="240001" />
                     <div class="input-group spacer-top">
@@ -74,11 +81,31 @@
                         <label class="pull-left">Program: <span class="text-danger">*</span></label>
                         <select class="form-control pull-right" name="ProgramID">
                             <option value="0">Select</option>
+                            <option value="38882">Anatomy &amp; Physiology</option>
+                            <option value="39877">Child and Youth Care with Addictions Support Worker</option>
+                            <option value="632">Community Service Worker</option>
                             <option value="39478">CPR &amp; First Aid</option>
+                            <option value="818">Dental Level 2</option>
                             <option value="38883">Dental Office Procedures (abel dent)</option>
+                            <option value="634">Developmental Service Worker</option>
+                            <option value="38526">Early Childhood Assistant</option>
+                            <option value="642">ECG</option>
+                            <option value="37255">Fitness &amp; Health Promotion</option>
                             <option value="39162">Intramuscular Injection</option>
+                            <option value="627">Intra-Oral Dental Assistant </option>
+                            <option value="629">Massage Therapy</option>
+                            <option value="633">Medical Laboratory Assistant / Technician</option>
+                            <option value="630">Medical Office Administrator</option>
+                            <option value="1170">Medical Terminology</option>
+                            <option value="38887">Medical Transcription</option>
                             <option value="39415">Mental Health &amp; Addictions</option>
+                            <option value="1169">OHIP Billing</option>
+                            <option value="631">Personal Support Worker</option>
+                            <option value="628">Pharmacy Assistant</option>
                             <option value="636">Phlebotomy</option>
+                            <option value="1167">Principles of Nutrition</option>
+                            <option value="643">PSW Upgrading</option>
+                            <option value="1171">Thought Patterns</option>
 
                         </select>
                     </div>
@@ -95,31 +122,8 @@
                 </form>
             </div>
         </div>
-        <div class="row spacer-top">
-            <div class="linkOptionsWrapper">
-                <div class="linkOptions allPrograms visible-xs" id="allPrograms">
-                    <i class="fa fa-search"></i>
-                    <label class="contentH3-white">FIND PROGRAMS</label>
-                </div>
-                <div class="linkOptions home col-md-3" id="requestCatalogue">
-                    <i class="fa fa-book"></i>
-                    <label class="contentH3-white">REQUEST CATALOGUE</label>
-                </div>
-                <div class="linkOptions home col-md-3" id="askQuestion">
-                    <i class="fa fa-comment"></i>
-                    <label class="contentH3-white">ASK A QUESTION</label>
-                </div>
-                <div class="linkOptions home col-md-3" id="tourCampus">
-                    <i class="fa fa-home"></i>
-                    <label class="contentH3-white">TOUR A CAMPUS</label>
-                </div>
-                <div class="linkOptions home col-md-3" id="apply">
-                    <i class="fa fa-bookmark"></i>
-                    <label class="contentH3-white">APPLY NOW</label>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+
+
     </div>
 </div>
 <div class="clearfix"></div>

@@ -4,6 +4,8 @@
 
 @{
     ViewBag.Title = "Medix Online";
+    ViewBag.PageDescription = "Learn more about the programs available at Medix Online.";
+
 }
 
 <div class="leftMenuWrapper col-md-3 custom-collapse">
@@ -14,15 +16,14 @@
         <span class="icon-bar"></span>
     </button>
     <ul class="leftMenu list-unstyled collapse" id="side-menu-medix">
-        <li class="item contentH1-white">@Html.ActionLink("About Medix Online", "Index", "MedixOnline")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Medix Online Programs", "Index", "MedixOnline")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Schedules and Fees", "SchedulesAndFees", "MedixOnline")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("E-Learning", "ELearning", "MedixOnline")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Advantages", "Advantages", "MedixOnline")</li>
-        <li class="item side-menu-h2">@Html.ActionLink("Contact Medix Online", "ContactMedixOnline", "MedixOnline")</li>
+        <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("About Medix Online", "Index", "MedixOnline")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Medix Online Programs", "Index", "MedixOnline")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Schedules and Fees", "SchedulesAndFees", "MedixOnline")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("E-Learning", "ELearning", "MedixOnline")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Advantages", "Advantages", "MedixOnline")</li>
+        <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Contact Medix Online", "ContactMedixOnline", "MedixOnline")</li>
         <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
-        <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Information</li>
-        <li class="item btn btn-brand btn-block" id="applyOnline">Apply Online</li>
+        <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
     </ul>
     <br />
 </div>
@@ -30,8 +31,11 @@
     <div class="col-md-8 mid-padding">
         @RenderBody()
     </div>
-    <div class="col-md-4 formWrapper no-padding">
-        <h5 class="text-center"><i class="fa fa-envelope"></i> Contact Medix Online</h5>
+    <div class="col-md-4 formWrapper overquestionsForm">
+        <br />
+        <h1 class="contentH1 text-center">
+            <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Contact Medix Online
+        </h1>
         <form id="medixOnlineQuestionsForm" name="medixOnlineQuestionsForm" class="questionsForm" method="post" action="/MedixOnline/ContactMedixOnlineForm">
             <input type="hidden" name="ORGID" value="240" />
             <input type="hidden" name="MailListID" value="240001" />

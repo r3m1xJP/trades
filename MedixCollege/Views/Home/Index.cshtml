@@ -6,8 +6,7 @@
         <div class="promoContent">
             <h1 class="mainHEADER hidden-xs">Our Obligation is to our Students</h1>
             <div class="videoButtons visible-xs visible-sm visible-md visible-lg">
-                <button class="btn contentH3-white" id="askQuestionMain">Ask A Question</button>
-                <button class="btn contentH3-white" id="findPrograms">Find Programs</button>
+
             </div>
         </div>
         <video autoplay loop>
@@ -26,24 +25,24 @@
     </div>
 </div>
 <div class="linkOptionsWrapper">
-    <div class="linkOptions allPrograms visible-md" id="allPrograms">
-        <i class="fa fa-search"></i>
+    <div class="linkOptions allPrograms visible-md visible-sm visible-xs" id="allPrograms">
+        <i class="fa fa-search goldColour"></i>
         <label class="contentH3-white">FIND PROGRAMS</label>
     </div>
     <div class="linkOptions home col-md-3" id="requestCatalogue">
-        <i class="fa fa-book"></i>
+        <i class="fa fa-book goldColour"></i>
         <label class="contentH3-white">REQUEST CATALOGUE</label>
     </div>
     <div class="linkOptions home col-md-3" id="askQuestion">
-        <i class="fa fa-comment"></i>
+        <i class="fa fa-comment goldColour"></i>
         <label class="contentH3-white">ASK A QUESTION</label>
     </div>
     <div class="linkOptions home col-md-3" id="tourCampus">
-        <i class="fa fa-home"></i>
+        <i class="fa fa-home goldColour"></i>
         <label class="contentH3-white">TOUR A CAMPUS</label>
     </div>
     <div class="linkOptions home col-md-3" id="apply">
-        <i class="fa fa-bookmark"></i>
+        <i class="fa fa-bookmark goldColour"></i>
         <label class="contentH3-white">APPLY NOW</label>
     </div>
     <div class="clearfix"></div>
@@ -69,7 +68,7 @@
     <div class="col-md-6 wrapper">
         <div class="videoItem">
             <div>
-                <label class="contentH3">EMPLOYER-GRADUATE TESTIMONIALS</label>
+                <label class="contentH3">MEDIX MEDIA</label>
                 <span class="pull-right"><i class="fa fa-caret-left videoScrollerNav prev"></i><i class="fa fa-caret-right videoScrollerNav next"></i></span>
             </div>
             <div class="video clearfix">
@@ -82,22 +81,23 @@
 </div>
 <div class="socialWrapper">
     <div class="col-md-4 facebook">
-        <h2 class="contentH2-white-bluebg"><i class="fa fa-facebook"></i>&nbsp;Facebook</h2>
+        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">b</span>&nbsp;Facebook</h2>
         <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FMedixCollege&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
     </div>
     <div class="col-md-4 twitter">
-        <h2 class="contentH2-white-bluebg"><i class="fa fa-twitter"></i>&nbsp;Twitter</h2>
+        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">a</span>&nbsp;&nbsp;Twitter</h2>
         <a class="twitter-timeline" href="https://twitter.com/medixhired" data-widget-id="573863902028632064">Tweets by medixhired</a>
         <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
     </div>
     <div class="col-md-4 newsUpdates">
-        <h2 class="contentH2-white-bluebg">News Updates</h2>
+        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">,</span>&nbsp;&nbsp;News Updates</h2>
         <ul class="list-unstyled newsList">
             @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
             {
-                <li class="newsListItem contentp" id="@article.Id">
-                    <div class="contentp"><span class="glyphicon glyphicon-calendar spacer-right"></span> @article.Title</div>
+                <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
+                    <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
                     <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
+
                 </li>
             }
         </ul>
@@ -146,7 +146,7 @@
     <div class="clearfix"></div>
 </div>
 <div class="contactUsWrapper">
-    <span class="pull-right contentH3-white">@Html.ActionLink("CLICK HERE TO HIRE A GRADUATE", "HireAMedixGrad", "Home")</span>
+    <span class="pull-right contentH1whitemain">@Html.ActionLink("CLICK HERE TO HIRE A GRADUATE", "HireAMedixGrad", "Home")</span>
     <div class="clearfix"></div>
 </div>
 <script>
