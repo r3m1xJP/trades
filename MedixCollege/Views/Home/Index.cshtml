@@ -1,154 +1,197 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+
 <div class="container">
-    <div class="promoWrapper hidden-xs">
-        <div class="promoContent">
-            <h1 class="mainHEADER hidden-xs">Our Obligation is to our Students</h1>
-            <div class="videoButtons visible-xs visible-sm visible-md visible-lg">
+    <div class="container containerPromoWrapper">
+        <div class="promoWrapper hidden-xs">
+            <div class="promoContent">
+                <h1 class="mainHEADER hidden-xs">Our Obligation is to our Students</h1>
+                <div class="videoButtons visible-xs visible-sm visible-md visible-lg">
 
+                </div>
             </div>
+            <video autoplay loop>
+                @*<source src="https://dl.dropboxusercontent.com/s/r7f6q1byzt06tke/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4?dl=0" type="video/mp4" />
+                    <source src="https://dl.dropboxusercontent.com/s/nk2tsuaz17vtw9l/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm?dl=0" type="video/webm" />
+                    <source src="https://dl.dropboxusercontent.com/s/e0rk9xqcyfdye9g/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv?dl=0" type="video/ogg" />*@
+                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4" type="video/mp4" />
+                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm" type="video/webm" />
+                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv" type="video/ogg" />
+            </video>
         </div>
-        <video autoplay loop>
-            @*<source src="https://dl.dropboxusercontent.com/s/r7f6q1byzt06tke/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4?dl=0" type="video/mp4" />
-                <source src="https://dl.dropboxusercontent.com/s/nk2tsuaz17vtw9l/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm?dl=0" type="video/webm" />
-                <source src="https://dl.dropboxusercontent.com/s/e0rk9xqcyfdye9g/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv?dl=0" type="video/ogg" />*@
-            <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4" type="video/mp4" />
-            <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm" type="video/webm" />
-            <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv" type="video/ogg" />
-        </video>
-    </div>
-    <div class="videoWrapperProgram visible-xs">
-        <iframe width="560"
-                height="315" src="https://www.youtube.com/embed/F7YibCuBIAI?rel=0 " frameborder="0"
-                allowfullscreen></iframe>
-    </div>
-</div>
-<div class="linkOptionsWrapper">
-    <div class="linkOptions allPrograms visible-md visible-sm visible-xs" id="allPrograms">
-        <i class="fa fa-search goldColour"></i>
-        <label class="contentH3-white">FIND PROGRAMS</label>
-    </div>
-    <div class="linkOptions home col-md-3" id="requestCatalogue">
-        <i class="fa fa-book goldColour"></i>
-        <label class="contentH3-white">REQUEST CATALOGUE</label>
-    </div>
-    <div class="linkOptions home col-md-3" id="askQuestion">
-        <i class="fa fa-comment goldColour"></i>
-        <label class="contentH3-white">ASK A QUESTION</label>
-    </div>
-    <div class="linkOptions home col-md-3" id="tourCampus">
-        <i class="fa fa-home goldColour"></i>
-        <label class="contentH3-white">TOUR A CAMPUS</label>
-    </div>
-    <div class="linkOptions home col-md-3" id="apply">
-        <i class="fa fa-bookmark goldColour"></i>
-        <label class="contentH3-white">APPLY NOW</label>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-<div class="videoWrapper">
-    <div class="col-md-6 wrapper">
-        <div class="videoItem">
-            <div>
-                <label class="contentH3">STUDENT REVIEWS</label>
-                <span class="pull-right"><i class="fa fa-caret-left videoScrollerNav prev"></i><i class="fa fa-caret-right videoScrollerNav next"></i></span>
-            </div>
-            <div class="video clearfix">
-                <iframe class="videoIFrame active" src="https://www.youtube.com/embed/L4_0O3aN3KU?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/vUeRBchdNP4?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/vUMLNqH_ANY?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/Z_2iq2HfWAM?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/Gf7y5DdUfPI?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/nHKzAwePASE?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-            </div>
+        <div class="videoWrapperProgram visible-xs">
+            <iframe width="560"
+                    height="315" src="https://www.youtube.com/embed/F7YibCuBIAI?rel=0 " frameborder="0"
+                    allowfullscreen></iframe>
         </div>
     </div>
-    <div class="col-md-6 wrapper">
-        <div class="videoItem">
-            <div>
-                <label class="contentH3">MEDIX MEDIA</label>
-                <span class="pull-right"><i class="fa fa-caret-left videoScrollerNav prev"></i><i class="fa fa-caret-right videoScrollerNav next"></i></span>
+</div>
+
+<div class="container-fluid containerlinkOptionsWrapper">
+    <div class="container">
+        <div class="linkOptionsWrapper">
+            <div class="linkOptions allPrograms visible-md visible-sm visible-xs linkOptionsFP" id="allPrograms">
+                <i class="fa fa-search goldColour"></i>
+                <label class="contentH3-white">FIND PROGRAMS</label>
             </div>
-            <div class="video clearfix">
-                <iframe class="videoIFrame active" src="https://www.youtube.com/embed/lK7-VbtSDfA?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
-                <iframe class="videoIFrame" src="https://www.youtube.com/embed/fvZYRmemeJo?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+            <div class="linkOptions linkOptionsRC home col-md-3" id="requestCatalogue">
+                <i class="fa fa-book goldColour"></i>
+                <label class="contentH3-white">REQUEST CATALOGUE</label>
             </div>
+            <div class="linkOptions linkOptionsAQ home col-md-3" id="askQuestion">
+                <i class="fa fa-comment goldColour"></i>
+                <label class="contentH3-white">ASK A QUESTION</label>
+            </div>
+            <div class="linkOptions linkOptionsTC home col-md-3" id="tourCampus">
+                <i class="fa fa-home goldColour"></i>
+                <label class="contentH3-white">TOUR A CAMPUS</label>
+            </div>
+            <div class="linkOptions linkOptionsAN home col-md-3" id="apply">
+                <i class="fa fa-bookmark goldColour"></i>
+                <label class="contentH3-white">APPLY NOW</label>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <div class="clearfix"></div>
 </div>
-<div class="socialWrapper">
-    <div class="col-md-4 facebook">
-        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">b</span>&nbsp;Facebook</h2>
-        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FMedixCollege&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
-    </div>
-    <div class="col-md-4 twitter">
-        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">a</span>&nbsp;&nbsp;Twitter</h2>
-        <a class="twitter-timeline" href="https://twitter.com/medixhired" data-widget-id="573863902028632064">Tweets by medixhired</a>
-        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-    </div>
-    <div class="col-md-4 newsUpdates">
-        <h2 class="contentH2-white-bluebg"><span class="socicon f30 goldColour">,</span>&nbsp;&nbsp;News Updates</h2>
-        <ul class="list-unstyled newsList">
-            @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
-            {
-                <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
-                    <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
-                    <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
 
-                </li>
-            }
+<div class="container-fluid containervideoItem">
+    <div class="container">
+        <div class="videoWrapper">
+            <div class="col-md-6 wrapper">
+                <div class="videoItem1">
+                    <div>
+                        <h3 class="contentH3-white">
+                            STUDENT REVIEWS
+                            <span class="pull-right">
+                                <i class="fa fa-caret-left videoScrollerNav prev"></i>
+                                <i class="fa fa-caret-right videoScrollerNav next"></i>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="video clearfix">
+                        <iframe class="videoIFrame active" src="https://www.youtube.com/embed/L4_0O3aN3KU?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/vUeRBchdNP4?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/vUMLNqH_ANY?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/Z_2iq2HfWAM?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/Gf7y5DdUfPI?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/nHKzAwePASE?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wrapper">
+                <div class="videoItem2">
+                    <div>
+                        <h3 class="contentH3-white">
+                            MEDIX VIDEOS
+                            <span class="pull-right">
+                                <i class="fa fa-caret-left videoScrollerNav prev"></i>
+                                <i class="fa fa-caret-right videoScrollerNav next"></i>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="video clearfix">
+                        <iframe class="videoIFrame active" src="https://www.youtube.com/embed/lK7-VbtSDfA?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="videoIFrame" src="https://www.youtube.com/embed/fvZYRmemeJo?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="socialWrapper">
+        <div class="col-md-4 facebook">
+            <h2 class="contentH2-white-bluebg contentH3-white"><span class="socicon f30 goldColour">b</span>&nbsp;FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+            <div class="mobile-content facebook hidden-xs">
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FMedixCollege&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
+            </div>
+        </div>
+
+
+        <div class="insidetwitter">
+            <div class="col-md-4 twitter">
+                <h2 class="contentH2-white-bluebg contentH3-white"><span class="socicon f30 goldColour">a</span>&nbsp;&nbsp;MEDIX HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+                <div class="mobile-content twitter hidden-xs">
+                    <a class="twitter-timeline" href="https://twitter.com/medixhired" data-widget-id="573863902028632064">Tweets by medixhired</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 newsUpdates">
+            <h2 class="contentH2-white-bluebg contentH3-white"><span class="socicon f30 goldColour">,</span>&nbsp;&nbsp;NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+            <div class="mobile-content newsUpdates hidden-xs">
+                <ul class="list-unstyled newsList">
+                    @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
+                    {
+                        <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
+                            <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
+                            <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
+
+                        </li>
+                    }
+                </ul>
+            </div>
+            <hr />
+            <div class="pull-right link-unstyled">
+                @Html.ActionLink("More News", "NewsDirectory", "Home")
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="graduatesHiredWrapper">
+        <label class="contentH1-main">GRADUATES FROM MEDIX COLLEGE HAVE BEEN HIRED AT:</label>
+        <ul id="graduatesImageScroller">
+            <li><img src="~/Content/images/graduates/Bayshore.jpg" alt="Bayshore Logo" /></li>
+            <li><img src="~/Content/images/graduates/Canes.jpg" alt="Canes Logo" /></li>
+            <li><img src="~/Content/images/graduates/Crest.jpg" alt="Crest Health Logo" /></li>
+            <li><img src="~/Content/images/graduates/Grand Erie - BRF.jpg" alt="Grand Erie Branford Logo" /></li>
+            <li><img src="~/Content/images/graduates/Homeinstead.jpg" alt="Home Instead Logo" /></li>
+            <li><img src="~/Content/images/graduates/Humber River - TOR.jpg" alt="Homber River Logo" /></li>
+            <li><img src="~/Content/images/graduates/IDA - TOR.jpg" alt="IDA Toronto Logo" /></li>
+            <li><img src="~/Content/images/graduates/Infomax.jpg" alt="Infomax Logo" /></li>
+            <li><img src="~/Content/images/graduates/Lchaim - TOR.jpg" alt="Lchain Logo" /></li>
+            <li><img src="~/Content/images/graduates/LifeLabs.jpg" alt="Lifelabs Logo" /></li>
+            <li><img src="~/Content/images/graduates/Medisystems.jpg" alt="Medisystems Logo" /></li>
+            <li><img src="~/Content/images/graduates/NYCH.jpg" alt="North York Community Logo" /></li>
+            <li><img src="~/Content/images/graduates/Oaks.jpg" alt="Erin Oaks Logo" /></li>
+            <li><img src="~/Content/images/graduates/Paramed - TOR.jpg" alt="Parameds Toronto Logo" /></li>
+            <li><img src="~/Content/images/graduates/Peekaboo - BRA.jpg" alt="Peekaboo Childcare Logo" /></li>
+            <li><img src="~/Content/images/graduates/PremierHomecare - BRA.jpg" alt="Premier homecare logo" /></li>
+            <li><img src="~/Content/images/graduates/Red Cross.jpg" alt="Red Cross Logo" /></li>
+            <li><img src="~/Content/images/graduates/Revera - BRF.jpg" alt="Revera Brantford Logo" /></li>
+            <li><img src="~/Content/images/graduates/ROmanson.jpg" alt="Romanson Dental Logo" /></li>
+            <li><img src="~/Content/images/graduates/Rutherford.jpg" alt="Rutherford Logo" /></li>
+            <li><img src="~/Content/images/graduates/Sante.jpg" alt="Sante Logo" /></li>
+            <li><img src="~/Content/images/graduates/Shoppers.jpg" alt="Shoppers logo" /></li>
+            <li><img src="~/Content/images/graduates/Solar Dental.jpg" alt="Solar Dental Logo" /></li>
+            <li><img src="~/Content/images/graduates/Spectrum.jpg" alt="Spectrum Logo" /></li>
+            <li><img src="~/Content/images/graduates/steliza.jpg" alt="Steliza Logo" /></li>
+            <li><img src="~/Content/images/graduates/TGH.jpg" alt="Toronto General Logo" /></li>
+            <li><img src="~/Content/images/graduates/Toronto Western.jpg" alt="Toronto Western Hospital Logo" /></li>
+            <li><img src="~/Content/images/graduates/UHN Prince Margaret.jpg" alt="United Health Network Prince Margaret Logo" /></li>
+            <li><img src="~/Content/images/graduates/UT - Scar.jpg" alt="University of Toronto - Scarborough Logo" /></li>
+            <li><img src="~/Content/images/graduates/VHA Home Healthcare.jpg" alt="VHN Home Healthcare Logo" /></li>
+            <li><img src="~/Content/images/graduates/VON.jpg" alt="VON Canada Logo" /></li>
         </ul>
-        <hr />
-        <div class="pull-right link-unstyled">
-            @Html.ActionLink("More News", "NewsDirectory", "Home")
-        </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
 </div>
-<div class="graduatesHiredWrapper">
-    <label class="contentH1-main">GRADUATES FROM MEDIX COLLEGE HAVE BEEN HIRED AT:</label>
-    <ul id="graduatesImageScroller">
-        <li><img src="~/Content/images/graduates/Bayshore.jpg" alt="Bayshore Logo" /></li>
-        <li><img src="~/Content/images/graduates/Canes.jpg" alt="Canes Logo" /></li>
-        <li><img src="~/Content/images/graduates/Crest.jpg" alt="Crest Health Logo" /></li>
-        <li><img src="~/Content/images/graduates/Grand Erie - BRF.jpg" alt="Grand Erie Branford Logo" /></li>
-        <li><img src="~/Content/images/graduates/Homeinstead.jpg" alt="Home Instead Logo" /></li>
-        <li><img src="~/Content/images/graduates/Humber River - TOR.jpg" alt="Homber River Logo" /></li>
-        <li><img src="~/Content/images/graduates/IDA - TOR.jpg" alt="IDA Toronto Logo" /></li>
-        <li><img src="~/Content/images/graduates/Infomax.jpg" alt="Infomax Logo" /></li>
-        <li><img src="~/Content/images/graduates/Lchaim - TOR.jpg" alt="Lchain Logo" /></li>
-        <li><img src="~/Content/images/graduates/LifeLabs.jpg" alt="Lifelabs Logo" /></li>
-        <li><img src="~/Content/images/graduates/Medisystems.jpg" alt="Medisystems Logo" /></li>
-        <li><img src="~/Content/images/graduates/NYCH.jpg" alt="North York Community Logo" /></li>
-        <li><img src="~/Content/images/graduates/Oaks.jpg" alt="Erin Oaks Logo" /></li>
-        <li><img src="~/Content/images/graduates/Paramed - TOR.jpg" alt="Parameds Toronto Logo" /></li>
-        <li><img src="~/Content/images/graduates/Peekaboo - BRA.jpg" alt="Peekaboo Childcare Logo" /></li>
-        <li><img src="~/Content/images/graduates/PremierHomecare - BRA.jpg" alt="Premier homecare logo" /></li>
-        <li><img src="~/Content/images/graduates/Red Cross.jpg" alt="Red Cross Logo" /></li>
-        <li><img src="~/Content/images/graduates/Revera - BRF.jpg" alt="Revera Brantford Logo" /></li>
-        <li><img src="~/Content/images/graduates/ROmanson.jpg" alt="Romanson Dental Logo" /></li>
-        <li><img src="~/Content/images/graduates/Rutherford.jpg" alt="Rutherford Logo" /></li>
-        <li><img src="~/Content/images/graduates/Sante.jpg" alt="Sante Logo" /></li>
-        <li><img src="~/Content/images/graduates/Shoppers.jpg" alt="Shoppers logo" /></li>
-        <li><img src="~/Content/images/graduates/Solar Dental.jpg" alt="Solar Dental Logo" /></li>
-        <li><img src="~/Content/images/graduates/Spectrum.jpg" alt="Spectrum Logo" /></li>
-        <li><img src="~/Content/images/graduates/steliza.jpg" alt="Steliza Logo" /></li>
-        <li><img src="~/Content/images/graduates/TGH.jpg" alt="Toronto General Logo" /></li>
-        <li><img src="~/Content/images/graduates/Toronto Western.jpg" alt="Toronto Western Hospital Logo" /></li>
-        <li><img src="~/Content/images/graduates/UHN Prince Margaret.jpg" alt="United Health Network Prince Margaret Logo" /></li>
-        <li><img src="~/Content/images/graduates/UT - Scar.jpg" alt="University of Toronto - Scarborough Logo" /></li>
-        <li><img src="~/Content/images/graduates/VHA Home Healthcare.jpg" alt="VHN Home Healthcare Logo" /></li>
-        <li><img src="~/Content/images/graduates/VON.jpg" alt="VON Canada Logo" /></li>
-    </ul>
-    <div class="clearfix"></div>
+
+<div class="container">
+    <div class="contactUsWrapper">
+        <span class="pull-right contentH1whitemain">@Html.ActionLink("CLICK HERE TO HIRE A GRADUATE", "HireAMedixGrad", "Home")</span>
+        <div class="clearfix"></div>
+    </div>
 </div>
-<div class="contactUsWrapper">
-    <span class="pull-right contentH1whitemain">@Html.ActionLink("CLICK HERE TO HIRE A GRADUATE", "HireAMedixGrad", "Home")</span>
-    <div class="clearfix"></div>
-</div>
+
 <script>
     $(document).ready(function () {
         $('.promoWrapper').parent().removeClass("container").removeClass("body-content");
@@ -175,6 +218,18 @@
         $header.css({
             top: $vid.height() / 3,
             left: ($vid.width() / 2) - ($header.width() / 2)
+        });
+
+        $('.socialMobileLink').click(function (e) {
+            var content = $('.mobile-content.' + $(this).attr("id"));
+
+            if (content.hasClass("hidden-xs")) {
+                content.removeClass("hidden-xs");
+            } else {
+                content.addClass("hidden-xs");
+            }
+
+            e.preventDefault();
         });
 
         $('#allPrograms').click(function () {

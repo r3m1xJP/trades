@@ -7,7 +7,7 @@
 
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/0dadfbd7-4931-4174-ae59-acc837e29491.css" />
 
-    <title>Medix College - @ViewBag.Title</title>
+    <title>Trades College - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -28,6 +28,7 @@
     </script>
 </head>
 <body>
+
     <header>
         <div class="container">
             <div class="col-sm-4">
@@ -48,10 +49,10 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="pull-right socialMediaList">
-                    <a href="https://www.facebook.com/MedixCollege?ref=hl"><span class="socicon mBlueColour f30">b</span></a>
-                    <a href="https://plus.google.com/+MedixcollegeCa/posts"><span class="socicon mBlueColour f30">c</span></a></a>
-                    <a href="https://www.youtube.com/user/medixcollegelondon"><span class="socicon mBlueColour f30">r</span></a></a>
-                    <a href="https://twitter.com/medix_college"><span class="socicon mBlueColour f30">a</span></a></a>
+                    <a href="https://www.facebook.com/MedixCollege?ref=hl"><span class="socicon mBlueColour f30">b</span></a>&nbsp;&nbsp;
+                    <a href="https://plus.google.com/+MedixcollegeCa/posts"><span class="socicon mBlueColour f30">c</span></a>&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/user/medixcollegelondon"><span class="socicon mBlueColour f30">r</span></a>&nbsp;&nbsp;
+                    <a href="https://twitter.com/medix_college"><span class="socicon mBlueColour f30">a</span></a>
                 </div>
             </div>
         </div>
@@ -300,9 +301,11 @@
             </div>
         </div>
     </header>
-    <div class="container body-content">
+
+    <div class="container-fluid body-content">
         @RenderBody()
     </div>
+
     <div class="form-overlay">
         <div class="container">
             <span class="close form-overlay-close"><i class="fa fa-close"></i></span>
@@ -668,6 +671,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container-fluid bottom-nav">
             <br />
@@ -757,6 +761,7 @@
             </div>
         </div>
     </footer> <!-- /footer -->
+
 </body>
 </html>
 

@@ -11,6 +11,17 @@ namespace MedixCollege.Controllers
         // GET: Admissions
         public ActionResult Index()
         {
+            ViewBag.HeroText = "";
+            ViewBag.BodyHeaderText = "";
+
+            ViewBag.SideHeader = "Test";
+            ViewBag.SideSubHeader1 = "Test1";
+            ViewBag.SideSubText1 = "Test2";
+            ViewBag.SideSubHeader2 = "Test3";
+            ViewBag.SideSubText2 = "Test4";
+            ViewBag.SideSubHeader3 = "Test5";
+            ViewBag.SideSubText3 = "Test6";
+
             return View();
         }
 

@@ -5,35 +5,36 @@
     ViewBag.Title = "Referral Program";
 }
 
+<div class="container">
 
-<div class="col-sm-8">
-    <h1 class="contentPageH1">Referral Program</h1>
-    <ol class="breadcrumb">
-        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-        <li class="active contentp">Referral Program</li>
-    </ol>
-    <h2 class="contentH2">Details:</h2>
+    <div class="col-sm-8 mid-padding">
+        <h1 class="contentPageH1">Referral Program</h1>
+        <ol class="breadcrumb">
+            <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="active contentp">Referral Program</li>
+        </ol>
+        <h2 class="contentH2">Details:</h2>
 
-    <p class="contentp">The draw will happen the 1st business day of the month.</p>
-  
-    <p class="contentp">
-        Winner will receive one of two options:
-    </p>
+        <p class="contentp">The draw will happen the 1st business day of the month.</p>
+
+        <p class="contentp">
+            Winner will receive one of two options:
+        </p>
         <ul>
             <li>  $500 bursary towards their tuition that will be credited upon graduation.</li>
             <li>  $250 cash prize.</li>
         </ul>
-    <p class="contentp">
-        The referral must enroll in a Medix fulltime program and must be enrolled as a student for a minimum of 30 days to qualify.
-        Winner can only win one time on the same referral name.
+        <p class="contentp">
+            The referral must enroll in a Medix fulltime program and must be enrolled as a student for a minimum of 30 days to qualify.
+            Winner can only win one time on the same referral name.
 
-        <br />
-        Fill out this form below to be entered into the reward program.
-    </p>
+            <br />
+            Fill out this form below to be entered into the reward program.
+        </p>
 
-</div>
+    </div>
 
-    <div class="col-sm-4">
+    <div class="col-sm-4 pull-right no-padding">
         <form id="referralProgramForm" name="referralProgramForm" method="post" action="/home/referralProgram">
             <input type="hidden" name="ORGID" value="240" />
             <input type="hidden" name="MailListID" value="240001" />
@@ -166,4 +167,6 @@
             </div>
         </form>
     </div>
-<br />
+    <br />
+
+</div>
