@@ -1576,3 +1576,14 @@ video {
 .sideSubText {
     font-size: 14px;
 }
+
+.sideWrapper {
+    display: none;
+}
+
+.nav.full-width {
+    width: 100%;
+}
+    .nav.full-width li.dropdown {
+        width: 14.28%;
+    }

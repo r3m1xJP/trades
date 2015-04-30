@@ -25,80 +25,56 @@ namespace MedixCollege.Controllers
             return View();
         }
 
-        // GET: Child Youth Addictions Worker
-        public ActionResult ChildYouthAddictionsWorker()
+        // GET: HVACTechnician
+        public ActionResult HVACTechnician()
         {
             return View();
         }
 
-        // GET: Community Service Worker
-        public ActionResult CommunityServiceWorker()
+        // GET: Welding
+        public ActionResult Welding()
         {
             return View();
         }
 
-        // GET: Dental Assistant II
-        public ActionResult DentalAssistantII()
+        // GET: SolarEnergyTechnician
+        public ActionResult SolarEnergyTechnician()
         {
             return View();
         }
 
-        // GET: Developmental Service Worker
-        public ActionResult DevelopmentalServiceWorker()
+        // GET: Cabinetmaking
+        public ActionResult Cabinetmaking()
         {
             return View();
         }
 
-        // GET: Early Child Care Assistant
-        public ActionResult EarlyChildCareAssistant()
+        // GET: HomeRenovationTechnician
+        public ActionResult HomeRenovationTechnician()
         {
             return View();
         }
 
-        // GET: Fitness Health Promotion
-        public ActionResult FitnessHealthPromotion()
+        // GET: IndustrialAndCommericalMaintenance
+        public ActionResult IndustrialAndCommericalMaintenance()
         {
             return View();
         }
 
-        // GET: Intra Oral Dental Assistant
-        public ActionResult IntraOralDentalAssistant()
+        // GET: MotorcycleAndSmallEngineRepair
+        public ActionResult MotorcycleAndSmallEngineRepair()
         {
             return View();
         }
 
-        // GET: Massage Therapy
-        public ActionResult MassageTherapy()
+        // GET: ConstructionAndMaintenanceElectrician
+        public ActionResult ConstructionAndMaintenanceElectrician()
         {
             return View();
         }
 
-        // GET: Massage Therapy Advanced Standing
-        public ActionResult MassageTherapyAdvancedStanding()
-        {
-            return View();
-        }
-
-        // GET: Medical Lab Assistant Technician
-        public ActionResult MedicalLabAssistantTechnician()
-        {
-            return View();
-        }
-
-        // GET: Medical Office Administrator
-        public ActionResult MedicalOfficeAdministrator()
-        {
-            return View();
-        }
-
-        // GET: Personal Support Worker
-        public ActionResult PersonalSupportWorker()
-        {
-            return View();
-        }
-
-        // GET: Pharmacy Assistant
-        public ActionResult PharmacyAssistant()
+        // GET: ElectricalTechnology
+        public ActionResult ElectricalTechnology()
         {
             return View();
         }
@@ -114,12 +90,6 @@ namespace MedixCollege.Controllers
             ViewBag.SideSubHeader3 = "Test5";
             ViewBag.SideSubText3 = "Test6";
 
-            return View();
-        }
-
-        // GET: Medix Online
-        public ActionResult MedixOnline()
-        {
             return View();
         }
     }

@@ -2,50 +2,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{
-    ViewBag.Title = "Certificate Programs at Medix College";
-    ViewBag.PageDescription = "Learn more about the Certificate programs and continuing education options at Medix College.";
-
-}
-
 <div class="container">
     <div class="heroWrapper">
         @ViewBag.HeroText
     </div>
     <div class="leftMenuWrapper col-sm-3 custom-collapse">
-        <button class="btn-brand-white collapse-toggle visible-xs" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-certificates">
+        <button class="btn-brand-white collapse-toggle visible-xs" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-discover">
             <span class=""><span class="glyphicon glyphicon-align-justify"></span></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
 
-        <ul class="leftMenu list-unstyled collapse" id="side-menu-certificates">
-            <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("All Certificates", "AllCertificates", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("ABELDent", "AbelDent", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Basic Wound Treatment", "BasicWoundTreatment", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Electrocardiogram", "Electrocardiogram", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Emotional First Aid", "EmotionalFirstAid", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("English Second Language", "EnglishSecondLanguage", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("English Skills - Healthcare Workers", "EnglishSkillsHealthcareWorkers", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("First Aid & CPR", "FirstAidCPR", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Food Handler Safety", "FoodHandlerSafety", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Home Childcare Management", "HomeChildCareManagement", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intramuscular Injections", "IntramuscularInjections", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intro - Developmental Disabilities Services", "IntroductionDevelopmentalDisabilitiesServices", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Intro - Swedish Massage", "IntroductionSwedishMassage", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Mental Health Addictions", "MentalHealthAddictions", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Phlebotomy", "Phlebotomy", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Soft Tissue Back Injury Prevention", "SoftTissueBackInjuryPrevention", "Certificates")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Urinalysis", "Urinalysis", "Certificates")</li>
+        <ul class="leftMenu list-unstyled collapse" id="side-menu-discover">
+            <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("Discover Medix", "Index", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("President's Message", "PresidentsMessage", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("History", "History", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Mission", "Mission", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Accreditation", "Accreditation", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Associations", "Associations", "DiscoverNATS")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Careers at NATS", "CareersAtNATS", "DiscoverNATS")</li>
+
 
             <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
             <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
         </ul>
         <br />
     </div>
-
-
     <div class="col-sm-9 pull-right">
         <div class="contentBody">
             <div class="row bodyHeaderWrapper">
@@ -62,19 +45,19 @@
                         <h1 class="contentH1 text-center">
                             <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Ask a Question
                         </h1>
-                        <form id="programsQuestionsForm" name="programsQuestionsForm" method="post" class="questionsForm" action="/home/askquestionprogram">
+                        <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
                             <input type="hidden" name="ORGID" value="240" />
                             <input type="hidden" name="MailListID" value="240001" />
                             <div class="input-group spacer-top">
-                                <label class="pull-left">First Name: <span class="text-danger">*</span></label>
+                                <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control pull-right" name="FirstName">
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left">Email: <span class="text-danger">*</span></label>
+                                <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control pull-right" name="Email">
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left">Location: <span class="text-danger">*</span></label>
+                                <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
                                 <select class="form-control pull-right" name="CampusID">
                                     <option value="0">Select</option>
                                     <option value="246">Brampton</option>
@@ -86,7 +69,7 @@
                                 </select>
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                                <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
                                 <select class="form-control pull-right" name="ProgramID">
                                     <option value="0">Select</option>
                                     <option value="38882">Anatomy &amp; Physiology</option>
@@ -118,10 +101,10 @@
                                 </select>
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left">Comments: </label>
+                                <label class="pull-left contentp">Comments: </label>
                                 <textarea class="form-control pull-right" name="Comment2"></textarea>
                             </div>
-                            <div class="small-text spacer-top text-center grayColor">
+                            <div class="small-text spacer-top text-center grayColor contentp">
                                 Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
                             </div>
                             <div class="text-center">
@@ -162,11 +145,10 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
     <div class="clearfix"></div>
+    <br />
 </div>
 <script>
     $(document).ready(function () {

@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MedixCollege.Controllers
 {
-    public class DiscoverMedixController : Controller
+    public class DiscoverNATSController : Controller
     {
         // GET: DiscoverMedix
         public ActionResult Index()
@@ -31,24 +31,29 @@ namespace MedixCollege.Controllers
             return View();
         }
 
-        // GET: Laptop Initiative
-        public ActionResult LaptopInitiative()
+        // GET: Presidents Message
+        public ActionResult PresidentsMessage()
         {
             return View();
         }
 
-        // GET: Transcript Request
-        public ActionResult TranscriptRequest()
+        // GET: Mission
+        public ActionResult Mission()
         {
             return View();
         }
 
-        public ActionResult VirtualTour()
+        public ActionResult Accreditation()
         {
             return View();
         }
 
-        public ActionResult CareersAtMedix()
+        public ActionResult Associations()
+        {
+            return View();
+        }
+
+        public ActionResult CareersAtNATS()
         {
             return View();
         }

@@ -2,33 +2,35 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@{
+    ViewBag.Title = "Training Programs at NATS College";
+    ViewBag.PageDescription = "Learn more about the Certificate programs and continuing education options at NATS College.";
+
+}
+
 <div class="container">
     <div class="heroWrapper">
         @ViewBag.HeroText
     </div>
     <div class="leftMenuWrapper col-sm-3 custom-collapse">
-        <button class="btn-brand-white collapse-toggle visible-xs" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-discover">
+        <button class="btn-brand-white collapse-toggle visible-xs" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-certificates">
             <span class=""><span class="glyphicon glyphicon-align-justify"></span></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
 
-        <ul class="leftMenu list-unstyled collapse" id="side-menu-discover">
-            <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("Discover Medix", "Index", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Medix History", "History", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Virtual Tour", "VirtualTour", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Laptop Initiative", "LaptopInitiative", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Transcript Request", "TranscriptRequest", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Careers at Medix", "CareersAtMedix", "DiscoverMedix")</li>
-            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;<a href="javascript: void(0)" onclick="popup('http://careercollegegroup.canpromo.com/Products.htm?CD=553')">Medix Store</a></li>
-
+        <ul class="leftMenu list-unstyled collapse" id="side-menu-certificates">
+            <li class="item contentH1-white"><span class="glyphicon glyphicon-home goldBorderSM"></span>&nbsp;@Html.ActionLink("All Workshops", "AllWorkshops", "Training")</li>
+            <li class="item side-menu-h2"><span class="glyphicon glyphicon-share-alt goldColour"></span>&nbsp;@Html.ActionLink("Corporate Training", "CorporateTraining", "Training")</li>
 
             <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
             <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
         </ul>
         <br />
     </div>
+
+
     <div class="col-sm-9 pull-right">
         <div class="contentBody">
             <div class="row bodyHeaderWrapper">
@@ -45,19 +47,19 @@
                         <h1 class="contentH1 text-center">
                             <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Ask a Question
                         </h1>
-                        <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                        <form id="programsQuestionsForm" name="programsQuestionsForm" method="post" class="questionsForm" action="/home/askquestionprogram">
                             <input type="hidden" name="ORGID" value="240" />
                             <input type="hidden" name="MailListID" value="240001" />
                             <div class="input-group spacer-top">
-                                <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                                <label class="pull-left">First Name: <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control pull-right" name="FirstName">
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                                <label class="pull-left">Email: <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control pull-right" name="Email">
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                                <label class="pull-left">Location: <span class="text-danger">*</span></label>
                                 <select class="form-control pull-right" name="CampusID">
                                     <option value="0">Select</option>
                                     <option value="246">Brampton</option>
@@ -69,7 +71,7 @@
                                 </select>
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                                <label class="pull-left">Program: <span class="text-danger">*</span></label>
                                 <select class="form-control pull-right" name="ProgramID">
                                     <option value="0">Select</option>
                                     <option value="38882">Anatomy &amp; Physiology</option>
@@ -101,10 +103,10 @@
                                 </select>
                             </div>
                             <div class="input-group spacer-top">
-                                <label class="pull-left contentp">Comments: </label>
+                                <label class="pull-left">Comments: </label>
                                 <textarea class="form-control pull-right" name="Comment2"></textarea>
                             </div>
-                            <div class="small-text spacer-top text-center grayColor contentp">
+                            <div class="small-text spacer-top text-center grayColor">
                                 Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
                             </div>
                             <div class="text-center">
@@ -145,10 +147,11 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
     </div>
     <div class="clearfix"></div>
-    <br />
 </div>
 <script>
     $(document).ready(function () {

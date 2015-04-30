@@ -97,7 +97,7 @@ namespace MedixCollege.Controllers
             return View();
         }
 
-        public ActionResult HireAMedixGrad()
+        public ActionResult HireAGrad()
         {
             return View();
         }
@@ -116,6 +116,12 @@ namespace MedixCollege.Controllers
         {
             return View();
         }
+
+        public ActionResult CourseStartDates()
+        {
+            return View();
+        }
+
 
         public ActionResult NewsDirectory()
         {
