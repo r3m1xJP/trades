@@ -37,33 +37,33 @@ textarea {
 }
 
 .blueColor {
-    color: #0F3F6F !important;
+    color: #FF0000 !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
 .btn-brand {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white !important;
     padding: 5px 9px 5px 9px !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
     .btn-brand:hover {
-        color: #0F3F6F !important;
+        color: #FF0000 !important;
         padding: 5px 9px 5px 9px !important;
     }
 
 .btn-brand-white {
     background-color: white;
-    color: #0F3F6F !important;
+    color: #FF0000 !important;
     border-bottom-style: solid !important;
-    border-color: #0F3F6F !important;
+    border-color: #FF0000 !important;
     padding: 5px 9px 5px 9px !important;
     font-size: 22px !important;
 }
 
     .btn-brand-white:hover {
-        color: #0F3F6F !important;
+        color: #FF0000 !important;
     }
 
 .mainLogo {
@@ -71,7 +71,7 @@ textarea {
 }
 
 .mainButton {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
 }
 
@@ -86,7 +86,7 @@ textarea {
 }
 
 .mainNav {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: #222222;
 }
 
@@ -97,7 +97,7 @@ textarea {
 .nav li.dropdown {
     text-align: center;
     font-size: 14px;
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     padding: 0px !important;
 }
 
@@ -126,11 +126,11 @@ textarea {
     background-color: #F9F6F4 !important;
     opacity: .9;
     transition: 1s;
-    color: #0F3F6F !important;
+    color: #FF0000 !important;
 }
 
 .nav li.dropdown ul.dropdown-menu {
-    background-color: #0F3F6F !important;
+    background-color: #FF0000 !important;
     box-shadow: none !important;
     background-clip: initial !important;
     min-width: 200px !important;
@@ -153,13 +153,13 @@ textarea {
     }
 
     .navbar-collapse.mobile.in .nav li.open a, .navbar-collapse.mobile.in .nav > li > a:hover, .navbar-collapse.mobile.in .nav > li > a:focus {
-        background-color: #0F3F6F !important;
+        background-color: #FF0000 !important;
     }
 
     .navbar-collapse.mobile.in .nav li a:hover {
         transition: 1s;
         background-color: #F9F6F4 !important;
-        color: #0F3F6F !important;
+        color: #FF0000 !important;
     }
 
     .navbar-collapse.mobile.in .nav .open .dropdown-menu li {
@@ -200,7 +200,7 @@ textarea {
     }
 
         .navPanel li a, .nav li.secondary a:hover {
-            background-color: #0F3F6F !important;
+            background-color: #FF0000 !important;
             color: white !important;
         }
 
@@ -233,7 +233,7 @@ textarea {
     }
 
 .navbar-collapse.in {
-    background-color: #0F3F6F !important;
+    background-color: #FF0000 !important;
 }
 
 footer {
@@ -274,7 +274,7 @@ footer {
     }
 
 .footer-banner {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     overflow: auto;
     padding: 10px;
 }
@@ -292,7 +292,7 @@ footer {
 }
 
 .mBlueColour {
-    color: #0F3F6F;
+    color: #FF0000;
 }
 
 .whiteOuterGlow {
@@ -312,7 +312,7 @@ footer {
 }
 
 .CblueGoldBorder {
-    color: #0F3F6F;
+    color: #FF0000;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #EDAA0F;
 }
@@ -320,7 +320,7 @@ footer {
 .CgoldBlueBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #0F3F6F;
+    -webkit-text-stroke-color: #FF0000;
 }
 
 .whiteBorderSM {
@@ -387,17 +387,17 @@ footer {
 .blueGoldBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0F3F6F;
+    -webkit-text-stroke-color: #FF0000;
 }
 
 .blueGoldBorderSM {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #0F3F6F;
+    -webkit-text-stroke-color: #FF0000;
 }
 
 .blueSubmit {
-    color: #0F3F6F;
+    color: #FF0000;
 }
 
 .linkOptionsWrapper {
@@ -442,7 +442,7 @@ footer {
 
 
 .linkOptionsRC {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -456,7 +456,7 @@ footer {
     }
 
 .linkOptionsAQ {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -470,7 +470,7 @@ footer {
     }
 
 .linkOptionsTC {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -525,7 +525,7 @@ footer {
 }
 
 .linkOptionsAN {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -544,7 +544,7 @@ footer {
 }
 
 .leftMenu li a {
-    color: #0F3F6F !important;
+    color: #FF0000 !important;
     width: 100%;
 }
 
@@ -554,7 +554,7 @@ footer {
 
 .leftMenu li {
     padding: 5px;
-    color: #0F3F6F;
+    color: #FF0000;
     cursor: pointer;
 }
 
@@ -564,13 +564,13 @@ footer {
 
     .leftMenu li.header {
         color: white !important;
-        background-color: #0F3F6F;
+        background-color: #FF0000;
         font-size: 18px;
         padding-left: 0px;
     }
 
 .contentHeader {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     font-size: 30px;
     padding-left: 15px;
@@ -583,7 +583,7 @@ footer {
 
 .contentBodyHeader {
     font-size: 15px;
-    color: #0F3F6F;
+    color: #FF0000;
 }
 
 .socialMediaList {
@@ -596,7 +596,7 @@ footer {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #0F3F6F;
+    color: #FF0000;
 }
 
 .underline {
@@ -640,7 +640,7 @@ footer {
     }
 
     .carousel-caption h4 {
-        color: #0F3F6F;
+        color: #FF0000;
     }
 
 .carousel-caption-options {
@@ -681,7 +681,7 @@ footer {
 
 
 .containervideoItem {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
 }
 
 
@@ -794,7 +794,7 @@ video {
 
 .videoScrollerNav {
     padding: 0px 15px 5px 15px;
-    background-color: #0f3f6f;
+    background-color: #FF0000;
     cursor: pointer;
     font-size: 35px !important;
     margin: 0px 0px 5px 5px;
@@ -806,13 +806,13 @@ video {
     }
 
 .videoItem1 {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     height: 375px;
     padding: 0px 5px 0px 0px;
 }
 
 .videoItem2 {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     height: 375px;
     padding: 0px 0px 0px 5px;
 }
@@ -829,14 +829,14 @@ video {
 
     .graduatesHiredWrapper label {
         font-size: 30px;
-        color: #0F3F6F;
+        color: #FF0000;
     }
 
 .socialWrapper h3 {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     text-align: center;
 }
 
@@ -865,16 +865,16 @@ iframe.twitter-timeline {
 
 .contactUsWrapper {
     margin-top: 15px;
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     padding: 10px;
 }
 
     .contactUsWrapper span {
-        color: #0F3F6F;
+        color: #FF0000;
     }
 
 .listLink {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     color: white;
     font-size: 20px;
     width: 100px;
@@ -911,7 +911,7 @@ iframe.twitter-timeline {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     z-index: 999999999999;
     width: 100%;
     height: 100%;
@@ -1086,17 +1086,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 }
 
 .gsc-search-button {
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     border-radius: 5px;
 }
 
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #0F3F6F !important;
+    background-color: #FF0000 !important;
     background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 16px !important;
-    border-color: #0F3F6F !important;
+    border-color: #FF0000 !important;
     filter: none;
 }
 
@@ -1128,11 +1128,11 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     }
 
     .breadcrumb a {
-        color: #0F3F6F;
+        color: #FF0000;
     }
 
         .breadcrumb a:hover {
-            color: #0F3F6F;
+            color: #FF0000;
         }
 
     .breadcrumb > .active {
@@ -1238,7 +1238,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 .contentPageH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 26px;
     line-height: 26px;
     margin-top: 0px !important;
@@ -1293,7 +1293,7 @@ blockquote p {
 
 .contentH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 20px;
     line-height: 20px;
     padding: 0px;
@@ -1330,7 +1330,7 @@ blockquote p {
 
 .contentH1-main {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 20px;
     line-height: 30px;
 }
@@ -1344,17 +1344,17 @@ blockquote p {
 
 .contentH1-white {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 20px;
     line-height: 20px;
     border-bottom: solid;
-    border-bottom-color: #0F3F6F;
+    border-bottom-color: #FF0000;
 }
 
 .contentH2-white-bluebg {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #0F3F6F;
+    background-color: #FF0000;
     font-size: 20px;
     padding: 18px 12px 12px 12px;
     text-align: center;
@@ -1364,14 +1364,14 @@ blockquote p {
 
 .side-menu-h2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 14px;
     line-height: 14px;
 }
 
 .contentH2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 16px;
     line-height: 16px;
     padding: 10px 0px 10px 0px;
@@ -1380,7 +1380,7 @@ blockquote p {
 
     .contentH2 a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #0F3F6F;
+        color: #FF0000;
         font-size: 16px;
         line-height: 18px;
         text-decoration: none;
@@ -1388,7 +1388,7 @@ blockquote p {
 
         .contentH2 a:hover {
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #0F3F6F;
+            color: #FF0000;
             font-size: 16px;
             line-height: 18px;
             text-decoration: none;
@@ -1411,21 +1411,21 @@ blockquote p {
 
 .contentH3-blue {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
+    color: #FF0000;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3-blue a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #0F3F6F;
+        color: #FF0000;
         font-size: 16px;
         line-height: 18px;
     }
 
         .contentH3-blue a:hover {
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #0F3F6F;
+            color: #FF0000;
             font-size: 16px;
             line-height: 18px;
             text-decoration: underline;
