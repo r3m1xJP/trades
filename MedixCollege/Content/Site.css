@@ -1,7 +1,7 @@
 ﻿
 body {
-    font-family: "Helvetica W01 Roman";
-    background-color: #F9F6F4;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+
 }
 
 header {
@@ -12,8 +12,7 @@ header {
 /* Set padding to keep content from hitting the edges */
 .body-content {
     margin-top: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
+
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -37,33 +36,33 @@ textarea {
 }
 
 .blueColor {
-    color: #FF0000 !important;
+    color: #B22222 !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
 .btn-brand {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white !important;
     padding: 5px 9px 5px 9px !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
     .btn-brand:hover {
-        color: #FF0000 !important;
+        color: #B22222 !important;
         padding: 5px 9px 5px 9px !important;
     }
 
 .btn-brand-white {
     background-color: white;
-    color: #FF0000 !important;
+    color: #B22222 !important;
     border-bottom-style: solid !important;
-    border-color: #FF0000 !important;
+    border-color: #B22222 !important;
     padding: 5px 9px 5px 9px !important;
     font-size: 22px !important;
 }
 
     .btn-brand-white:hover {
-        color: #FF0000 !important;
+        color: #B22222 !important;
     }
 
 .mainLogo {
@@ -71,7 +70,7 @@ textarea {
 }
 
 .mainButton {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
 }
 
@@ -86,7 +85,7 @@ textarea {
 }
 
 .mainNav {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: #222222;
 }
 
@@ -97,7 +96,7 @@ textarea {
 .nav li.dropdown {
     text-align: center;
     font-size: 14px;
-    background-color: #FF0000;
+    background-color: #B22222;
     padding: 0px !important;
 }
 
@@ -119,18 +118,18 @@ textarea {
 .navbar {
     margin-bottom: 0px !important;
     min-height: 0px !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710";
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
 .nav li.dropdown a:hover {
     background-color: #F9F6F4 !important;
     opacity: .9;
     transition: 1s;
-    color: #FF0000 !important;
+    color: #B22222 !important;
 }
 
 .nav li.dropdown ul.dropdown-menu {
-    background-color: #FF0000 !important;
+    background-color: #B22222 !important;
     box-shadow: none !important;
     background-clip: initial !important;
     min-width: 200px !important;
@@ -153,13 +152,13 @@ textarea {
     }
 
     .navbar-collapse.mobile.in .nav li.open a, .navbar-collapse.mobile.in .nav > li > a:hover, .navbar-collapse.mobile.in .nav > li > a:focus {
-        background-color: #FF0000 !important;
+        background-color: #B22222 !important;
     }
 
     .navbar-collapse.mobile.in .nav li a:hover {
         transition: 1s;
         background-color: #F9F6F4 !important;
-        color: #FF0000 !important;
+        color: #B22222 !important;
     }
 
     .navbar-collapse.mobile.in .nav .open .dropdown-menu li {
@@ -200,7 +199,7 @@ textarea {
     }
 
         .navPanel li a, .nav li.secondary a:hover {
-            background-color: #FF0000 !important;
+            background-color: #B22222 !important;
             color: white !important;
         }
 
@@ -233,7 +232,7 @@ textarea {
     }
 
 .navbar-collapse.in {
-    background-color: #FF0000 !important;
+    background-color: #B22222 !important;
 }
 
 footer {
@@ -274,7 +273,7 @@ footer {
     }
 
 .footer-banner {
-    background-color: #FF0000;
+    background-color: #B22222;
     overflow: auto;
     padding: 10px;
 }
@@ -292,7 +291,7 @@ footer {
 }
 
 .mBlueColour {
-    color: #FF0000;
+    color: #B22222;
 }
 
 .whiteOuterGlow {
@@ -312,7 +311,7 @@ footer {
 }
 
 .CblueGoldBorder {
-    color: #FF0000;
+    color: #B22222;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #EDAA0F;
 }
@@ -320,7 +319,7 @@ footer {
 .CgoldBlueBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FF0000;
+    -webkit-text-stroke-color: #B22222;
 }
 
 .whiteBorderSM {
@@ -387,17 +386,17 @@ footer {
 .blueGoldBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #FF0000;
+    -webkit-text-stroke-color: #B22222;
 }
 
 .blueGoldBorderSM {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FF0000;
+    -webkit-text-stroke-color: #B22222;
 }
 
 .blueSubmit {
-    color: #FF0000;
+    color: #B22222;
 }
 
 .linkOptionsWrapper {
@@ -442,7 +441,7 @@ footer {
 
 
 .linkOptionsRC {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -456,7 +455,7 @@ footer {
     }
 
 .linkOptionsAQ {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -470,7 +469,7 @@ footer {
     }
 
 .linkOptionsTC {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     cursor: pointer;
     height: 150px;
@@ -478,6 +477,24 @@ footer {
     text-align: center;
     border-left: 5px solid white;
 }
+
+    .linkOptionsTC:hover {
+        opacity: .8;
+    }
+
+.linkOptionsAN {
+    background-color: #B22222;
+    color: white;
+    cursor: pointer;
+    height: 150px;
+    padding: 5px;
+    text-align: center;
+    border-left: 10px solid white;
+}
+
+    .linkOptionsAN:hover {
+        opacity: .8;
+    }
 
 @media (max-width: 768px) {
     .linkOptionsFP {
@@ -520,23 +537,9 @@ footer {
     }
 }
 
-.linkOptionsTC:hover {
-    opacity: .8;
-}
 
-.linkOptionsAN {
-    background-color: #FF0000;
-    color: white;
-    cursor: pointer;
-    height: 150px;
-    padding: 5px;
-    text-align: center;
-    border-left: 10px solid white;
-}
 
-    .linkOptionsAN:hover {
-        opacity: .8;
-    }
+
 
 @media (min-width: 768px) {
     .leftMenuWrapper {
@@ -544,8 +547,10 @@ footer {
 }
 
 .leftMenu li a {
-    color: #FF0000 !important;
+    color: #B22222 !important;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     width: 100%;
+
 }
 
     .leftMenu li a:hover {
@@ -554,8 +559,11 @@ footer {
 
 .leftMenu li {
     padding: 5px;
-    color: #FF0000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #B22222;
     cursor: pointer;
+    border-bottom: solid 1px lightgray;
 }
 
     .leftMenu li:hover {
@@ -564,13 +572,64 @@ footer {
 
     .leftMenu li.header {
         color: white !important;
-        background-color: #FF0000;
+        background-color: #B22222;
         font-size: 18px;
         padding-left: 0px;
+            padding-left: 10px;
+    border-bottom: solid 3px #EDAA0F;
     }
 
+.formHeaderSIDE {
+    width: 100%;
+            color: white !important;
+        background-color: #B22222;
+        font-size: 18px;
+        padding-top: 10px;
+            padding-bottom: 10px;
+    border-bottom: solid 3px #EDAA0F;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+                position: relative;
+        top:0px;
+
+}
+
+.leftMenu li.header a {
+    color: white !important;
+    background-color: #B22222;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    width: 100%;
+
+}
+
+
+.leftMenuTOP li a {
+    color: white !important;
+    background-color: #B22222;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    width: 100%;
+    font-size: 16px;
+}
+
+    .leftMenuTOP li a:hover {
+        text-decoration: none;
+    }
+
+.leftMenuTOP li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+    .leftMenuTOP li:hover {
+        background-color: gray;
+    }
+
+
+
+
+
+
 .contentHeader {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     font-size: 30px;
     padding-left: 15px;
@@ -583,7 +642,7 @@ footer {
 
 .contentBodyHeader {
     font-size: 15px;
-    color: #FF0000;
+    color: #B22222;
 }
 
 .socialMediaList {
@@ -596,7 +655,7 @@ footer {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #FF0000;
+    color: #B22222;
 }
 
 .underline {
@@ -640,7 +699,7 @@ footer {
     }
 
     .carousel-caption h4 {
-        color: #FF0000;
+        color: #B22222;
     }
 
 .carousel-caption-options {
@@ -681,7 +740,7 @@ footer {
 
 
 .containervideoItem {
-    background-color: #FF0000;
+    background-color: #B22222;
 }
 
 
@@ -709,7 +768,7 @@ footer {
         font-size: 1em;
         border-top: 1px solid rgba(255,255,255, 0.2);
         border-bottom: 1px solid rgba(255,255,255, 0.2);
-        font-family: "HelveticaNeueW01-67MdCn_692710" !important;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     }
 
     .promoContent .videoButtons {
@@ -742,7 +801,7 @@ footer {
 
 @media (min-width: 1500px) {
     .promoContent h1 {
-        font-size: 5em;
+        font-size: 4em;
     }
 }
 
@@ -753,7 +812,7 @@ footer {
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
     border-radius: 3px;
-    font-family: "HelveticaNeueW01-67MdCn_692710" !important;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
     .videoButtons .btn:hover {
@@ -794,7 +853,7 @@ video {
 
 .videoScrollerNav {
     padding: 0px 15px 5px 15px;
-    background-color: #FF0000;
+    background-color: #B22222;
     cursor: pointer;
     font-size: 35px !important;
     margin: 0px 0px 5px 5px;
@@ -806,13 +865,13 @@ video {
     }
 
 .videoItem1 {
-    background-color: #FF0000;
+    background-color: #B22222;
     height: 375px;
     padding: 0px 5px 0px 0px;
 }
 
 .videoItem2 {
-    background-color: #FF0000;
+    background-color: #B22222;
     height: 375px;
     padding: 0px 0px 0px 5px;
 }
@@ -820,43 +879,54 @@ video {
 
 
 .graduatesHiredWrapper {
-    margin-top: 15px;
-    border: 1px solid gray;
-    padding: 10px;
+    margin-top: 0px;
+    padding: 15px;
     text-align: center;
     background-color: white;
 }
 
     .graduatesHiredWrapper label {
         font-size: 30px;
-        color: #FF0000;
+        color: #B22222;
     }
 
 .socialWrapper h3 {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #FF0000;
+    background-color: #B22222;
     text-align: center;
 }
 
 @media screen and (min-width: 768px) {
     .socialWrapper div.twitter, .socialWrapper div.facebook, .socialWrapper div.newsUpdates {
-        height: 500px;
     }
 }
 
+
+
+
+
+
+
 .socialWrapper div.twitter {
-    border-left: solid 3px white;
-    border-right: solid 3px white;
+    border-left: solid 2.5px #eeeeee;
+    border-right: solid 2.5px #eeeeee;
 }
 
 .socialWrapper div.facebook {
-    border-right: 5px solid white;
+    border-right: 5px solid #eeeeee;
 }
 
 .socialWrapper div.newsUpdates {
-    border-left: 5px solid white;
+    border-left: 5px solid #eeeeee;
+}
+
+@media (max-width: 768px) {
+    .socialWrapper div.twitter, .socialWrapper div.facebook, .socialWrapper div.newsUpdates {
+        border: 0px;
+        margin: 0px;
+    }
 }
 
 iframe.twitter-timeline {
@@ -865,16 +935,16 @@ iframe.twitter-timeline {
 
 .contactUsWrapper {
     margin-top: 15px;
-    background-color: #FF0000;
+    background-color: #B22222;
     padding: 10px;
 }
 
     .contactUsWrapper span {
-        color: #FF0000;
+        color: #B22222;
     }
 
 .listLink {
-    background-color: #FF0000;
+    background-color: #B22222;
     color: white;
     font-size: 20px;
     width: 100px;
@@ -911,7 +981,7 @@ iframe.twitter-timeline {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FF0000;
+    background-color: #B22222;
     z-index: 999999999999;
     width: 100%;
     height: 100%;
@@ -1019,6 +1089,7 @@ iframe.twitter-timeline {
 .nbs-flexisel-container {
     position: relative;
     max-width: 100%;
+
 }
 
 .nbs-flexisel-ul {
@@ -1034,8 +1105,8 @@ iframe.twitter-timeline {
     overflow: hidden;
     float: left;
     width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-height:225px;
+    background-color: white;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
@@ -1047,6 +1118,7 @@ iframe.twitter-timeline {
     cursor: pointer;
     position: relative;
     line-height: 0px;
+
 }
 
     .nbs-flexisel-item img {
@@ -1055,8 +1127,8 @@ iframe.twitter-timeline {
         position: relative;
         margin-top: 10px;
         margin-bottom: 10px;
-        max-width: 100px;
-        max-height: 45px;
+        max-width: 200px;
+        max-height: 90px;
     }
 
 .nbs-flexisel-nav-left,
@@ -1086,17 +1158,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 }
 
 .gsc-search-button {
-    background-color: #FF0000;
+    background-color: #B22222;
     border-radius: 5px;
 }
 
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #FF0000 !important;
+    background-color: #B22222 !important;
     background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 16px !important;
-    border-color: #FF0000 !important;
+    border-color: #B22222 !important;
     filter: none;
 }
 
@@ -1115,24 +1187,30 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 /*Breadcrumb*/
 
 .breadcrumb {
-    background: #F9F6F4;
+    background: white;
     border: 0px solid rgba(255, 255, 255, 1);
     border-radius: 0px;
     display: block;
     padding-left: 0px;
     padding-top: 0px;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+
 }
 
     .breadcrumb li {
         font-size: 14px;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+
     }
 
     .breadcrumb a {
-        color: #FF0000;
+        color: #B22222;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+
     }
 
         .breadcrumb a:hover {
-            color: #FF0000;
+            color: #B22222;
         }
 
     .breadcrumb > .active {
@@ -1148,7 +1226,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .questionsForm {
     font-size: 11px;
     padding: 10px;
-    font-family: "HelveticaNeueW01-67MdCn_692710" !important;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
 .overquestionsForm {
@@ -1238,7 +1316,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 .contentPageH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 26px;
     line-height: 26px;
     margin-top: 0px !important;
@@ -1288,12 +1366,12 @@ blockquote p {
 .mainHEADER {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .contentH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 20px;
     line-height: 20px;
     padding: 0px;
@@ -1330,8 +1408,22 @@ blockquote p {
 
 .contentH1-main {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 20px;
+    line-height: 30px;
+}
+
+.contentH1-main2 {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+       color: #B22222;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.contentH1-mainW {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 22px;
     line-height: 30px;
 }
 
@@ -1344,17 +1436,17 @@ blockquote p {
 
 .contentH1-white {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 20px;
     line-height: 20px;
     border-bottom: solid;
-    border-bottom-color: #FF0000;
+    border-bottom-color: #B22222;
 }
 
 .contentH2-white-bluebg {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #FF0000;
+    background-color: #B22222;
     font-size: 20px;
     padding: 18px 12px 12px 12px;
     text-align: center;
@@ -1364,23 +1456,23 @@ blockquote p {
 
 .side-menu-h2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 14px;
     line-height: 14px;
 }
 
 .contentH2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+    color: #B22222;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 20px;
     padding: 10px 0px 10px 0px;
     margin: 0px;
 }
 
     .contentH2 a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #FF0000;
+        color: #B22222;
         font-size: 16px;
         line-height: 18px;
         text-decoration: none;
@@ -1388,7 +1480,7 @@ blockquote p {
 
         .contentH2 a:hover {
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #FF0000;
+            color: #B22222;
             font-size: 16px;
             line-height: 18px;
             text-decoration: none;
@@ -1410,22 +1502,22 @@ blockquote p {
 }
 
 .contentH3-blue {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #FF0000;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        color: #B22222;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3-blue a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #FF0000;
+            color: #B22222;
         font-size: 16px;
         line-height: 18px;
     }
 
         .contentH3-blue a:hover {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #FF0000;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            color: #B22222;
             font-size: 16px;
             line-height: 18px;
             text-decoration: underline;
@@ -1446,22 +1538,32 @@ blockquote p {
     }
 
 .contentp {
-    font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #222222;
 }
 
+.contentpheight {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #222222;
+    line-height:2em;
+}
+
+.bottomb {
+        border-bottom: solid 1px lightgray;
+}
+
 .contentp-light {
-    font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .contentp a {
-    font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #222222;
 }
 
     .contentp a:hover {
-        font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
         color: #313131;
         text-decoration: underline;
     }
@@ -1577,13 +1679,84 @@ video {
     font-size: 14px;
 }
 
-.sideWrapper {
-    display: none;
-}
+/*.sideWrapper {
+display: none;
+}*/
 
 .nav.full-width {
     width: 100%;
 }
+
     .nav.full-width li.dropdown {
-        width: 14.28%;
+        width: 12.5%;
     }
+
+.ProgramsHero {
+    margin-top:20px;
+    padding-top: 20px;
+        padding-bottom: 20px;
+ text-align: center;
+background-color: #B22222;
+color:white;
+font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+}
+
+.buttonCampus {
+    margin:10px 5px 5px 10px;
+    color: #B22222;
+    background-color: white;
+    border-radius: 3px;
+    width: 160px;
+    max-width:160px;
+    border-radius: 0px;
+font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
+}
+
+    .buttonCampus a {
+    color: #B22222;
+    border-radius: 2px;
+    }
+
+        .buttonCampus a:hover{
+            color: #B22222;
+    }
+
+                .buttonCampus:hover{
+            color: #B22222;
+            border-bottom: solid 5px #EDAA0F;
+    }
+
+
+        .buttonHire{
+    margin:10px 5px 5px 10px;
+    color: #B22222;
+    background-color: white;
+    border-radius: 3px;
+    width: 300px;
+    max-width: 300px;
+    border-radius: 0px;
+font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
+}
+
+            .buttonHire a {
+            color: #B22222;
+    }
+
+        .buttonHire a:hover{
+            color: #B22222;
+    }
+
+                        .buttonHire:hover{
+            color: #B22222;
+            border-bottom: solid 5px #EDAA0F;
+    }
+
+.hrp {
+    margin-top:8px;
+    margin-bottom: 8px
+}
+
+.ul-none
+{
+list-style-type: none;
+}
