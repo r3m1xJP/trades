@@ -12,3 +12,4 @@
 /// <reference path="jquery.flexisel.js" />
 /// <reference path="npm.js" />
 /// <reference path="bootstrap.min.js" />
+/// <reference path="responsiveslides.min.js" />

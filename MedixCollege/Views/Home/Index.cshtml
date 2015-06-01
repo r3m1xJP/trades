@@ -2,33 +2,23 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container">
-    <div class="container containerPromoWrapper">
-        <div class="promoWrapper hidden-xs">
-            <div class="promoContent">
-                <h1 class="mainHEADER hidden-xs">Our Obligation is to our Students</h1>
-                <div class="videoButtons visible-xs visible-sm visible-md visible-lg">
-
-                </div>
-            </div>
-            <video autoplay loop>
-                @*<source src="https://dl.dropboxusercontent.com/s/r7f6q1byzt06tke/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4?dl=0" type="video/mp4" />
-                    <source src="https://dl.dropboxusercontent.com/s/nk2tsuaz17vtw9l/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm?dl=0" type="video/webm" />
-                    <source src="https://dl.dropboxusercontent.com/s/e0rk9xqcyfdye9g/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv?dl=0" type="video/ogg" />*@
-                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.mp4.mp4" type="video/mp4" />
-                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.webmhd.webm" type="video/webm" />
-                <source src="~/Content/videos/Cinescope%20Shorter%20-%20No%20Tattoos.oggtheora.ogv" type="video/ogg" />
-            </video>
-        </div>
-        <div class="videoWrapperProgram visible-xs">
-            <iframe width="560"
-                    height="315" src="https://www.youtube.com/embed/F7YibCuBIAI?rel=0 " frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
+<div>
+    <ul class="rslides">
+        <li>
+            <img src="~/Content/images/heroBanner/IMG1.jpg" />
+        </li>
+        <li>
+            <img src="~/Content/images/heroBanner/IMG2.jpg" />
+        </li>
+        <li>
+            <img src="~/Content/images/heroBanner/IMG3.jpg" />
+        </li>
+        <li>
+            <img src="~/Content/images/heroBanner/IMG4.jpg" />
+        </li>
+    </ul>
 </div>
-
-<div class="container-fluid containerlinkOptionsWrapper">
+<div class="container-fluid containerlinkOptionsWrapper spacer-top">
     <div class="container">
         <div class="linkOptionsWrapper">
             <div class="linkOptions allPrograms visible-md visible-sm visible-xs linkOptionsFP" id="allPrograms">
@@ -302,6 +292,8 @@
     });
 
     $(window).load(function () {
+        $(".rslides").responsiveSlides();
+
         $("#graduatesImageScroller").flexisel({
             autoPlay: false,
             visibleItems: 5

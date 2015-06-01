@@ -198,6 +198,10 @@
     <Content Include="Content\images\graduates\UT - Scar.jpg" />
     <Content Include="Content\images\graduates\VHA Home Healthcare.jpg" />
     <Content Include="Content\images\graduates\VON.jpg" />
+    <Content Include="Content\images\heroBanner\IMG1.jpg" />
+    <Content Include="Content\images\heroBanner\IMG2.jpg" />
+    <Content Include="Content\images\heroBanner\IMG3.jpg" />
+    <Content Include="Content\images\heroBanner\IMG4.jpg" />
     <Content Include="Content\images\instagram.gif" />
     <Content Include="Content\images\mainBANNER-1-ECA.jpg" />
     <Content Include="Content\images\mainBANNER-2-IODA.jpg" />
@@ -209,6 +213,7 @@
     <Content Include="Content\images\NATSLogo.png" />
     <Content Include="Content\images\payments.jpg" />
     <Content Include="Content\images\pinterest.gif" />
+    <Content Include="Content\responsiveslides.css" />
     <Content Include="Content\smoothDivScroll.css" />
     <Content Include="Content\images\twitter.gif" />
     <Content Include="Content\images\youtube.gif" />
@@ -341,6 +346,7 @@
     <Content Include="Scripts\npm.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\responsiveslides.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
