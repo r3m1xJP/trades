@@ -119,6 +119,7 @@
     <Compile Include="Controllers\AdmissionsController.cs" />
     <Compile Include="Controllers\CampusesController.cs" />
     <Compile Include="Controllers\CareerServicesController.cs" />
+    <Compile Include="Controllers\LeadsController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Controllers\DiscoverNATSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Leads.cs" />
     <Compile Include="Models\NewsArticle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -400,7 +402,6 @@
     <Content Include="Views\Home\PrivacyPolicy.cshtml" />
     <Content Include="Views\Home\AccessibilityPolicy.cshtml" />
     <Content Include="Views\Home\CareersAtMedix.cshtml" />
-    <Content Include="Views\Home\HireAGrad.cshtml" />
     <Content Include="Views\Home\VirtualTours.cshtml" />
     <Content Include="Views\Home\SocialMedia.cshtml" />
     <Content Include="Views\CareerServices\JobSearchTips.cshtml" />
@@ -417,6 +418,8 @@
     <Content Include="Views\DiscoverNATS\Accreditation.cshtml" />
     <Content Include="Views\DiscoverNATS\Associations.cshtml" />
     <Content Include="Views\Home\CourseStartDates.cshtml" />
+    <Content Include="Views\Leads\Index.cshtml" />
+    <Content Include="Views\Home\HireAGrad.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
