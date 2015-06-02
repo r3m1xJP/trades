@@ -2,6 +2,9 @@
 body {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom:0px;
 }
 
 header {
@@ -896,7 +899,6 @@ video {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #B22222;
     text-align: center;
 }
 
@@ -912,16 +914,16 @@ video {
 
 
 .socialWrapper div.twitter {
-    border-left: solid 2.5px #eeeeee;
-    border-right: solid 2.5px #eeeeee;
+    border-left: solid 2.5px white;
+    border-right: solid 2.5px white;
 }
 
 .socialWrapper div.facebook {
-    border-right: 5px solid #eeeeee;
+    border-right: 5px solid white;
 }
 
 .socialWrapper div.newsUpdates {
-    border-left: 5px solid #eeeeee;
+    border-left: 5px solid white;
 }
 
 @media (max-width: 768px) {
