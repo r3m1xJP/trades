@@ -1,7 +1,7 @@
 ﻿
 body {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-
+    width: 100%;
 }
 
 header {
@@ -890,6 +890,8 @@ video {
         color: #B22222;
     }
 
+
+
 .socialWrapper h3 {
     width: 100%;
     padding: 10px;
@@ -1080,6 +1082,8 @@ iframe.twitter-timeline {
     font-size: 20px;
 }
 
+
+
 /* Flexisel */
 
 #graduatesImageScroller {
@@ -1150,6 +1154,8 @@ iframe.twitter-timeline {
     right: 5px;
     background: url(images/button-next.png) no-repeat;
 }
+
+
 
 /* Google Custom Search */
 input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
