@@ -488,7 +488,7 @@ footer {
 }
 
     .linkOptionsRC:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsAQ {
@@ -502,7 +502,7 @@ footer {
 }
 
     .linkOptionsAQ:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsTC {
@@ -516,7 +516,7 @@ footer {
 }
 
     .linkOptionsTC:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsAN {
@@ -530,7 +530,7 @@ footer {
 }
 
     .linkOptionsAN:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 @media (max-width: 768px) {
@@ -1584,7 +1584,7 @@ blockquote p {
 }
 
 .contentH3-red {
-    font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
     line-height: 18px;
