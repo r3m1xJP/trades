@@ -150,47 +150,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
                             }
 
                             message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
                             message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
                             message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            message.Subject = "New Lead - Medix - Apply Now";
+                            message.Subject = "New Lead - Trades - Apply Now";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -205,7 +183,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
@@ -264,61 +242,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
+
                             }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
+                            message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+                            message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
+                            message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
-                            }
-
-                            message.Subject = "New Lead - Medix - Book A Tour";
+                            message.Subject = "New Lead - Trades - Book A Tour";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -333,7 +275,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
@@ -392,61 +334,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
+
                             }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
+                            message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+                            message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
+                            message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
-                            }
-
-                            message.Subject = "New Lead - Medix - Program Question";
+                            message.Subject = "New Lead - Trades - Program Question";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -461,7 +367,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
@@ -520,61 +426,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
+
                             }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
+                            message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+                            message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
+                            message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
-                            }
-
-                            message.Subject = "New Lead - Medix - Certificate Question";
+                            message.Subject = "New Lead - Trades - Certificate Question";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -589,7 +459,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
@@ -648,61 +518,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
+
                             }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
+                            message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+                            message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
+                            message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
-                            }
-
-                            message.Subject = "New Lead - Medix - Request Catalogue";
+                            message.Subject = "New Lead - Trades - Request Catalogue";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -717,7 +551,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
@@ -776,61 +610,25 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools.ca");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 
-                            if (fc["CampusID"].ToString() == "246")
+                            if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
                                 message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
                             }
 
-                            if (fc["CampusID"].ToString() == "243")
+                            if (fc["CampusID"].ToString() == "24001")
                             {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("jlaird@medixcollege.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
+
                             }
 
-                            if (fc["CampusID"].ToString() == "242")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("kharris@medixcollege.ca"));
-                            }
+                            message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+                            message.Bcc.Add(new MailAddress("pdykstra@medixcollege.ca"));
+                            message.Bcc.Add(new MailAddress("ralary@natradeschools.ca"));
 
-                            if (fc["CampusID"].ToString() == "244")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("ngauvin@medixschool.ca"));
-                                message.To.Add(new MailAddress("nicole@medixschool.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "241")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("dickson@medixcollege.ca"));
-                            }
-
-                            if (fc["CampusID"].ToString() == "240")
-                            {
-                                message.To.Add(new MailAddress("toppyv@careercollegegroup.com"));
-                                message.To.Add(new MailAddress("pdykstra@medixcollege.ca"));
-                                message.To.Add(new MailAddress("ralary@natradeschools.ca"));
-                                message.To.Add(new MailAddress("chris@medixcollege.ca"));
-                            }
-
-                            message.Subject = "New Lead - Medix - Ask a Question";
+                            message.Subject = "New Lead - Trades - Ask a Question";
 
                             var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
@@ -845,7 +643,7 @@ namespace MedixCollege.Controllers
                                                where key != "ORGID" && key != "MailListID"
                                                select string.Format("{0}: {1}" + Environment.NewLine, HttpUtility.UrlEncode(key), value)).ToArray();
 
-                            var body = "New Lead - Medix" + Environment.NewLine +
+                            var body = "New Lead - Trades" + Environment.NewLine +
                                        Environment.NewLine;
 
                             var data = string.Join(",", stringArray).Replace(",", "");
