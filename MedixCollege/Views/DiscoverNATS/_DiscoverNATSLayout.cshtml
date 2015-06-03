@@ -2,6 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<br />
 <div class="container">
     <div class="heroWrapper">
         @ViewBag.HeroText
@@ -15,8 +16,8 @@
         </button>
 
         <ul class="leftMenu list-unstyled collapse" id="side-menu-discover">
-            <li class="item header>@Html.ActionLink("Discover NATS", "Index", "DiscoverNATS")</li>
-            <li class="item header>@Html.ActionLink("About NATS", "Index", "DiscoverNATS")</li>
+            <li class="item header">@Html.ActionLink("Discover NATS", "Index", "DiscoverNATS")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("About NATS", "Index", "DiscoverNATS")</li>
             <li class="item side-menu-h2">@Html.ActionLink("President's Message", "PresidentsMessage", "DiscoverNATS")</li>
             <li class="item side-menu-h2">@Html.ActionLink("History", "History", "DiscoverNATS")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Mission", "Mission", "DiscoverNATS")</li>

@@ -7,7 +7,7 @@
     ViewBag.PageDescription = "Learn more about the Certificate programs and continuing education options at NATS College.";
 
 }
-
+<br />
 <div class="container">
     <div class="heroWrapper">
         @ViewBag.HeroText
@@ -21,9 +21,9 @@
         </button>
 
         <ul class="leftMenu list-unstyled collapse" id="side-menu-certificates">
-            <li class="item header">@Html.ActionLink("All Workshops", "AllWorkshops", "Training")</li>
+            <li class="item header">@Html.ActionLink("TRAINING", "AllWorkshops", "Training")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("Workshops", "AllWorkshops", "Training")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Corporate Training", "CorporateTraining", "Training")</li>
-
             <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
             <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
         </ul>
@@ -93,37 +93,7 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row sideWrapper">
-                        <div class="sideHeader">
-                            <h1 class="contentH1-main">@ViewBag.SideHeader</h1>
-                        </div>
-                        <div class="sideBody">
-                            <div class="sideSubWrapper">
-                                <div class="sideSubHeader">
-                                    @ViewBag.SideSubHeader1
-                                </div>
-                                <div class="sideSubText">
-                                    @ViewBag.SideSubText1
-                                </div>
-                            </div>
-                            <div class="sideSubWrapper">
-                                <div class="sideSubHeader">
-                                    @ViewBag.SideSubHeader2
-                                </div>
-                                <div class="sideSubText">
-                                    @ViewBag.SideSubText2
-                                </div>
-                            </div>
-                            <div class="sideSubWrapper">
-                                <div class="sideSubHeader">
-                                    @ViewBag.SideSubHeader3
-                                </div>
-                                <div class="sideSubText">
-                                    @ViewBag.SideSubText3
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
