@@ -1,18 +1,35 @@
 ﻿
 body {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 
+a {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 header {
     background-color: white;
-    padding-top: 12px;
+    padding-top: 15px;
+}
+
+
+.container-fluid {
+padding-left:0px;
+padding-right:0px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    margin-top: 15px;
+    width: 100%;
 
+                font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+                font-weight: 400;
+                    padding-top: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -35,34 +52,53 @@ textarea {
     color: #555;
 }
 
+.lightBG {
+background-color: white;
+padding: 5px;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+
+}
+
 .blueColor {
-    color: #B22222 !important;
+    color: #B20000 !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
+.btn {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+}
+
+    .btn a {
+    color: #555;
+    }
+
+       .btn a:hover {
+    color: #222222;
+    }
+
 .btn-brand {
-    background-color: #B22222;
+    background-color: #B20000;
     color: white !important;
     padding: 5px 9px 5px 9px !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 }
 
     .btn-brand:hover {
-        color: #B22222 !important;
+        color: #B20000 !important;
         padding: 5px 9px 5px 9px !important;
     }
 
 .btn-brand-white {
     background-color: white;
-    color: #B22222 !important;
+    color: #B20000 !important;
     border-bottom-style: solid !important;
-    border-color: #B22222 !important;
+    border-color: #B20000 !important;
     padding: 5px 9px 5px 9px !important;
     font-size: 22px !important;
 }
 
     .btn-brand-white:hover {
-        color: #B22222 !important;
+        color: #B20000 !important;
     }
 
 .mainLogo {
@@ -70,7 +106,7 @@ textarea {
 }
 
 .mainButton {
-    background-color: #B22222;
+    background-color: #B20000;
     color: white;
 }
 
@@ -85,7 +121,7 @@ textarea {
 }
 
 .mainNav {
-    background-color: #B22222;
+    background-color: #B20000;
     color: #222222;
 }
 
@@ -96,7 +132,7 @@ textarea {
 .nav li.dropdown {
     text-align: center;
     font-size: 14px;
-    background-color: #B22222;
+    background-color: #B20000;
     padding: 0px !important;
 }
 
@@ -125,11 +161,11 @@ textarea {
     background-color: #F9F6F4 !important;
     opacity: .9;
     transition: 1s;
-    color: #B22222 !important;
+    color: #B20000 !important;
 }
 
 .nav li.dropdown ul.dropdown-menu {
-    background-color: #B22222 !important;
+    background-color: #B20000 !important;
     box-shadow: none !important;
     background-clip: initial !important;
     min-width: 200px !important;
@@ -152,13 +188,13 @@ textarea {
     }
 
     .navbar-collapse.mobile.in .nav li.open a, .navbar-collapse.mobile.in .nav > li > a:hover, .navbar-collapse.mobile.in .nav > li > a:focus {
-        background-color: #B22222 !important;
+        background-color: #B20000 !important;
     }
 
     .navbar-collapse.mobile.in .nav li a:hover {
         transition: 1s;
         background-color: #F9F6F4 !important;
-        color: #B22222 !important;
+        color: #B20000 !important;
     }
 
     .navbar-collapse.mobile.in .nav .open .dropdown-menu li {
@@ -199,7 +235,7 @@ textarea {
     }
 
         .navPanel li a, .nav li.secondary a:hover {
-            background-color: #B22222 !important;
+            background-color: #B20000 !important;
             color: white !important;
         }
 
@@ -232,7 +268,7 @@ textarea {
     }
 
 .navbar-collapse.in {
-    background-color: #B22222 !important;
+    background-color: #B20000 !important;
 }
 
 footer {
@@ -273,7 +309,7 @@ footer {
     }
 
 .footer-banner {
-    background-color: #B22222;
+    background-color: #B20000;
     overflow: auto;
     padding: 10px;
 }
@@ -291,7 +327,7 @@ footer {
 }
 
 .mBlueColour {
-    color: #B22222;
+    color: #B20000;
 }
 
 .whiteOuterGlow {
@@ -311,7 +347,7 @@ footer {
 }
 
 .CblueGoldBorder {
-    color: #B22222;
+    color: #B20000;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #EDAA0F;
 }
@@ -319,7 +355,7 @@ footer {
 .CgoldBlueBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #B22222;
+    -webkit-text-stroke-color: #B20000;
 }
 
 .whiteBorderSM {
@@ -386,17 +422,17 @@ footer {
 .blueGoldBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #B22222;
+    -webkit-text-stroke-color: #B20000;
 }
 
 .blueGoldBorderSM {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #B22222;
+    -webkit-text-stroke-color: #B20000;
 }
 
 .blueSubmit {
-    color: #B22222;
+    color: #B20000;
 }
 
 .linkOptionsWrapper {
@@ -422,7 +458,8 @@ footer {
         }
 
         .linkOptions.allPrograms {
-            background-color: #555;
+            background-color: #B20000;
+            color: white;
         }
 }
 
@@ -441,8 +478,8 @@ footer {
 
 
 .linkOptionsRC {
-    background-color: #B22222;
-    color: white;
+    background-color: white;
+    color: #B20000;
     cursor: pointer;
     height: 150px;
     padding: 5px 5px 5px 0px;
@@ -455,8 +492,8 @@ footer {
     }
 
 .linkOptionsAQ {
-    background-color: #B22222;
-    color: white;
+    background-color: white;
+    color: #B20000;
     cursor: pointer;
     height: 150px;
     padding: 5px;
@@ -469,8 +506,8 @@ footer {
     }
 
 .linkOptionsTC {
-    background-color: #B22222;
-    color: white;
+    background-color: white;
+    color: #B20000;
     cursor: pointer;
     height: 150px;
     padding: 5px;
@@ -483,8 +520,8 @@ footer {
     }
 
 .linkOptionsAN {
-    background-color: #B22222;
-    color: white;
+    background-color: white;
+    color: #B20000;
     cursor: pointer;
     height: 150px;
     padding: 5px;
@@ -498,6 +535,8 @@ footer {
 
 @media (max-width: 768px) {
     .linkOptionsFP {
+        background-color: #B20000;
+        color: white;
         border: 0px;
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
@@ -506,7 +545,7 @@ footer {
 
 @media (max-width: 768px) {
     .linkOptionsTC {
-        border: 0px;
+        border: 1px #B20000 solid;
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
     }
@@ -514,7 +553,7 @@ footer {
 
 @media (max-width: 768px) {
     .linkOptionsAQ {
-        border: 0px;
+        border: 1px #B20000 solid;
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
     }
@@ -523,7 +562,7 @@ footer {
 
 @media (max-width: 768px) {
     .linkOptionsRC {
-        border: 0px;
+        border: 1px #B20000 solid;
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
     }
@@ -531,7 +570,7 @@ footer {
 
 @media (max-width: 768px) {
     .linkOptionsAN {
-        border: 0px;
+        border: 1px #B20000 solid;
         padding: 10px 10px 10px 10px;
         margin: 5px 0px 5px 0px;
     }
@@ -547,7 +586,7 @@ footer {
 }
 
 .leftMenu li a {
-    color: #B22222 !important;
+    color: #B20000 !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     width: 100%;
 
@@ -561,7 +600,7 @@ footer {
     padding: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #B22222;
+    color: #B20000;
     cursor: pointer;
     border-bottom: solid 1px lightgray;
 }
@@ -572,7 +611,7 @@ footer {
 
     .leftMenu li.header {
         color: white !important;
-        background-color: #B22222;
+        background-color: #B20000;
         font-size: 18px;
         padding-left: 0px;
             padding-left: 10px;
@@ -582,7 +621,7 @@ footer {
 .formHeaderSIDE {
     width: 100%;
             color: white !important;
-        background-color: #B22222;
+        background-color: #B20000;
         font-size: 18px;
         padding-top: 10px;
             padding-bottom: 10px;
@@ -595,7 +634,7 @@ footer {
 
 .leftMenu li.header a {
     color: white !important;
-    background-color: #B22222;
+    background-color: #B20000;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     width: 100%;
 
@@ -604,7 +643,7 @@ footer {
 
 .leftMenuTOP li a {
     color: white !important;
-    background-color: #B22222;
+    background-color: #B20000;
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     width: 100%;
     font-size: 16px;
@@ -629,7 +668,7 @@ footer {
 
 
 .contentHeader {
-    background-color: #B22222;
+    background-color: #B20000;
     color: white;
     font-size: 30px;
     padding-left: 15px;
@@ -642,7 +681,7 @@ footer {
 
 .contentBodyHeader {
     font-size: 15px;
-    color: #B22222;
+    color: #B20000;
 }
 
 .socialMediaList {
@@ -655,7 +694,7 @@ footer {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #B22222;
+    color: #B20000;
 }
 
 .underline {
@@ -699,7 +738,7 @@ footer {
     }
 
     .carousel-caption h4 {
-        color: #B22222;
+        color: #B20000;
     }
 
 .carousel-caption-options {
@@ -740,7 +779,7 @@ footer {
 
 
 .containervideoItem {
-    background-color: #B22222;
+    background-color: #B20000;
 }
 
 
@@ -853,7 +892,7 @@ video {
 
 .videoScrollerNav {
     padding: 0px 15px 5px 15px;
-    background-color: #B22222;
+    background-color: #B20000;
     cursor: pointer;
     font-size: 35px !important;
     margin: 0px 0px 5px 5px;
@@ -865,13 +904,13 @@ video {
     }
 
 .videoItem1 {
-    background-color: #B22222;
+    background-color: #B20000;
     height: 375px;
     padding: 0px 5px 0px 0px;
 }
 
 .videoItem2 {
-    background-color: #B22222;
+    background-color: #B20000;
     height: 375px;
     padding: 0px 0px 0px 5px;
 }
@@ -881,20 +920,20 @@ video {
 .graduatesHiredWrapper {
     margin-top: 0px;
     padding: 15px;
-    text-align: center;
+
     background-color: white;
 }
 
     .graduatesHiredWrapper label {
         font-size: 30px;
-        color: #B22222;
+        color: #B20000;
     }
 
 .socialWrapper h3 {
     width: 100%;
     padding: 10px;
     color: white;
-    background-color: #B22222;
+    background-color: #B20000;
     text-align: center;
 }
 
@@ -910,16 +949,16 @@ video {
 
 
 .socialWrapper div.twitter {
-    border-left: solid 2.5px #eeeeee;
-    border-right: solid 2.5px #eeeeee;
+    border-left: solid 2.5px white;
+    border-right: solid 2.5px white;
 }
 
 .socialWrapper div.facebook {
-    border-right: 5px solid #eeeeee;
+    border-right: 5px solid white;
 }
 
 .socialWrapper div.newsUpdates {
-    border-left: 5px solid #eeeeee;
+    border-left: 5px solid white;
 }
 
 @media (max-width: 768px) {
@@ -935,16 +974,16 @@ iframe.twitter-timeline {
 
 .contactUsWrapper {
     margin-top: 15px;
-    background-color: #B22222;
+    background-color: #B20000;
     padding: 10px;
 }
 
     .contactUsWrapper span {
-        color: #B22222;
+        color: #B20000;
     }
 
 .listLink {
-    background-color: #B22222;
+    background-color: #B20000;
     color: white;
     font-size: 20px;
     width: 100px;
@@ -981,7 +1020,7 @@ iframe.twitter-timeline {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #B22222;
+    background-color: #B20000;
     z-index: 999999999999;
     width: 100%;
     height: 100%;
@@ -1151,6 +1190,7 @@ iframe.twitter-timeline {
     background: url(images/button-next.png) no-repeat;
 }
 
+
 /* Google Custom Search */
 input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
     box-sizing: content-box;
@@ -1158,17 +1198,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {
 }
 
 .gsc-search-button {
-    background-color: #B22222;
+    background-color: #B20000;
     border-radius: 5px;
 }
 
 input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
-    background-color: #B22222 !important;
+    background-color: #B20000 !important;
     background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     height: 16px !important;
-    border-color: #B22222 !important;
+    border-color: #B20000 !important;
     filter: none;
 }
 
@@ -1204,13 +1244,13 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     }
 
     .breadcrumb a {
-        color: #B22222;
+        color: #B20000;
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
 
     }
 
         .breadcrumb a:hover {
-            color: #B22222;
+            color: #B20000;
         }
 
     .breadcrumb > .active {
@@ -1316,7 +1356,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 .contentPageH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 26px;
     line-height: 26px;
     margin-top: 0px !important;
@@ -1371,7 +1411,7 @@ blockquote p {
 
 .contentH1 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 20px;
     line-height: 20px;
     padding: 0px;
@@ -1408,14 +1448,14 @@ blockquote p {
 
 .contentH1-main {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 20px;
     line-height: 30px;
 }
 
 .contentH1-main2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-       color: #B22222;
+       color: #B20000;
     font-size: 22px;
     line-height: 30px;
 }
@@ -1423,6 +1463,20 @@ blockquote p {
 .contentH1-mainW {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.contentH1-mainW a{
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.contentH1-mainW a:hover{
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #EDAA0F;
     font-size: 22px;
     line-height: 30px;
 }
@@ -1436,17 +1490,45 @@ blockquote p {
 
 .contentH1-white {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 20px;
     line-height: 20px;
     border-bottom: solid;
-    border-bottom-color: #B22222;
+    border-bottom-color: #B20000;
+}
+
+.contentH1-whiteCAMPUS {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 17px;
+    line-height: 17px;
+    border-bottom: solid;
+    border-bottom-color: #B20000;
+}
+
+.contentH1-whiteCAMPUS a {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 17px;
+    line-height: 17px;
+    border-bottom: solid;
+    border-bottom-color: #B20000;
+}
+
+.contentH1-whiteCAMPUS a:hover {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #EDAA0F;
+    font-size: 17px;
+    line-height: 17px;
+    border-bottom: solid;
+    border-bottom-color: #B20000;
+    text-decoration: underline;
 }
 
 .contentH2-white-bluebg {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #B22222;
+    background-color: #B20000;
     font-size: 20px;
     padding: 18px 12px 12px 12px;
     text-align: center;
@@ -1456,14 +1538,14 @@ blockquote p {
 
 .side-menu-h2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 14px;
     line-height: 14px;
 }
 
 .contentH2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #B22222;
+    color: #B20000;
     font-size: 16px;
     line-height: 20px;
     padding: 10px 0px 10px 0px;
@@ -1472,7 +1554,7 @@ blockquote p {
 
     .contentH2 a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #B22222;
+        color: #B20000;
         font-size: 16px;
         line-height: 18px;
         text-decoration: none;
@@ -1480,7 +1562,7 @@ blockquote p {
 
         .contentH2 a:hover {
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #B22222;
+            color: #B20000;
             font-size: 16px;
             line-height: 18px;
             text-decoration: none;
@@ -1501,23 +1583,51 @@ blockquote p {
     font-weight: 400;
 }
 
+.contentH3-red {
+    font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.centeralign {
+ text-align: center;
+}
+
+
+.contentH4-white {
+    font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.contentH4-dark {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 14px;
+    line-height: 18px;
+}
+
 .contentH3-blue {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-        color: #B22222;
+        color: #B20000;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3-blue a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #B22222;
+            color: #B20000;
         font-size: 16px;
         line-height: 18px;
     }
 
         .contentH3-blue a:hover {
         font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-            color: #B22222;
+            color: #B20000;
             font-size: 16px;
             line-height: 18px;
             text-decoration: underline;
@@ -1538,8 +1648,9 @@ blockquote p {
     }
 
 .contentp {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #222222;
+        font-weight: 400;
 }
 
 .contentpheight {
@@ -1692,18 +1803,26 @@ display: none;
     }
 
 .ProgramsHero {
-    margin-top:20px;
+    margin-top: 20px;
     padding-top: 20px;
-        padding-bottom: 20px;
- text-align: center;
-background-color: #B22222;
+    padding-bottom: 20px;
+    background-color: #B20000;
+}
+
+.divpadding {
+    padding-top: 20px;
+        padding-bottom: 30px;
+
+}
+
+background-color: #B20000;
 color:white;
 font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
 }
 
 .buttonCampus {
     margin:10px 5px 5px 10px;
-    color: #B22222;
+    color: #B20000;
     background-color: white;
     border-radius: 3px;
     width: 160px;
@@ -1713,23 +1832,23 @@ font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
 }
 
     .buttonCampus a {
-    color: #B22222;
+    color: #B20000;
     border-radius: 2px;
     }
 
         .buttonCampus a:hover{
-            color: #B22222;
+            color: #B20000;
     }
 
                 .buttonCampus:hover{
-            color: #B22222;
+            color: #B20000;
             border-bottom: solid 5px #EDAA0F;
     }
 
 
         .buttonHire{
     margin:10px 5px 5px 10px;
-    color: #B22222;
+    color: #B20000;
     background-color: white;
     border-radius: 3px;
     width: 300px;
@@ -1739,24 +1858,33 @@ font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
 }
 
             .buttonHire a {
-            color: #B22222;
+            color: #B20000;
     }
 
         .buttonHire a:hover{
-            color: #B22222;
+            color: #B20000;
     }
 
                         .buttonHire:hover{
-            color: #B22222;
+            color: #B20000;
             border-bottom: solid 5px #EDAA0F;
     }
 
 .hrp {
     margin-top:8px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    height:1px;
+}
+
+.hrpblue {
+    margin-top:8px;
+    margin-bottom: 8px;
+    background-color: #B20000;
+    height:1px;
 }
 
 .ul-none
 {
 list-style-type: none;
 }
+
