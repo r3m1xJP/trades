@@ -488,7 +488,7 @@ footer {
 }
 
     .linkOptionsRC:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsAQ {
@@ -502,7 +502,7 @@ footer {
 }
 
     .linkOptionsAQ:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsTC {
@@ -516,7 +516,7 @@ footer {
 }
 
     .linkOptionsTC:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 .linkOptionsAN {
@@ -530,7 +530,7 @@ footer {
 }
 
     .linkOptionsAN:hover {
-        opacity: .8;
+        opacity: .5;
     }
 
 @media (max-width: 768px) {
@@ -955,6 +955,7 @@ video {
 
 .socialWrapper div.facebook {
     border-right: 5px solid white;
+    padding-left:0px;
 }
 
 .socialWrapper div.newsUpdates {
@@ -974,7 +975,7 @@ iframe.twitter-timeline {
 
 .contactUsWrapper {
     margin-top: 15px;
-    background-color: #B20000;
+    background-color: lightgray;
     padding: 10px;
 }
 
@@ -1525,13 +1526,30 @@ blockquote p {
     text-decoration: underline;
 }
 
+.grayBGwrap {
+    background-color: lightgray;
+    padding-bottom: 20px;
+}
+
 .contentH2-white-bluebg {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: #B20000;
-    font-size: 20px;
+    color: #B20000;
+    border-bottom: solid 3px #B20000;
+    background-color: white;
+    font-size: 30px;
     padding: 18px 12px 12px 12px;
-    text-align: center;
+    text-align: left;
+    margin-top: 0 !important;
+}
+
+.contentH2-white-graybg {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    border-bottom: solid 3px #B20000;
+    background-color: white;
+    font-size: 30px;
+    padding: 18px 12px 12px 0px;
+    text-align: left;
     margin-top: 0 !important;
 }
 
@@ -1584,9 +1602,17 @@ blockquote p {
 }
 
 .contentH3-red {
-    font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.contentH3-red1 {
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 30px;
     line-height: 18px;
     font-weight: 400;
 }
