@@ -6,15 +6,19 @@
     <ul class="rslides">
         <li>
             <img src="~/Content/images/heroBanner/IMG1.jpg" />
+            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG2.jpg" />
+            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG3.jpg" />
+            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG4.jpg" />
+            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
         </li>
     </ul>
 </div>
@@ -424,7 +428,11 @@
         });
 
         $(window).load(function () {
-            $(".rslides").responsiveSlides();
+            $(".rslides").responsiveSlides({
+                pagination: true,
+                nav: true,
+                fade: 500
+            });
 
             $("#graduatesImageScroller").flexisel({
                 autoPlay: false,

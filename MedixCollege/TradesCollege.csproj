@@ -119,6 +119,7 @@
     <Compile Include="Controllers\AdmissionsController.cs" />
     <Compile Include="Controllers\CampusesController.cs" />
     <Compile Include="Controllers\CareerServicesController.cs" />
+    <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\LeadsController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Controllers\DiscoverNATSController.cs" />
@@ -206,6 +207,7 @@
     <Content Include="Content\images\twitter.gif" />
     <Content Include="Content\images\youtube.gif" />
     <Content Include="Content\mediaelementplayer.min.css" />
+    <Content Include="Content\themes.gif" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -414,6 +416,14 @@
     <Content Include="Views\Home\CourseStartDates.cshtml" />
     <Content Include="Views\Leads\Index.cshtml" />
     <Content Include="Views\Home\HireAGrad.cshtml" />
+    <Content Include="Views\External\ContactUs.cshtml" />
+    <Content Include="Views\External\ContactUsMobile.cshtml" />
+    <Content Include="Views\External\PPC.cshtml" />
+    <Content Include="Views\External\PPCNoDropDown.cshtml" />
+    <Content Include="Views\External\QuickContact.cshtml" />
+    <Content Include="Views\External\ReferAFriend.cshtml" />
+    <Content Include="Views\External\RequestInformation.cshtml" />
+    <Content Include="Views\External\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
