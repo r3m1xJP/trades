@@ -715,10 +715,11 @@ footer {
 
 .link-unstyled a {
     text-decoration: none;
+            color: #B20000;
 }
 
     .link-unstyled a:hover {
-        text-decoration: none;
+        text-decoration: underline;
     }
 
 .formWrapper {
@@ -1916,6 +1917,12 @@ font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
     margin-top:8px;
     margin-bottom: 8px;
     height:1px;
+}
+.hrpw3 {
+    margin-top:8px;
+    margin-bottom: 8px;
+    height:3px;
+    background-color:white;
 }
 
 .hrpblue {
