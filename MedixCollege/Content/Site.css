@@ -1467,6 +1467,13 @@ blockquote p {
     line-height: 30px;
 }
 
+.contentH1-mainW2 {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+}
+
 .contentH1-mainW a{
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
