@@ -2,26 +2,28 @@
     ViewBag.Title = "";
 }
 
-<div>
+<div class="hidden-xs">
     <ul class="rslides">
         <li>
-            <img src="~/Content/images/heroBanner/IMG1.jpg" />
-            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+            <img src="~/Content/images/heroBanner/IMG1.jpg"/>
+            <p class="caption"></p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG2.jpg" />
-            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+            <p class="caption"></p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG3.jpg" />
-            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+            <p class="caption"></p>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG4.jpg" />
-            <p class="caption">Donec id elit non mi porta gravida at eget metus.</p>
+            <p class="caption"></p>
         </li>
     </ul>
 </div>
+
+
 <div class="container-fluid containerlinkOptionsWrapper spacer-top">
     <div class="container">
         <h1 class="contentH3-red1">
@@ -119,10 +121,11 @@
 
 <div class="container-fluid">
     <div class="container">
+        <br />
         <h1 class="contentH3-red1">
             GRADUATES FROM NORTH AMERICAN TRADE SCHOOLS HAVE BEEN HIRED AT:
         </h1>
-            <hr class="hrpblue" />
+            <hr class="hrpblue2" />
 
             <p class="contentp">
                 North American Trade School graduates are well trained individuals who have had a well-rounded educational experience.
@@ -131,7 +134,7 @@
                 This enables a seemless transition to the workforce. Below are a number of companies that have hired a number of recent graduates.
             </p>
 
-            <br />
+
             <ul id="graduatesImageScroller">
                 <li><img src="~/Content/images/graduates/canadiansolar.jpg" alt="Canadian Solar Logo" /></li>
                 <li><img src="~/Content/images/graduates/ccr.jpg" alt="Creative Renovations Logo" /></li>
@@ -160,13 +163,13 @@
     </div>
 
 
-<div class="container-fluid grayBGwrap"><br /></div>
+
 
 
     <div class="container">
         <div class="socialWrapper">
             <div class="col-md-4 facebook">
-                <h2 class="contentH2-white-graybg contentH3-red1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+                <h2 class="contentH2-white-graybg contentH3-red1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
                 <div class="mobile-content facebook hidden-xs">
                     <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FNATSLondon&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
                 </div>
@@ -174,7 +177,7 @@
 
             <div class="insidetwitter">
                 <div class="col-md-4 twitter">
-                    <h2 class="contentH2-white-graybg contentH3-red1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+                    <h2 class="contentH2-white-graybg contentH3-red1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
                     <div class="mobile-content twitter hidden-xs">
                         <a class="twitter-timeline" href="https://twitter.com/nats_hired" data-widget-id="606109159906529281">Tweets by nats_hired</a>
                         <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
@@ -183,7 +186,7 @@
             </div>
 
             <div class="col-md-4 newsUpdates">
-                <h2 class="contentH2-white-graybg contentH3-red1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-align-justify pull-right visible-xs"></span></a></h2>
+                <h2 class="contentH2-white-graybg contentH3-red1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
                 <div class="mobile-content newsUpdates hidden-xs">
                     <ul class="list-unstyled newsList">
                         @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
@@ -205,100 +208,12 @@
         </div>
     </div>
 
+<br />
 
 
 
 
 
-    <div class="container-fluid">
-        <div class="ProgramsHero">
-            <div class="container">
-
-                <span class="contentH1-mainW">
-                    <span class="glyphicon glyphicon-map-marker goldColour f30"></span>&nbsp;
-                    OUR CAMPUSES
-                </span><hr class="hrp" />
-                <p class="contentH3-white">
-                    North American Trade Schools has two campuses across Ontario with each of them featuring state-of-the-art facilities. Each campus has full-scale labs where students will receive hands on experience working with the latest technologies.
-                </p>
-                <br />
-
-                <div class="container">
-
-                    <div class="col-md-6 contentH1-whiteCAMPUS">
-                        <hr class="hrp visible-xs">
-                        <span class="glyphicon glyphicon-map-marker goldColour"></span>&nbsp;
-                        @Html.ActionLink("BRAMPTON", "Brampton", "Campuses")
-                        <hr class="hrp">
-
-                        <div class="col-md-6 contentH1-whiteCAMPUS">
-
-                            <p class="contentH4-white">
-                                499 Main St S Unit 60<br />
-                                Brampton, Ontario<br />
-                                L6Y 1N7<br />
-                                Toll Free: 1-866-962-7685<br />
-                                Fax: (905) 487-1162<br />
-                            </p>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 contentH1-whiteCAMPUS">
-                        <hr class="hrp visible-xs">
-                        <span class="glyphicon glyphicon-map-marker goldColour"></span>&nbsp;
-                        @Html.ActionLink("LONDON", "London", "Campuses")
-                        <hr class="hrp">
-                        <div class="col-md-6 contentH1-whiteCAMPUS">
-
-                            <p class="contentH4-white">
-                                847 Highbury Ave N. Bldg. 4<br />
-                                London, ON<br />
-                                N5Y 5B8<br />
-                                (519) 963-0680<br />
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-
-
-
-
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container-fluid divpadding">
-        <div class="container">
-
-            <h1 class="contentH3-red1"><span class="glyphicon glyphicon-search blueGoldBorder f30 centeralign"></span>&nbsp;&nbsp;CAREER SERVICES AT NORTH AMERICAN TRADE SCHOOLS</h1>
-            <hr class="hrpblue">
-
-            <p class="contentp">
-                Employment counselling and job search training is provided for all students during their program by scheduled classroom lectures and ongoing individualized counselling. The school remains a permanent source of employment search assistance for all graduates. The placement department prepares each student to:
-                <br /><br />
-
-                <div class="col-md-12">
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-pencil blueGoldBorder f30"></span><hr class="hrp">Create cover letter, resume and other effective portfolio material.</div><br class="visible-xs" />
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-search blueGoldBorder f30"></span><hr class="hrp">Conduct an employment interview including proper follow-up activities.</div><br class="visible-xs" />
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-signal blueGoldBorder f30"></span><hr class="hrp">Analyze employment opportunities and market trends.</div><br class="visible-xs" />
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-lock blueGoldBorder f30"></span><hr class="hrp">Utilize resources for locating prospective employers.</div><br class="visible-xs" />
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-book blueGoldBorder f30"></span><hr class="hrp">Analyze employment benefits and career advancement opportunities.</div><br class="visible-xs" />
-                    <div class="col-md-2 centeralign"><span class="glyphicon glyphicon-thumbs-up blueGoldBorder f30"></span><hr class="hrp">Follow up post employment to ensure success .</div>
-                </div>
-
-            </p>
-
-        </div>
-    </div>
 
 
     <script>

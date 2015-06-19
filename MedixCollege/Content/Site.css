@@ -29,7 +29,6 @@ padding-right:0px;
 
                 font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
                 font-weight: 400;
-                    padding-top: 10px;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -1613,8 +1612,18 @@ blockquote p {
             font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+@media only screen and (max-device-width: 480px) {
+.contentH3-red1 {
+            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 18px;
     line-height: 18px;
     font-weight: 400;
+}
 }
 
 .centeralign {
@@ -1908,9 +1917,43 @@ font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
     background-color: #B20000;
     height:1px;
 }
+.hrpblue2 {
+    margin-top:8px;
+    margin-bottom: 8px;
+    background-color: #B20000;
+    height:3px;
+}
+
+.mobile-icon {
+ font-size:.75em;
+ color:#B20000;
+}
 
 .ul-none
 {
 list-style-type: none;
 }
 
+
+.header-1 {
+            position: absolute; 
+        top: 0px;
+        right: 0%;
+}
+.header-2 {
+        position: absolute; 
+        top: 33%;
+        right: 0%;
+}
+.header-3 {
+        position: absolute; 
+        bottom: 10px;
+        right: 0%;
+}
+.header-3-container { position:relative; 
+                      height:150px;
+}
+
+.numbersize {
+    font-size:1.5em;
+}
