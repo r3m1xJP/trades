@@ -191,7 +191,10 @@
     <Content Include="Content\images\heroBanner\IMG2.jpg" />
     <Content Include="Content\images\heroBanner\IMG3.jpg" />
     <Content Include="Content\images\heroBanner\IMG4.jpg" />
+    <Content Include="Content\images\heroBanner\main-program.jpg" />
+    <Content Include="Content\images\heroBanner\solar-program.jpg" />
     <Content Include="Content\images\instagram.gif" />
+    <Content Include="Content\images\main-program.jpg" />
     <Content Include="Content\images\mainBANNER-1-ECA.jpg" />
     <Content Include="Content\images\mainBANNER-2-IODA.jpg" />
     <Content Include="Content\images\mainBANNER-3-MLAT.jpg" />
@@ -205,6 +208,7 @@
     <Content Include="Content\images\NATSLogo.png" />
     <Content Include="Content\images\payments.jpg" />
     <Content Include="Content\images\pinterest.gif" />
+    <Content Include="Content\images\solar-program.jpg" />
     <Content Include="Content\responsiveslides.css" />
     <Content Include="Content\smoothDivScroll.css" />
     <Content Include="Content\images\twitter.gif" />
