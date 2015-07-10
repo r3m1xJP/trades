@@ -153,14 +153,47 @@
         background: rgba(0,0,0, .8);
     }
 
+
 .caption {
     position: absolute;
     bottom: 15%;
-    right: 20%;
     display: block;
-    padding: 6px;
-    text-align: right;
+    padding: 3px;
+    text-align: center;
     background: #B20000;
     color: white;
-    font-size: 2.5em;
+    font-size: 2.2em;
+    width: 97.5%;
 }
+
+.caption2 {
+    position: absolute;
+    bottom: 15%;
+    display: inline-block;
+    padding: 3px 13px 3px 13px;
+    text-align: right;
+}
+
+.caption2 a {
+    color: white;
+}
+
+.caption2 a:hover {
+    color: #EDAA0F;
+}
+
+
+
+.captionChar {
+    display: inline-block;
+    background: #B20000;
+    color: white;
+    font-size: 2.2em;
+}
+
+.banner-content {
+    width: 100%;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+

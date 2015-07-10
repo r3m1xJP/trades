@@ -2,32 +2,56 @@
     ViewBag.Title = "";
 }
 
-<div class="hidden-xs">
+<div class="hidden-xs hidden-sm">
     <ul class="rslides">
         <li>
-            <img src="~/Content/images/NATSIMG1.gif"/>
-            <p class="caption">SOLAR ENERGY TECHNICIAN</p>
+            <img src="~/Content/images/heroBanner/main-program.jpg" />
+            <div class="container" style="position:relative; ">
+                <p class="caption2 captionChar">
+                    <a class="youtube" href="https://www.youtube.com/embed/l9dR97qTGlE?rel=0 ">CHECK US OUT <span class="glyphicon glyphicon-play-circle f25"></span></a>
+
+                </p>
+            </div>
         </li>
+
         <li>
-            <img src="~/Content/images/NATSIMG2.gif" />
-            <p class="caption">WELDING</p>
+            <img src="~/Content/images/heroBanner/IMG2.jpg" />
+            <div class="container" style="position:relative;">
+                <p class="caption2 captionChar">
+                    TOUR OUR FACILITIES
+                </p>
+            </div>
         </li>
         <li>
             <img src="~/Content/images/heroBanner/IMG1.jpg" />
-            <p class="caption">HVAC TECHNICIAN</p>
+            <div class="container" style="position:relative;">
+                <p class="caption2 captionChar">
+                    SEE OUR HVAC LAB
+                </p>
+            </div>
         </li>
         <li>
-            <img src="~/Content/images/heroBanner/IMG4.jpg" />
-            <p class="caption">HOME RENOVATIONS</p>
+            <img src="~/Content/images/heroBanner/solar-program.jpg" />
+            <div class="container" style="position:relative; ">
+                <p class="caption2 captionChar">
+                    LEARN ABOUT OUR SOLAR TECHNICIAN PROGRAM
+                </p>
+            </div>
         </li>
     </ul>
 </div>
+
+<div class="videoWrapperProgram visible-xs visible-sm">
+    <iframe width="560"
+            height="315" src="https://www.youtube.com/embed/l9dR97qTGlE" frameborder="0"
+            allowfullscreen></iframe>
+</div>
+
 
 
 <div class="container-fluid containerlinkOptionsWrapper spacer-top">
     <div class="container">
         <h1 class="contentH3-red1">
-            <span class="glyphicon glyphicon-info-sign blueColour f30 centeralign"></span>&nbsp;&nbsp;
             LEARN MORE ABOUT NORTH AMERICAN TRADE SCHOOLS:
         </h1>
         <hr class="hrpblue2" />
@@ -66,12 +90,7 @@
                 WHAT SETS OUR EDUCATION APART: THE STUDENT EXPERIENCE
                 <hr class="hrpw3" />
             </h3>
-            <p class="contentp-light">
-                As a student of North American Trade Schools, you will not only receive an education but an entire student experience.
-                Our foundational approach to education provides students with not only technical knowledge but also hands-on experience.
-                North American Trade Schools students receive in-class instruction with extensive lab work to simulate real world experience.
-                Students are learning from Instructors who hold professional designations in their field in additional to many years of experience in their field. 
-            </p>
+
         </div>
 
         <div class="videoWrapper">
@@ -119,20 +138,58 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="socialWrapper">
+        <div class="col-md-4 facebook">
+            <h2 class="contentH2-white-graybg contentH3-red1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+            <div class="mobile-content facebook hidden-xs">
+                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FNATSLondon&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
+            </div>
+        </div>
+
+        <div class="insidetwitter">
+            <div class="col-md-4 twitter">
+                <h2 class="contentH2-white-graybg contentH3-red1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+                <div class="mobile-content twitter hidden-xs">
+                    <a class="twitter-timeline" href="https://twitter.com/nats_hired" data-widget-id="606109159906529281">Tweets by nats_hired</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 newsUpdates">
+            <h2 class="contentH2-white-graybg contentH3-red1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+            <div class="mobile-content newsUpdates hidden-xs">
+                <ul class="list-unstyled newsList">
+                    @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
+                    {
+                        <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
+                            <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
+                            <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
+
+                        </li>
+                    }
+                </ul>
+            </div>
+            <hr />
+            <div class="pull-right link-unstyled">
+                @Html.ActionLink("More News", "NewsDirectory", "Home")
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<br />
 <div class="container-fluid">
     <div class="container">
         <br />
         <h1 class="contentH3-red1">
-            OUR GRADUATES ARE CAREER READY:
+            OUR GRADUATES GET HIRED:
         </h1>
             <hr class="hrpblue2" />
 
-            <p class="contentp">
-                North American Trade School graduates are well trained individuals who have had a well-rounded educational experience.
-                During the entire education process, North American Trade School students are in a simulated work environment.
-                Students are held up to the same standards as professional employees in terms of punctuality, attendance and accountability.
-                This enables a seemless transition to the workforce. Below are a number of companies that have hired a number of recent graduates.
-            </p>
+
 
 
             <ul id="graduatesImageScroller">
@@ -166,47 +223,7 @@
 
 
 
-    <div class="container">
-        <div class="socialWrapper">
-            <div class="col-md-4 facebook">
-                <h2 class="contentH2-white-graybg contentH3-red1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
-                <div class="mobile-content facebook hidden-xs">
-                    <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FNATSLondon&amp;width&amp;height=450&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=true&amp;appId=255262464670895" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height: 400px; width: 100%" allowtransparency="true"></iframe>
-                </div>
-            </div>
-
-            <div class="insidetwitter">
-                <div class="col-md-4 twitter">
-                    <h2 class="contentH2-white-graybg contentH3-red1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
-                    <div class="mobile-content twitter hidden-xs">
-                        <a class="twitter-timeline" href="https://twitter.com/nats_hired" data-widget-id="606109159906529281">Tweets by nats_hired</a>
-                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 newsUpdates">
-                <h2 class="contentH2-white-graybg contentH3-red1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
-                <div class="mobile-content newsUpdates hidden-xs">
-                    <ul class="list-unstyled newsList">
-                        @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
-                        {
-                            <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
-                                <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
-                                <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
-
-                            </li>
-                        }
-                    </ul>
-                </div>
-                <hr />
-                <div class="pull-right link-unstyled">
-                    @Html.ActionLink("More News", "NewsDirectory", "Home")
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+    
 
 <br />
 
