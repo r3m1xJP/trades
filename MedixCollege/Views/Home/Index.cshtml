@@ -5,7 +5,7 @@
 <div class="hidden-xs hidden-sm">
     <ul class="rslides">
         <li>
-            <img src="~/Content/images/heroBanner/" />
+            <img src="~/Content/images/heroBanner/main-program.jpg" />
             <div class="container" style="position:relative; ">
                 <p class="caption2 captionChar">
                     <a class="youtube" href="https://www.youtube.com/embed/l9dR97qTGlE?rel=0 ">CHECK US OUT <span class="glyphicon glyphicon-play-circle f25"></span></a>
@@ -26,7 +26,7 @@
             <img src="~/Content/images/heroBanner/IMG1.jpg" />
             <div class="container" style="position:relative;">
                 <p class="caption2 captionChar">
-                    SEE OUR HVAC LAB
+                    @Html.ActionLink("LEARN ABOUT OUR HVAC PROGRAM", "HVACTechnician", "Programs") <span class="glyphicon glyphicon-forward f25"></span>
                 </p>
             </div>
         </li>
@@ -34,7 +34,7 @@
             <img src="~/Content/images/heroBanner/solar-program.jpg" />
             <div class="container" style="position:relative; ">
                 <p class="caption2 captionChar">
-                    LEARN ABOUT OUR SOLAR TECHNICIAN PROGRAM
+                    @Html.ActionLink("LEARN ABOUT OUR SOLAR TECHNICIAN PROGRAM", "SolarEnergyTechnician", "Programs") <span class="glyphicon glyphicon-forward f25"></span>
                 </p>
             </div>
         </li>

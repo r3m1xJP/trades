@@ -164,8 +164,10 @@
     <Content Include="Content\images\button-next.png" />
     <Content Include="Content\images\button-previous.png" />
     <Content Include="Content\images\CCGLogo.png" />
+    <Content Include="Content\images\facebook-ic.gif" />
     <Content Include="Content\images\facebook.gif" />
     <Content Include="Content\images\Fran-Women-Of-Excellence.jpg" />
+    <Content Include="Content\images\googleplus-ic-jpg.jpg" />
     <Content Include="Content\images\googleplus.gif" />
     <Content Include="Content\images\graduates\canadiansolar.jpg" />
     <Content Include="Content\images\graduates\ccr.jpg" />
@@ -193,7 +195,9 @@
     <Content Include="Content\images\heroBanner\IMG4.jpg" />
     <Content Include="Content\images\heroBanner\main-program.jpg" />
     <Content Include="Content\images\heroBanner\solar-program.jpg" />
+    <Content Include="Content\images\instagram-ic.gif" />
     <Content Include="Content\images\instagram.gif" />
+    <Content Include="Content\images\linkedin-ic.gif" />
     <Content Include="Content\images\main-program.jpg" />
     <Content Include="Content\images\mainBANNER-1-ECA.jpg" />
     <Content Include="Content\images\mainBANNER-2-IODA.jpg" />
@@ -207,8 +211,11 @@
     <Content Include="Content\images\NATSIMG2.gif" />
     <Content Include="Content\images\NATSLogo.png" />
     <Content Include="Content\images\payments.jpg" />
+    <Content Include="Content\images\pinterest-ic.gif" />
     <Content Include="Content\images\pinterest.gif" />
     <Content Include="Content\images\solar-program.jpg" />
+    <Content Include="Content\images\twitter-ic.gif" />
+    <Content Include="Content\images\youtube-ic.gif" />
     <Content Include="Content\responsiveslides.css" />
     <Content Include="Content\smoothDivScroll.css" />
     <Content Include="Content\images\twitter.gif" />
