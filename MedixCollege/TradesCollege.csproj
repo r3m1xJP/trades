@@ -156,6 +156,8 @@
     <Content Include="Content\fonts\socicon-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-bold-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-regular-webfont.svg" />
+    <Content Include="Content\images\150419-Hired-NATS-Brampton.jpg" />
+    <Content Include="Content\images\150419-Hired-NATS-London.jpg" />
     <Content Include="Content\images\Banner-Certificates-Main.jpg" />
     <Content Include="Content\images\Banner-Discover-Medix-History.jpg" />
     <Content Include="Content\images\Banner-Discover-Medix-Index.jpg" />

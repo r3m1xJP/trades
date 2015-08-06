@@ -352,6 +352,11 @@ footer {
     -webkit-text-stroke-color: #EDAA0F;
 }
 
+.1blueGoldBorder {
+    color: #B20000;
+
+}
+
 .CgoldBlueBorder {
     color: #EDAA0F;
     -webkit-text-stroke-width: 1px;
@@ -1278,7 +1283,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 .overquestionsForm {
-    border: 1px solid lightgray;
+
     background-color: white;
 }
 
@@ -1977,4 +1982,89 @@ list-style-type: none;
 
 .numbersize {
     font-size:1.5em;
+}
+
+
+
+.contentH2-white-graybg {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #0F3F6F;
+    border-bottom: solid 3px #0F3F6F;
+    background-color: white;
+    padding: 18px 12px 12px 0px;
+    text-align: left;
+    margin-top: 0 !important;
+}
+
+.programtableheader {
+    background-color: #0F3F6F;
+    color:white;
+    font-size:1.2em;
+    border-bottom: 2px solid #EDAA0F;
+}
+
+.programtableheader a {
+    background-color: #0F3F6F;
+    color:white;
+    font-size:1.2em;
+}
+
+.programtableheader a:hover {
+    background-color: #0F3F6F;
+    color:#EDAA0F;
+    font-size:1.2em;
+    text-decoration:none;
+}
+
+.panelBG {
+background-color:#f8f8f8;
+
+}
+
+.newsTable a {
+}
+
+.newsTable li table a:hover{
+    text-decoration: underline;
+}
+
+.mainBLUEmoreNews a{
+color:#0F3F6F;
+}
+
+.mainBLUEmoreNews a:hover {
+color:#0F3F6F;
+text-decoration:underline;
+}
+
+.hrpNEWS {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    background-color: #0F3F6F;
+    height: 1px;
+}
+
+.imgPADDINGnews {
+margin-top:9px;
+margin-bottom:9px;
+}
+
+.newsMARGINtop {
+    margin-top:5px;
+}
+
+
+.btn-danger {
+ background-color:#B20000;
+ color:white;
+}
+
+.redBTN a{
+ background-color:#B20000;
+ color:white;
+}
+
+.redBTN a:hover {
+ background-color:#ff5151;
+ color:white;
 }

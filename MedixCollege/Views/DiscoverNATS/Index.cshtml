@@ -7,68 +7,148 @@
     ViewBag.PageDescription = "Learn more about Medix College and why programs offered at this Private Career College helps graduates train for health care professions";
 }
 
+
+<div class="col-sm-12">
     <h1 class="contentPageH1">DISCOVER NATS</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="active contentp">Discover NATS</li>
-</ol>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="active contentp">Discover NATS</li>
+    </ol>
+</div>
 
-<blockquote class="contentBlockquote">
-    <h2 class="contentPageH1">"To service with excellence the needs of our community and the needs of our graduates by matching skills"</h2>
-</blockquote>
+<div class="col-sm-8 mid-padding">
 
-<br />
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h1 class="contentH1">            When you choose training from North American Trade Schools, you're making a commitment to excellence.
-</h1>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <blockquote class="contentBlockquote">
+                <h2 class="contentPageH1">"To service with excellence the needs of our community and the needs of our graduates by matching skills"</h2>
+            </blockquote>
+        </div>
     </div>
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="contentH2">
+                When you choose training from North American Trade Schools, you're making a commitment to excellence.
+                </h2>
+
+</div>
+</div>
+
+
+<div class="panel panel-default">
     <div class="panel-body">
-
-
-
         <h2 class="contentH2">
             OUR PROGRAMS PROVIDE:
-                </h2>
+        </h2>
         <p class="contentpheight">
             <hr class="hrp">
-            
+
             Career preparation so you can be job-ready in less than one year<br />
             <hr class="hrp">
-            
+
             Small class sizes and individual attention<br />
             <hr class="hrp">
-            
+
             Professional instructors with career experience in your chosen field of study<br />
             <hr class="hrp">
-            
+
             Employment preparation and placement assistance is available to all graduates of full-time registered programs<br />
             <hr class="hrp">
-            
+
             Financial Assistance may be available to those who qualify
         </p>
-        <br /><br />
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
         <h2 class="contentH2">
             GENERAL ADMISSIONS REQUIREMENTS:
         </h2>
         <p class="contentpheight">
             <hr class="hrp">
-            
+
             Successful completion of standardized entry examination<br />
             <hr class="hrp">
-            
+
             GED, Ontario Secondary School Diploma or Equivalent/Mature Student Status<br />
             <hr class="hrp">
-            
+
             Personal interview to determine interest, attitude and values
         </p>
 
-       
+
     </div>
 </div>
-<br />
-<button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;@Html.ActionLink("SEE PROGRAMS", "AllPrograms", "Programs")</button>
-<br />
-<button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;@Html.ActionLink("SEE CAMPUSES", "Index", "Campuses")</button>
 
+<button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
 <br />
+<button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
+
+
+        </div>
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpblue" />
+            <div class="row formWrapper overquestionsForm">
+
+
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor contentp">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+

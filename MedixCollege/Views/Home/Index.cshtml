@@ -173,10 +173,22 @@
                     @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
                     {
                         <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
-                            <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
-                            <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
+
+                            <table>
+                                <tr>
+                                    <td valign="top"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f30 goldOuterGlow "></span></td>
+                                    <td>
+                                        <div class="contentH3-blue newsTable">@article.Title</div>
+                                        <div class="date newsTable">@article.Date.ToString("MMMM d, yyyy")</div>
+                                    </td>
+                                </tr>
+                            </table><hr class="hrp" />
+
+
+
 
                         </li>
+
                     }
                 </ul>
             </div>
