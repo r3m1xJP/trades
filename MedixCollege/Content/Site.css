@@ -311,6 +311,7 @@ footer {
     background-color: #B20000;
     overflow: auto;
     padding: 10px;
+        border-top: solid 3px #EDAA0F;
 }
 
 .footer-banner-logo {
@@ -784,6 +785,8 @@ footer {
 
 .containervideoItem {
     background-color: #B20000;
+    border-bottom: solid 3px #EDAA0F;
+    border-top: solid 3px #EDAA0F;
 }
 
 
