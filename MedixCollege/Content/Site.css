@@ -1487,6 +1487,13 @@ blockquote p {
     line-height: 30px;
 }
 
+.contentH1-mainW2c {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 26px;
+    line-height: 26px;
+}
+
 .contentH1-mainW a{
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: white;
@@ -1566,7 +1573,7 @@ blockquote p {
     color: #B20000;
     border-bottom: solid 3px #B20000;
     background-color: white;
-    font-size: 30px;
+    font-size: 26px;
     padding: 18px 12px 12px 0px;
     text-align: left;
     margin-top: 0 !important;
@@ -1617,6 +1624,14 @@ blockquote p {
     color: white;
     font-size: 16px;
     line-height: 18px;
+    font-weight: 400;
+}
+
+.contentH2-white {
+    font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 400;
 }
 
@@ -1705,6 +1720,12 @@ blockquote p {
 .contentp {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #222222;
+        font-weight: 400;
+}
+
+.contentpw {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: white;
         font-weight: 400;
 }
 
@@ -1986,15 +2007,7 @@ list-style-type: none;
 
 
 
-.contentH2-white-graybg {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
-    color: #0F3F6F;
-    border-bottom: solid 3px #0F3F6F;
-    background-color: white;
-    padding: 18px 12px 12px 0px;
-    text-align: left;
-    margin-top: 0 !important;
-}
+
 
 .programtableheader {
     background-color: #0F3F6F;
