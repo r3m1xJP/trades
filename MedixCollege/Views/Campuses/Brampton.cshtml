@@ -2,126 +2,196 @@
     Layout = "~/Views/Campuses/_CampusesLayout.cshtml";
 }
 
-<h1 class="contentPageH1">BRAMPTON CAMPUS</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="contentp">@Html.ActionLink("All Campuses", "Index", "Campuses")</li>
-    <li class="active contentp">Brampton</li>
-</ol>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h2 class="contentH1">About Medix College Brampton</h2>
-
-    </div>
-    <div class="panel-body">
-        <p class="contentp">
-            The Brampton campus is the latest chapter in the Medix College success book. Located at 499 Main
-
-            Street inside Shoppers World Brampton, this campus has grown rapidly and has proudly educated
-
-            students to thrive in the healthcare industry. The campus boasts modern facilities, fully equipped with
-
-            the latest technology to provide an excellent learning and teaching environment.
-
-            <br /><br />
-
-            The Brampton campus faculty consists of over twenty professional, experienced members who are
-
-            committed to fulfilling the school’s mission: “To service with excellence the needs of our community
-
-            and the needs of our graduates by matching skills.” With the addition of North American Trade
-
-            Schools (NATS) to the Career College Group campus, we are now able to meet demand for both
-
-            Healthcare and Skilled Trades graduates.
-        </p>
-    </div>
-</div>
-<br />
-
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;">
-        <div id="gmap_canvas" style="height:500px"></div>
-        <a class="google-map-code" href="http://wordpress-themes.org" id="get-map-data">http://wordpress-themes.org</a>
-    </div>
-    <script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(43.6670762, -79.7383509), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(43.6670762, -79.7383509) }); infowindow = new google.maps.InfoWindow({ content: "<b></b><br/>499 Main St S Unit 60<br/> Brampton" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
-
-<br />
-   
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h1 class="contentH1">About Brampton</h1>
-
-    </div>
-    <div class="panel-body">
-        <p class="contentp">
-            Brampton is a suburban city in the Greater Toronto Area and is part of Peel Region. As of the 2011
-
-            census, Brampton’s population is currently at 523,911. Brampton officially became recognized as a
-
-            village in 1853 and gain city status as of 1974.
-            <br /><br />
-            The city was named after a city with the same name in Cumbria England. In Brampton, the area codes
-
-            are either 905 or 289. The current nickname for Brampton is the “Flower City”.
-        </p>
-    </div>
-</div>
-<br />
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h1 class="contentH1">Social Media</h1>
-
-    </div>
-    <div class="panel-body">
-        <a href="https://www.facebook.com/MedixCollegeNATS?ref=hl"><img src="~/Content/images/facebook-ic.gif" height="50" width="50" /></a>&nbsp;
-        <a href="https://twitter.com/bramptonmedix"><img src="~/Content/images/twitter-ic.gif" height="50" width="50" /></a>&nbsp;
-        <a href=" https://plus.google.com/u/0/b/113990709745010331819/+MedixcollegeCaBrampton/posts"><img src="~/Content/images/googleplus-ic-jpg.jpg" height="50" width="50" /></a>&nbsp;
-        <a href="https://www.youtube.com/user/MedixCollegeBrampton"><img src="~/Content/images/youtube-ic.gif" height="50" width="50" /></a>&nbsp;
-        <a href="https://www.pinterest.com/bramptonmedix/"><img src="~/Content/images/pinterest-ic.gif" height="50" width="50" /></a>
-    </div>
+<div class="col-sm-12">
+    <h1 class="contentPageH1">BRAMPTON CAMPUS</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="contentp">@Html.ActionLink("All Campuses", "Index", "Campuses")</li>
+        <li class="active contentp">Brampton</li>
+    </ol>
 </div>
 
-<br />
+<div class="col-sm-8 mid-padding">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="contentH1">About North American Trade Schools Brampton</h2>
 
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <h1 class="contentH1">Brampton Links</h1>
+        </div>
+        <div class="panel-body">
+            <p class="contentp">
+                Located at 499 Main
 
+                Street inside Shoppers World Brampton, the North American Trade Schools campus has grown rapidly and has proudly educated
+
+                students to thrive in the skilled trades industry. The campus boasts modern facilities, fully equipped with
+
+                the latest technology to provide an excellent learning and teaching environment.
+
+ 
+
+
+            </p>
+        </div>
     </div>
-    <div class="panel-body">
 
-        <p class="contentp">
-            <a href="http://www.brampton.ca/">City of Brampton Website</a>
-        </p>
 
-        <p class="contentp">
-            <a href="http://www.brampton.ca/EN/Arts-Culture-Tourism/Tourism-Brampton/Pages/welcome-splash.aspx">Brampton Tourism Website</a>
-        </p>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;">
+                <div id="gmap_canvas" style="height:500px"></div>
+                <a class="google-map-code" href="http://wordpress-themes.org" id="get-map-data">http://wordpress-themes.org</a>
+            </div>
+            <script type="text/javascript"> function init_map() { var myOptions = { zoom: 15, center: new google.maps.LatLng(43.6670762, -79.7383509), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(43.6670762, -79.7383509) }); infowindow = new google.maps.InfoWindow({ content: "<b></b><br/>499 Main St S Unit 60<br/> Brampton" }); google.maps.event.addListener(marker, "click", function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 
-        <p class="contentp">
-            <a href="http://www.brampton.ca/EN/City-Hall/Pages/top-links.aspx">Brampton City Hall</a>
-        </p>
-
-        <p class="contentp">
-            <a href="http://www.ymcagta.org/en/find-ymca/location.php?id=353">Brampton YMCA</a>
-        </p>
-
-        <p class="contentp">
-            <a href="http://www.brampton.ca/EN/Business/BEC/resources/Pages/welcome.aspx">Brampton Resources</a>
-        </p>
-
-        <p class="contentp">
-            <a href="http://www.peelschools.org/adulteducation/esl/Pages/default.aspx">Peel Region ESL </a>
-        </p>
-
-        <p class="contentp">
-            <a href="http://www.immigrationpeel.ca/en/about-peel-region/newcomer-information-centres.asp">Newcomers to Brampton</a>
-        </p>
+        </div>
     </div>
+
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="contentH1">About Brampton</h1>
+
+        </div>
+        <div class="panel-body">
+            <p class="contentp">
+                Brampton is a suburban city in the Greater Toronto Area and is part of Peel Region. As of the 2011
+
+                census, Brampton’s population is currently at 523,911. Brampton officially became recognized as a
+
+                village in 1853 and gain city status as of 1974.
+                <br /><br />
+                The city was named after a city with the same name in Cumbria England. In Brampton, the area codes
+
+                are either 905 or 289. The current nickname for Brampton is the “Flower City”.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="contentH1">Social Media</h1>
+
+        </div>
+        <div class="panel-body">
+            <a href="https://www.facebook.com/MedixCollegeNATS?ref=hl"><img src="~/Content/images/facebook-ic.gif" height="50" width="50" /></a>&nbsp;
+            <a href="https://twitter.com/bramptonmedix"><img src="~/Content/images/twitter-ic.gif" height="50" width="50" /></a>&nbsp;
+            <a href="https://plus.google.com/+TradescollegeCaBrampton"><img src="~/Content/images/googleplus-ic-jpg.jpg" height="50" width="50" /></a>&nbsp;
+            <a href="https://www.youtube.com/user/BramptonTrades"><img src="~/Content/images/youtube-ic.gif" height="50" width="50" /></a>&nbsp;
+            <a href="https://www.pinterest.com/bramptonmedix/"><img src="~/Content/images/pinterest-ic.gif" height="50" width="50" /></a>
+        </div>
+    </div>
+
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="contentH1">Brampton Links</h1>
+
+        </div>
+        <div class="panel-body">
+
+            <p class="contentp">
+                <a href="http://www.brampton.ca/">City of Brampton Website</a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.brampton.ca/EN/Arts-Culture-Tourism/Tourism-Brampton/Pages/welcome-splash.aspx">Brampton Tourism Website</a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.brampton.ca/EN/City-Hall/Pages/top-links.aspx">Brampton City Hall</a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.ymcagta.org/en/find-ymca/location.php?id=353">Brampton YMCA</a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.brampton.ca/EN/Business/BEC/resources/Pages/welcome.aspx">Brampton Resources</a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.peelschools.org/adulteducation/esl/Pages/default.aspx">Peel Region ESL </a>
+            </p>
+
+            <p class="contentp">
+                <a href="http://www.immigrationpeel.ca/en/about-peel-region/newcomer-information-centres.asp">Newcomers to Brampton</a>
+            </p>
+        </div>
+    </div>
+
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
 </div>
 
-<br />
-<button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
-<br />
+
+
+
+
+
+
+    <div class="col-sm-4 pull-right no-padding">
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+                <h1 class="contentH1 text-center">
+                    <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+                </h1><hr class="hrpblue" />
+                <div class="row formWrapper overquestionsForm">
+
+
+                    <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                        <input type="hidden" name="ORGID" value="240" />
+                        <input type="hidden" name="MailListID" value="240001" />
+                        <div class="input-group spacer-top">
+                            <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control pull-right" name="FirstName">
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control pull-right" name="Email">
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="CampusID">
+                                <option value="0">Select</option>
+                                <option value="24004">Brampton-NATS</option>
+                                <option value="24001">London-NATS</option>
+                                <option value="240">Toronto</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                            <select class="form-control pull-right" name="ProgramID">
+                                <option class="0 24004 24001 240" value="0">Select</option>
+                                <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                                <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                                <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                                <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                                <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                                <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                                <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                                <option class="0 24004 24001" value="39063">Welding Technology</option>
+                            </select>
+                        </div>
+                        <div class="input-group spacer-top">
+                            <label class="pull-left contentp">Comments: </label>
+                            <textarea class="form-control pull-right" name="Comment2"></textarea>
+                        </div>
+                        <div class="small-text spacer-top text-center grayColor contentp">
+                            Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                        </div>
+                        <div class="text-center">
+                            <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+

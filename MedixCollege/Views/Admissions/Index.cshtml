@@ -8,24 +8,21 @@
 
 
 
+<div class="col-sm-12">
+    <h1 class="contentPageH1">ADMISSIONS</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="active contentp">Admissions</li>
+    </ol>
+</div>
 
-<h1 class="contentPageH1">ADMISSIONS</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="active contentp">Admissions</li>
-</ol>
-
-
-<table class="table table-bordered">
-    <tr>
-        <td width="100%" class="active">
+<div class="col-sm-8 mid-padding">
+    <div class="panel panel-default">
+        <div class="panel-body">
             <h1 class="contentH1">&nbsp;<span class="glyphicon glyphicon-earphone"></span>&nbsp;&nbsp;CONTACT US</h1>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
+            <hr class="hrp" />
             <p class="contentp">Contact an admissions representative to set up an appointment. It is essential to set some time aside to visit one of our admissions representatives who will answer all the questions you might have.</p>
-            <h3 class="contentH3">Do you have questions about:</h3>
+            <p class="contentp">DO YOU HAVE QUESTIONS ABOUT:</p>
             <ul class="contentp">
                 <li>The cost of the program</li>
                 <li>When classes start</li>
@@ -35,36 +32,22 @@
                 <li>Where recent gradutes have been hired</li>
                 <li>How the career services department can help you find employment</li>
             </ul>
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="contentH1">&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;CONFIDENTIAL INTERVIEW</h1><hr class="hrp" />
+            <p class="contentp">Once an appointment has been made, we will need to determine your academic and career goals. We also need to determine if you have the right attitude to be successful as a student at Medix. A short assessment will help us determine your eligibility. <br /><br />We will then help you choose the best suitable program and class schedule to meet your career goals and personal needs.</p>
+
+        </div>
+    </div>
 
 
-
-
-
-<table class="table table-bordered">
-    <tr>
-        <td width="100%" class="active">
-            <h1 class="contentH1">&nbsp;<span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;CONFIDENTIAL INTERVIEW</h1>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentp">Once an appointment has been made, we will need to determine your academic and career goals. We also need to determine if you have the right attitude to be successful as a student at North American Trade Schools. A short assessment will help us determine your eligibility. <br /><br />We will then help you choose the best suitable program and class schedule to meet your career goals and personal needs.</p>
-        </td>
-    </tr>
-</table>
-
-
-<table class="table table-bordered">
-    <tr>
-        <td width="100%" class="active">
+    <div class="panel panel-default">
+        <div class="panel-body">
             <h1 class="contentH1">&nbsp;<span class="glyphicon glyphicon-briefcase"></span>&nbsp;&nbsp;BUSINESS AFFAIRS ASSESSMENT</h1>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
+            <hr class="hrp" />
             <p class="contentp">Once we determine your qualifications for the program you have chosen, and have answered all your questions, we then schedule a business affairs appointment which will determine your eligibility with one of our many different financial aid options. Financial Assistance maybe available for those who qualify</p>
             <h3 class="contentH3">Some available payment options include:</h3>
             <ul class="contentp">
@@ -77,22 +60,86 @@
                 <li>Employment Ontario</li>
                 <li>Monthly Payment Plan</li>
             </ul>
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
 
-
-<table class="table table-bordered">
-    <tr>
-        <td width="100%" class="active">
+    <div class="panel panel-default">
+        <div class="panel-body">
             <h1 class="contentH1">&nbsp;<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;ENROLLMENT</h1>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-
+            <hr class="hrp" />
             <p class="contentp">After you are comfortable with the financial plan you have put in place to attain your career goals, we then will enroll you into that program and will look forward in seeing you start training for your new career!  </p>
-        </td>
-    </tr>
-</table>
-<br />
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</button>
+    <br />
+
+
+</div>
+
+
+
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpblue" />
+            <div class="row formWrapper overquestionsForm">
+
+
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor contentp">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
