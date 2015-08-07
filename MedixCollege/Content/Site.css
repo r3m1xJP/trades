@@ -1,6 +1,6 @@
 ﻿
 body {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 400;
     width: 100%;
     margin-left: 0px;
@@ -8,7 +8,7 @@ body {
 }
 
 a {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
@@ -27,7 +27,7 @@ padding-right:0px;
 .body-content {
     width: 100%;
 
-                font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+                font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
                 font-weight: 400;
 }
 
@@ -47,24 +47,24 @@ textarea {
 /* Layout */
 .grayColor {
     color: gray !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #555;
 }
 
 .lightBG {
 background-color: white;
 padding: 5px;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 
 }
 
 .blueColor {
     color: #B20000 !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
 .btn {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
     .btn a {
@@ -79,7 +79,7 @@ padding: 5px;
     background-color: #B20000;
     color: white !important;
     padding: 5px 9px 5px 9px !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
     .btn-brand:hover {
@@ -153,7 +153,7 @@ padding: 5px;
 .navbar {
     margin-bottom: 0px !important;
     min-height: 0px !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
 .nav li.dropdown a:hover {
@@ -595,7 +595,7 @@ footer {
 
 .leftMenu li a {
     color: #B20000 !important;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     width: 100%;
 
 }
@@ -634,7 +634,7 @@ footer {
         padding-top: 10px;
             padding-bottom: 10px;
     border-bottom: solid 3px #EDAA0F;
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
                 position: relative;
         top:0px;
 
@@ -643,7 +643,7 @@ footer {
 .leftMenu li.header a {
     color: white !important;
     background-color: #B20000;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     width: 100%;
 
 }
@@ -652,7 +652,7 @@ footer {
 .leftMenuTOP li a {
     color: white !important;
     background-color: #B20000;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     width: 100%;
     font-size: 16px;
 }
@@ -837,7 +837,7 @@ footer {
         font-size: 1em;
         border-top: 1px solid rgba(255,255,255, 0.2);
         border-bottom: 1px solid rgba(255,255,255, 0.2);
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     }
 
     .promoContent .videoButtons {
@@ -881,7 +881,7 @@ footer {
     text-transform: uppercase;
     transition: all 0.3s ease 0s;
     border-radius: 3px;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
     .videoButtons .btn:hover {
@@ -1264,19 +1264,19 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     display: block;
     padding-left: 0px;
     padding-top: 0px;
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 
 }
 
     .breadcrumb li {
         font-size: 14px;
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 
     }
 
     .breadcrumb a {
         color: #B20000;
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 
     }
 
@@ -1297,7 +1297,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .questionsForm {
     font-size: 11px;
     padding: 10px;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
 .overquestionsForm {
@@ -1386,7 +1386,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 /* Body Content Resets*/
 
 .contentPageH1 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 26px;
     line-height: 26px;
@@ -1405,7 +1405,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .blockquoteGOLD {
     background: white;
     border-left: 10px solid #EDAA0F;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     padding: 5px 5px 5px 20px;
     margin-top: 0px;
 }
@@ -1413,7 +1413,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 .blockquote {
     background: white;
     border-left: 10px solid #EDAA0F;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     padding: 5px 5px 5px 20px;
     margin-top: 0px;
 }
@@ -1423,7 +1423,7 @@ blockquote:before {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
 blockquote p {
@@ -1435,13 +1435,13 @@ blockquote p {
 
 
 .mainHEADER {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
 }
 
 .contentH1 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 20px;
     line-height: 20px;
@@ -1450,7 +1450,7 @@ blockquote p {
 }
 
 .contentH1whitemain {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 20px;
     line-height: 20px;
@@ -1459,7 +1459,7 @@ blockquote p {
 }
 
     .contentH1whitemain a {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: white;
         font-size: 20px;
         line-height: 20px;
@@ -1468,7 +1468,7 @@ blockquote p {
     }
 
         .contentH1whitemain a:hover {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
             color: white;
             font-size: 20px;
             line-height: 20px;
@@ -1478,63 +1478,63 @@ blockquote p {
         }
 
 .contentH1-main {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 20px;
     line-height: 30px;
 }
 
 .contentH1-main2 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
        color: #B20000;
     font-size: 22px;
     line-height: 30px;
 }
 
 .contentH1-mainW {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 22px;
     line-height: 30px;
 }
 
 .contentH1-mainW2 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 30px;
     line-height: 30px;
 }
 
 .contentH1-mainW2c {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 26px;
     line-height: 26px;
 }
 
 .contentH1-mainW a{
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 22px;
     line-height: 30px;
 }
 
 .contentH1-mainW a:hover{
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #EDAA0F;
     font-size: 22px;
     line-height: 30px;
 }
 
 .contentH1-small {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #555;
     font-size: 20px;
     line-height: 20px;
 }
 
 .contentH1-white {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 20px;
     line-height: 20px;
@@ -1543,7 +1543,7 @@ blockquote p {
 }
 
 .contentH1-whiteCAMPUS {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 17px;
     line-height: 17px;
@@ -1552,7 +1552,7 @@ blockquote p {
 }
 
 .contentH1-whiteCAMPUS a {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 17px;
     line-height: 17px;
@@ -1561,7 +1561,7 @@ blockquote p {
 }
 
 .contentH1-whiteCAMPUS a:hover {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #EDAA0F;
     font-size: 17px;
     line-height: 17px;
@@ -1576,7 +1576,7 @@ blockquote p {
 }
 
 .contentH2-white-bluebg {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     border-bottom: solid 3px #B20000;
     background-color: white;
@@ -1587,7 +1587,7 @@ blockquote p {
 }
 
 .contentH2-white-graybg {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     border-bottom: solid 3px #B20000;
     background-color: white;
@@ -1599,14 +1599,14 @@ blockquote p {
 
 
 .side-menu-h2 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 14px;
     line-height: 14px;
 }
 
 .contentH2video {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
     line-height: 16px;
@@ -1615,7 +1615,7 @@ blockquote p {
 }
 
 .contentH2 {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
     line-height: 20px;
@@ -1624,7 +1624,7 @@ blockquote p {
 }
 
     .contentH2 a {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #B20000;
         font-size: 16px;
         line-height: 18px;
@@ -1632,7 +1632,7 @@ blockquote p {
     }
 
         .contentH2 a:hover {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
             color: #B20000;
             font-size: 16px;
             line-height: 18px;
@@ -1663,7 +1663,7 @@ blockquote p {
 }
 
 .contentH3-red {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
     line-height: 18px;
@@ -1671,7 +1671,7 @@ blockquote p {
 }
 
 .contentH3-red1 {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 30px;
     line-height: 30px;
@@ -1680,7 +1680,7 @@ blockquote p {
 
 @media only screen and (max-device-width: 480px) {
 .contentH3-red1 {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 18px;
     line-height: 18px;
@@ -1702,28 +1702,28 @@ blockquote p {
 }
 
 .contentH4-dark {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 14px;
     line-height: 18px;
 }
 
 .contentH3-blue {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #B20000;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3-blue a {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
             color: #B20000;
         font-size: 16px;
         line-height: 18px;
     }
 
         .contentH3-blue a:hover {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
             color: #B20000;
             font-size: 16px;
             line-height: 18px;
@@ -1731,33 +1731,33 @@ blockquote p {
         }
 
 .contentH3 a {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #555;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3 a:hover {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #555;
         font-size: 16px;
         line-height: 18px;
     }
 
 .contentp {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
         font-weight: 400;
 }
 
 .contentpw {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
         font-weight: 400;
 }
 
 .contentpheight {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
     line-height:2em;
 }
@@ -1767,17 +1767,17 @@ blockquote p {
 }
 
 .contentp-light {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .contentp a {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
 }
 
     .contentp a:hover {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #313131;
         text-decoration: underline;
     }
