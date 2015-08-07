@@ -7,21 +7,21 @@
     ViewBag.PageDescription = "Learn more about Construction & Maintenance Electrican Pre-Apprenticeship  Training Program at North American Trade Schools.";
 }
 
-<div class="col-sm-12">
+<div class="col-sm-12 no-padding botMARG">
     <h1 class="contentPageH1">CONSTRUCTION & MAINTENANCE ELECTRICIAN PRE-APPRENTICESHIP TRAINING <small class="contentH1-small">DIPLOMA PROGRAM</small></h1>
     <ol class="breadcrumb">
         <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
         <li class="contentp">@Html.ActionLink("Programs", "AllPrograms", "Programs")</li>
         <li class="active contentp">Construction & Maintenance Electrican Pre-Apprenticeship </li>
-    </ol>
+    </ol><img class="img-responsive" width="100%" src="~/Content/images/banner-construction-maintenance.jpg" alt="construction maintenance electrician working on panels" />
+
 </div>
 
 <div class="col-sm-8 mid-padding">
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">PROGRAM SUMMARY</h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">PROGRAM SUMMARY</h1>
+<hr class="hrp" />
             <p class="contentp">
                 The Construction & Maintenance Electrican Pre-Apprenticeship training program at North American Trade Schools at the London and Brampton campuses provides technical training for individuals looking for a rewarding career in the Construction & Maintenance Electrican Pre-Apprenticeship  field. The curriculum is designed to provide classroom and lab training in woodworking, Construction & Maintenance Electrican Pre-Apprenticeship  and installation.
                 <br /><br />
@@ -34,12 +34,10 @@
     
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                EMPLOYMENT TYPES
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    EMPLOYMENT TYPES
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 What career opportunities are available to graduates of the Construction & Maintenance Electrican Pre-Apprenticeship Program?
             </h2>
@@ -57,12 +55,10 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                EMPLOYMENT LOCATIONS
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    EMPLOYMENT LOCATIONS
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 Where do graduates of the Construction & Maintenance Electrican Pre-Apprenticeship work?
             </h2>
@@ -81,12 +77,10 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                COMMON JOB TASKS
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    COMMON JOB TASKS
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 What are common job tasks for individuals working in the Electrical Technology field?
             </h2>
@@ -102,12 +96,10 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                CAREER SERVICES
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    CAREER SERVICES
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 How can the career services department help you get a job?
             </h2>
@@ -122,8 +114,10 @@
     </div>
 
 
-    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;@Html.ActionLink("SEE MORE PROGRAMS", "AllPrograms", "Programs")</button>
-
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
+    <br class="visible-xs" />
 </div>
 
 <div class="col-sm-4 pull-right no-padding">

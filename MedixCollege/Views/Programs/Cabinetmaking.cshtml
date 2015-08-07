@@ -8,23 +8,23 @@
 }
 
 
-<div class="col-sm-12">
+<div class="col-sm-12 no-padding botMARG">
     <h1 class="contentPageH1">CABINETMAKING TRAINING <small class="contentH1-small">DIPLOMA PROGRAM</small></h1>
     <ol class="breadcrumb">
         <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
         <li class="contentp">@Html.ActionLink("Programs", "AllPrograms", "Programs")</li>
         <li class="active contentp">Cabinetmaking</li>
     </ol>
+    <img class="img-responsive" width="100%" src="~/Content/images/banner-cabinetmaking.jpg" alt="Solar Energy Technician working on solar panels" />
+
 </div>
 
 
 
 <div class="col-sm-8 mid-padding">
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">PROGRAM SUMMARY</h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">PROGRAM SUMMARY</h1><hr class="hrp" />
             <p class="contentp">
                 The Cabinetmaking training program at North American Trade Schools at the London and Brampton campuses provides technical training for individuals looking for a rewarding career in the cabinetmaking field. The curriculum is designed to provide classroom and lab training in woodworking, cabinetmaking and installation.
                 <br /><br />
@@ -36,12 +36,10 @@
 
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                EMPLOYMENT TYPES
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    EMPLOYMENT TYPES
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 What career opportunities are available to graduates of the Cabinetmaking Program?
             </h2>
@@ -60,11 +58,48 @@
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h1 class="contentH1">
-                EMPLOYMENT LOCATIONS
-            </h1>
+            <h1 class="contentH1">CABINETMAKER CAREER PROFILE </h1>
         </div>
         <div class="panel-body">
+            <div class="videoWrapperProgram">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/ra-vsjqRQQo?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <br />
+
+            <a class="btn btn-small btn-default" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <h2 class="contentH2video">
+                    <span class="glyphicon glyphicon-film CgoldBlueBorder"></span>    See Transcript
+                </h2>
+            </a>
+            <div class="collapse" id="collapseExample">
+                <div class="well">
+                   
+                    A Cabinetmaker is someone who takes wood boxes and turns them into furniture.
+
+                    <br /><br />
+                    A Cabinetmaker builds furniture; they can do trimwork, kitchens and work with anything that involves wood.
+
+                    <br /><br />
+                    Charactertistics of a good Cabinetmaker include the ability to read a tape measure, be precise and meticulous in terms of wanting to create a perfect product. They are always looking to be better with every project that they are doing.
+
+                    <br /><br />
+                    North American Trade Schools training includes lots of hands-on honing your skills which leads to the process of writing your ticket.
+
+                    <br /><br />
+                    I enjoy seeing the end product; seeing the customers face when I bring them their furniture and it's exactly or more than what they expected.
+
+                    <br /><br />
+                    In the Cabinetmaking field, there are cabinetmaking installers, kitchen builders, kitchen installers, trimwork, construction builders, store fixture workers and many more.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+
+        <div class="panel-body"><h1 class="contentH1">
+    EMPLOYMENT LOCATIONS
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 Where do graduates of the Cabinetmaking work?
             </h2>
@@ -83,12 +118,10 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
-                COMMON JOB TASKS
-            </h1>
-        </div>
-        <div class="panel-body">
+
+        <div class="panel-body"><h1 class="contentH1">
+    COMMON JOB TASKS
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 What are common job tasks for individuals working in the Cabinetmaking field?
             </h2>
@@ -104,13 +137,11 @@
     </div>
 
     <div class="panel panel-default">
-        <div class="panel-heading">
-            <h1 class="contentH1">
 
-                CAREER SERVICES
-            </h1>
-        </div>
-        <div class="panel-body">
+        <div class="panel-body"><h1 class="contentH1">
+
+    CAREER SERVICES
+</h1><hr class="hrp" />
             <h2 class="contentH2">
                 How can the career services department help you get a job?
             </h2>
@@ -130,7 +161,7 @@
     <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
     <br />
     <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
-
+    <br class="visible-xs" />
 
 </div>
 

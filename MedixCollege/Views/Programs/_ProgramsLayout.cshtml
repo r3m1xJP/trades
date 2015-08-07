@@ -2,10 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{
-    ViewBag.Title = "Programs at North American Trade Schools";
-    ViewBag.PageDescription = "Learn more about the Programs available at North American Trade Schools.";
-}
+
 <br />
 <div class="container">
     <div class="heroWrapper">
@@ -22,15 +19,19 @@
         <ul class="leftMenu list-unstyled collapse" id="side-menu-programs">
             <li class="item item header">@Html.ActionLink("PROGRAMS", "AllPrograms", "Programs")</li>
             <li class="item side-menu-h2">@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("HVAC Technician", "HVACTechnician", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("Welding", "Welding", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("Solar Energy Technician", "SolarEnergyTechnician", "Programs")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Cabinetmaking", "Cabinetmaking", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("Home Renovation Technician", "HomeRenovationTechnician", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("Industrial & Commerical Maintenance", "IndustrialAndCommericalMaintenance", "Programs")</li>
-            <li class="item side-menu-h2">@Html.ActionLink("Motorcycle & Small Engine Repair", "MotorcycleAndSmallEngineRepair", "Programs")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Construction & Maintenance Electrician", "ConstructionAndMaintenanceElectrician", "Programs")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Electrical Technology", "ElectricalTechnology", "Programs")</li>
+
+            <li class="item side-menu-h2">@Html.ActionLink("Home Renovation Technician", "HomeRenovationTechnician", "Programs")</li>
+
+            <li class="item side-menu-h2">@Html.ActionLink("HVAC Technician", "HVACTechnician", "Programs")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("Industrial & Commerical Maintenance", "IndustrialAndCommericalMaintenance", "Programs")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("Motorcycle & Small Engine Repair", "MotorcycleAndSmallEngineRepair", "Programs")</li>
+
+            <li class="item side-menu-h2">@Html.ActionLink("Solar Energy Technician", "SolarEnergyTechnician", "Programs")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("Welding", "Welding", "Programs")</li>
+
 
             <li class="item btn btn-brand btn-block" id="askQuestion">Ask a Question</li>
             <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>

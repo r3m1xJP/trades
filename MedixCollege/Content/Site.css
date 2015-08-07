@@ -717,9 +717,28 @@ footer {
     padding: 0 !important;
 }
 
-.mid-padding {
-    padding-left: 5px;
+.botMARG {
+ margin-bottom:28px;
+
+}
+
+@media screen and (max-width: 480px) {
+.botMARG {
+ margin-bottom:15px;
+
+}
+}
+
+    .mid-padding {
+    padding-left: 0px;
     padding-right: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .mid-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 }
 
 .link-unstyled a {
@@ -1586,6 +1605,15 @@ blockquote p {
     line-height: 14px;
 }
 
+.contentH2video {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 3px 0px 3px 0px;
+    margin: 0px;
+}
+
 .contentH2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     color: #B20000;
@@ -1946,8 +1974,8 @@ font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
     }
 
 .hrp {
-    margin-top:8px;
-    margin-bottom: 8px;
+    margin-top:5px;
+    margin-bottom: 5px;
     height:1px;
 }
 .hrpw3 {
@@ -2082,3 +2110,4 @@ margin-bottom:9px;
 }
 
 .liSM {list-style-type: none;}
+
