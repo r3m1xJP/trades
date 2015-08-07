@@ -159,6 +159,11 @@
     <Content Include="Content\fonts\texgyreheros-regular-webfont.svg" />
     <Content Include="Content\images\150419-Hired-NATS-Brampton.jpg" />
     <Content Include="Content\images\150419-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150517-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150606-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150616-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150620-Hired-NATS-Brampton.jpg" />
+    <Content Include="Content\images\150620-Hired-NATS-London.jpg" />
     <Content Include="Content\images\admissions-home.jpg" />
     <Content Include="Content\images\banner-cabinetmaking.jpg" />
     <Content Include="Content\images\Banner-Certificates-Main.jpg" />
