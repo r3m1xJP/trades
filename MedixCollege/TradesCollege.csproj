@@ -424,7 +424,7 @@
     <Content Include="Views\DiscoverNATS\CareersAtNATS.cshtml" />
     <Content Include="Views\Home\ReferralProgram.cshtml" />
     <Content Include="Views\Home\_HomeLayout.cshtml" />
-    <Content Include="Views\Admissions\_MonthlyPaymentPlan.cshtml" />
+    <Content Include="Views\Admissions\MonthlyPaymentPlan.cshtml" />
     <Content Include="Views\CareerServices\HireAGrad.cshtml" />
     <Content Include="Views\DiscoverNATS\PresidentsMessage.cshtml" />
     <Content Include="Views\DiscoverNATS\Mission.cshtml" />

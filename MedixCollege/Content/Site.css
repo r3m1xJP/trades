@@ -370,7 +370,6 @@ footer {
 
 .whiteBG-GrayStroke {
     background-color: white;
-    border: solid 1px lightgray;
     margin-top: 3px;
     margin-bottom: 3px;
 }
@@ -1302,7 +1301,7 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     }
 
 .date {
-    color: #9b2929;
+    color: #555;
 }
 
 @font-face {
