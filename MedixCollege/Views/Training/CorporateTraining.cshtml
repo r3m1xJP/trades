@@ -2,13 +2,20 @@
     Layout = "~/Views/Training/_TrainingLayout.cshtml";
 }
 
-<div class="col-sm-12">
+@{
+    ViewBag.Title = "Corporate Training Programs";
+    ViewBag.PageDescription = "Learn more about corporate training programs and classes at North American Trade Schools.";
+}
+
+
+<div class="col-sm-12 no-padding botMARG">
     <h1 class="contentPageH1">Corporate Training</h1>
     <ol class="breadcrumb">
         <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
         <li class="contentp">@Html.ActionLink("All Training", "AllTraining", "Training")</li>
         <li class="active contentp">Corporate Training</li>
-    </ol>
+    </ol><img class="img-responsive" width="100%" src="~/Content/images/corporate-training.jpg" alt="two welders working together on a project" />
+
 </div>
 
 <div class="col-sm-8 mid-padding">

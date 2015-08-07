@@ -8,74 +8,62 @@
     ViewBag.HeaderTitle = "Career Services";
 }
 
-<div class="col-sm-12">
+<div class="col-sm-12 no-padding botMARG">
     <h1 class="contentPageH1">CAREER SERVICES</h1>
     <ol class="breadcrumb">
         <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
         <li class="active contentp">Career Services</li>
-    </ol>
+    </ol><img class="img-responsive" width="100%" src="~/Content/images/career-services-main.jpg" alt="job seeker in an interview with an employer" />
+
 </div>
 
 <div class="col-sm-8 mid-padding">
 
-    <table class="table table-bordered">
-        <tr>
-            <td width="100%" class="active">
-                <h1 class="contentH1">Career Services at North American Trade Schools</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="100%">
-                <p class="contentp">
-                    Employment counselling and job search training is provided for all students during their program by
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="contentH1">Career Services at North American Trade Schools</h1>
+<hr class="hrp" /><p class="contentp">
+    Employment counselling and job search training is provided for all students during their program by
 
-                    scheduled classroom lectures and ongoing individualized counselling. The School remains a permanent
+    scheduled classroom lectures and ongoing individualized counselling. The School remains a permanent
 
-                    source of employment search assistance for all graduates. The placement department prepares each
+    source of employment search assistance for all graduates. The placement department prepares each
 
-                    student to:
-                </p>
-                <ul class="contentp">
-                    <li>Create cover letter, resume and other effective portfolio material.</li>
+    student to:
+</p>
+<ul class="contentp">
+    <li>Create cover letter, resume and other effective portfolio material.</li>
 
-                    <li>Conduct an employment interview including proper follow-up activities.</li>
+    <li>Conduct an employment interview including proper follow-up activities.</li>
 
-                    <li>Analyze employment opportunities and market trends.</li>
+    <li>Analyze employment opportunities and market trends.</li>
 
-                    <li>Utilize resources for locating prospective employers.</li>
+    <li>Utilize resources for locating prospective employers.</li>
 
-                    <li>Analyze employment benefits and career advancement opportunities.</li>
-                </ul>
-                <br />
+    <li>Analyze employment benefits and career advancement opportunities.</li>
+</ul>
+<br />
 
-                <p class="contentp">
-                    North American Trade Schools Graduates have been hired in all industries of the residential, commercial and industrial sectors in all of our offered programs. Our graduates have been hired in companies all across Canada. Some of the employers of North American Trade Schools graduates include:
-                </p>
-            </td>
-        </tr>
-    </table>
+<p class="contentp">
+    North American Trade Schools Graduates have been hired in all industries of the residential, commercial and industrial sectors in all of our offered programs. Our graduates have been hired in companies all across Canada. Some of the employers of North American Trade Schools graduates include:
+</p>
+        </div>
+    </div>
 
-
-
-
-
-    <table class="table table-bordered">
-        <tr>
-            <td width="100%" class="active">
-                <h1 class="contentH1">Calling all Employers!</h1>
-            </td>
-        </tr>
-        <tr>
-            <td width="100%">
-
-                <p class="contentp">
-                    Are you are looking for a solution to help you meet the demands of your organization? Why not hire a North American Trade Schools graduate. To find out more about what openings our students are a great fit for contact the Employment Relations consultant at the School.
-                </p>
+    
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="contentH1">Calling all Employers!</h1>
+<hr class="hrp" /><p class="contentp">
+    Are you are looking for a solution to help you meet the demands of your organization? Why not hire a North American Trade Schools graduate. To find out more about what openings our students are a great fit for contact the Employment Relations consultant at the School.
+</p>
+        </div>
+    </div>
 
 
-            </td>
-        </tr>
-    </table>
+
+
+    
 
     <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
     <br />
