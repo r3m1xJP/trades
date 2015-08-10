@@ -141,6 +141,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="career-services-main.jpg" />
     <Content Include="Content\bigplay.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -164,16 +165,40 @@
     <Content Include="Content\fonts\socicon-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-bold-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-regular-webfont.svg" />
+    <Content Include="Content\images\150419-Hired-NATS-Brampton.jpg" />
+    <Content Include="Content\images\150419-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150517-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150606-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150616-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150620-Hired-NATS-Brampton.jpg" />
+    <Content Include="Content\images\150620-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\admissions-home.jpg" />
+    <Content Include="Content\images\banner-cabinetmaking.jpg" />
     <Content Include="Content\images\Banner-Certificates-Main.jpg" />
+    <Content Include="Content\images\banner-construction-maintenance.jpg" />
     <Content Include="Content\images\Banner-Discover-Medix-History.jpg" />
     <Content Include="Content\images\Banner-Discover-Medix-Index.jpg" />
+    <Content Include="Content\images\banner-electrical.jpg" />
+    <Content Include="Content\images\banner-engine-repair.jpg" />
+    <Content Include="Content\images\banner-homereno.jpg" />
+    <Content Include="Content\images\banner-hvac.jpg" />
+    <Content Include="Content\images\banner-maintenance.jpg" />
     <Content Include="Content\images\Banner-Programs-Medical-Office-Administrator.jpg" />
     <Content Include="Content\images\Banner-Programs-Pharmacy-Assistant.jpg" />
+    <Content Include="Content\images\banner-solar.jpg" />
+    <Content Include="Content\images\banner-welding.jpg" />
+    <Content Include="Content\images\banner_hvac.jpg" />
+    <Content Include="Content\images\banner_solar.jpg" />
     <Content Include="Content\images\button-next.png" />
     <Content Include="Content\images\button-previous.png" />
+    <Content Include="Content\images\campus-brampton.jpg" />
+    <Content Include="Content\images\campus-london.jpg" />
+    <Content Include="Content\images\career-services-main.jpg" />
     <Content Include="Content\images\CCGLogo.png" />
+    <Content Include="Content\images\corporate-training.jpg" />
     <Content Include="Content\images\facebook-ic.gif" />
     <Content Include="Content\images\facebook.gif" />
+    <Content Include="Content\images\finance-options.jpg" />
     <Content Include="Content\images\Fran-Women-Of-Excellence.jpg" />
     <Content Include="Content\images\googleplus-ic-jpg.jpg" />
     <Content Include="Content\images\googleplus.gif" />
@@ -222,6 +247,7 @@
     <Content Include="Content\images\pinterest-ic.gif" />
     <Content Include="Content\images\pinterest.gif" />
     <Content Include="Content\images\solar-program.jpg" />
+    <Content Include="Content\images\training-workshops.jpg" />
     <Content Include="Content\images\twitter-ic.gif" />
     <Content Include="Content\images\youtube-ic.gif" />
     <Content Include="Content\PagedList.css" />
@@ -431,7 +457,7 @@
     <Content Include="Views\DiscoverNATS\CareersAtNATS.cshtml" />
     <Content Include="Views\Home\ReferralProgram.cshtml" />
     <Content Include="Views\Home\_HomeLayout.cshtml" />
-    <Content Include="Views\Admissions\_MonthlyPaymentPlan.cshtml" />
+    <Content Include="Views\Admissions\MonthlyPaymentPlan.cshtml" />
     <Content Include="Views\CareerServices\HireAGrad.cshtml" />
     <Content Include="Views\DiscoverNATS\PresidentsMessage.cshtml" />
     <Content Include="Views\DiscoverNATS\Mission.cshtml" />

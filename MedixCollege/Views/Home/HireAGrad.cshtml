@@ -9,78 +9,102 @@
 
 
 
-    <div class="col-sm-8 mid-padding">
+<div class="col-sm-12">
 
-        <h1 class="contentPageH1">HIRE A TRADES COLLEGE GRADUATE</h1>
-        <ol class="breadcrumb">
-            <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-            <li class="active contentp">Hire A Grad</li>
-        </ol>
-
-        <p class="contentp">Please fill out the form below to contact us about hiring a student or posting a job opportunity.</p>
-
-        <p class="contentp">
-            All Medix students need to complete some volunteer work as a part of their
-
-            curriculum. The following is a list of hours by program:
-        </p>
-
-        <ul class="contentp">
-            <li>Pharmacy Assistant Student - 240 hrs</li>
-
-            <li>Community Service Worker Student- 500 hrs</li>
-
-            <li>Dental Assisting Student- 150 hrs</li>
-
-            <li>Medical Office Student - 240 hrs</li>
-
-            <li>Medical Lab Student- 240 hrs</li>
-
-            <li>Personal Support Worker Student- 200 clinical hrs / 155 community hrs
-        </ul>
-
+    <h1 class="contentPageH1">HIRE A NATS GRADUATE</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="active contentp">Hire A NATS Grad</li>
+    </ol>
 </div>
 
-    <div class="col-sm-4 pull-right no-padding">
-        <form id="hireAGradForm" name="hireAGradForm" method="post" action="/home/hireAGrad">
-            <input type="hidden" name="ORGID" value="240" />
-            <input type="hidden" name="MailListID" value="240011" />
-            <div class="input-group spacer-top">
-                <label class="pull-left">Contact First Name: <span class="text-danger">*</span></label>
-                <input type="text" class="form-control pull-right" name="FirstName">
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Contact Last Name: <span class="text-danger">*</span></label>
-                <input type="text" class="form-control pull-right" name="LastName">
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Organization Name: <span class="text-danger">*</span></label>
-                <input type="text" class="form-control pull-right" name="OrganizationName">
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Email Address: <span class="text-danger">*</span></label>
-                <input type="text" class="form-control pull-right" name="EmailAddress">
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Phone Number: <span class="text-danger"></span></label>
-                <input type="text" class="form-control pull-right" name="PhoneNumber">
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Purpose:</label>
-                <select name="custfield21" id="custfield21" class="form-control pull-right">
-                    <option value="0">Select</option>
-                    <option value="Hiring a student">Hiring a student</option>
-                    <option value="Posting a job">Posting a job</option>
-                    <option value="Other">Other</option>
-                </select>
-            </div>
-            <div class="input-group spacer-top">
-                <label class="pull-left">Is there anything you would like to tell us?</label>
-                <textarea class="form-control pull-right" name="Comment1"></textarea>
-            </div>
-            <div class="text-center">
-                <input id="hireAGradSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
-            </div>
-        </form>
+
+<div class="col-sm-8 mid-padding">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p class="contentp">Please fill out the form below to contact us about hiring a student or posting a job opportunity.</p>
+         
+            <p class="contentp">
+                If you are interested in hiring a graduate from one of our diploma programs, please contact the following placement coordinators below.
+                <hr class="hrp" />
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        SCOTT WILSON<br />
+                        LONDON CAMPUS<br />
+                        swilson@natradeschools.ca<br />
+                        (519) 963-0680
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+
+                        LYNN MORGAN<br />
+                        BRAMPTON CAMPUS<br />
+                        lmorgan@medixcollege.ca<br />
+                        (905) 487-1163
+                    </div>
+                </div>
+                
+                
+            </p>
+
+            
+
+        </div>
+    </div>
+</div>
+
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment"></span>&nbsp; HIRE A GRAD
+            </h1><hr class="hrpblue" />
+
+            <form id="hireAGradForm" name="hireAGradForm" method="post" action="/home/hireAGrad">
+                <input type="hidden" name="ORGID" value="240" />
+                <input type="hidden" name="MailListID" value="240011" />
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Contact First Name: <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control pull-right" name="FirstName">
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Contact Last Name: <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control pull-right" name="LastName">
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Organization Name: <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control pull-right" name="OrganizationName">
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Email Address: <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control pull-right" name="EmailAddress">
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Phone Number: <span class="text-danger"></span></label>
+                    <input type="text" class="form-control pull-right" name="PhoneNumber">
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Purpose:</label>
+                    <select name="custfield21" id="custfield21" class="form-control pull-right">
+                        <option value="0">Select</option>
+                        <option value="Hiring a student">Hiring a student</option>
+                        <option value="Posting a job">Posting a job</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group spacer-top">
+                    <label class="pull-left contentp">Is there anything you would like to tell us?</label>
+                    <textarea class="form-control pull-right" name="Comment1"></textarea>
+                </div>
+                <div class="text-center">
+                    <input id="hireAGradSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                </div>
+            </form>
         </div>
 
+    </div>
+</div>

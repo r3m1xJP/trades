@@ -48,10 +48,10 @@
 </div>
 
 
-
+<br />
 <div class="container-fluid containerlinkOptionsWrapper spacer-top">
     <div class="container">
-        <h1 class="contentH3-red1">
+        <h1 class="contentPageH1">
             LEARN MORE ABOUT NORTH AMERICAN TRADE SCHOOLS:
         </h1>
         <hr class="hrpblue2" />
@@ -86,7 +86,7 @@
 <div class="container-fluid containervideoItem">
     <div class="container">
         <div>
-            <h3 class="contentH1-mainW2">
+            <h3 class="contentH1-mainW2c">
                 WHAT SETS OUR EDUCATION APART: THE STUDENT EXPERIENCE
                 <hr class="hrpw3" />
             </h3>
@@ -97,13 +97,13 @@
             <div class="col-md-6 wrapper">
                 <div class="videoItem1">
                     <div>
-                        <h3 class="contentH3-white">
+                        <h2 class="contentH2-white">
                             STUDENT REVIEWS
                             <span class="pull-right">
                                 <i class="fa fa-caret-left videoScrollerNav prev"></i>
                                 <i class="fa fa-caret-right videoScrollerNav next"></i>
                             </span>
-                        </h3>
+                        </h2>
                     </div>
                     <div class="video clearfix">
                         <iframe class="videoIFrame active" src="https://www.youtube.com/embed/ejiRyycN0LQ?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
@@ -117,13 +117,13 @@
             <div class="col-md-6 wrapper">
                 <div class="videoItem2">
                     <div>
-                        <h3 class="contentH3-white">
+                        <h2 class="contentH2-white">
                             NATS VIDEOS
                             <span class="pull-right">
                                 <i class="fa fa-caret-left videoScrollerNav prev"></i>
                                 <i class="fa fa-caret-right videoScrollerNav next"></i>
                             </span>
-                        </h3>
+                        </h2>
                     </div>
                     <div class="video clearfix">
                         <iframe class="videoIFrame active" src="https://www.youtube.com/embed/1QVGJoGEdDQ?rel=0 " autoplay="false" frameborder="0" allowfullscreen></iframe>
@@ -141,7 +141,7 @@
 <div class="container">
     <div class="socialWrapper">
         <div class="col-md-4 facebook">
-            <h2 class="contentH2-white-graybg contentH3-red1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+            <h2 class="contentH2-white-graybg contentPageH1">FACEBOOK <a href="#" id="facebook" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
             <div class="mobile-content facebook hidden-xs">
                 <div class="fb-page" data-href="https://www.facebook.com/NATSLondon" data-small-header="true" data-width="500" data-height="400" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/NATSLondon"><a href="https://www.facebook.com/NATSLondon">North American Trade Schools</a></blockquote></div></div>
             </div>
@@ -158,7 +158,7 @@
 
         <div class="insidetwitter">
             <div class="col-md-4 twitter">
-                <h2 class="contentH2-white-graybg contentH3-red1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+                <h2 class="contentH2-white-graybg contentPageH1">NATS HIRES <a href="#" id="twitter" class="socialMobileLink"><span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
                 <div class="mobile-content twitter hidden-xs">
                     <a class="twitter-timeline" href="https://twitter.com/nats_hired" data-widget-id="606109159906529281">Tweets by nats_hired</a>
                     <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
@@ -167,16 +167,28 @@
         </div>
 
         <div class="col-md-4 newsUpdates">
-            <h2 class="contentH2-white-graybg contentH3-red1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
+            <h2 class="contentH2-white-graybg contentPageH1">NEWS UPDATES<a href="#" id="newsUpdates" class="socialMobileLink"> <span class="glyphicon glyphicon-fullscreen mobile-icon pull-right visible-xs"></span></a></h2>
             <div class="mobile-content newsUpdates hidden-xs">
                 <ul class="list-unstyled newsList">
                     @foreach (MedixCollege.Models.NewsArticleDTO article in ViewBag.NewsArticles)
                     {
                         <li class="newsListItem contentp whiteBG-GrayStroke" id="@article.Id">
-                            <div class="contentH3-blue"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f20 goldOuterGlow "></span> @article.Title</div>
-                            <div class="date">@article.Date.ToString("MMMM d, yyyy")</div>
+
+                            <table>
+                                <tr>
+                                    <td valign="top"><span class="glyphicon glyphicon-comment spacer-right mBlueColour f30"></span></td>
+                                    <td>
+                                        <div class="contentH3-blue newsTable">@article.Title</div>
+                                        <div class="date newsTable">@article.Date.ToString("MMMM d, yyyy")</div>
+                                    </td>
+                                </tr>
+                            </table><hr class="hrp" />
+
+
+
 
                         </li>
+
                     }
                 </ul>
             </div>
@@ -193,7 +205,7 @@
 <div class="container-fluid">
     <div class="container">
         <br />
-        <h1 class="contentH3-red1">
+        <h1 class="contentPageH1">
             OUR GRADUATES GET HIRED:
         </h1>
         <hr class="hrpblue2" />

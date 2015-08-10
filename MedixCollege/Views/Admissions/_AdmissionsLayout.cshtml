@@ -2,11 +2,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@{
-    ViewBag.Title = "Admissions at Medix College";
-    ViewBag.PageDescription = "Learn more about the Admissions process at Medix College. Learn about the four step process and financial aid options.";
 
-}
 <br />
 <div class="container">
     <div class="heroWrapper">
@@ -20,7 +16,7 @@
             <span class="icon-bar"></span>
         </button>
         <ul class="leftMenu list-unstyled collapse" id="side-menu-admissions">
-            <li class="item header">@Html.ActionLink("Admissions", "Index", "Admissions")</li>
+            <li class="item header">@Html.ActionLink("ADMISSIONS", "Index", "Admissions")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Admissions Home", "Index", "Admissions")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
             <li class="item side-menu-h2">@Html.ActionLink("OSAP", "OSAP", "Admissions")</li>
@@ -31,12 +27,13 @@
             <li class="item side-menu-h2">@Html.ActionLink("RESP", "RegisteredEducationSavingsPlans", "Admissions")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Employment Ontario", "EmploymentOntario", "Admissions")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Monthly Payment Plan", "MonthlyPaymentPlan", "Admissions")</li>
-            <br />
+     
             <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
             <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
         </ul>
-        <br />
+
     </div>
+
 
     <div class="col-sm-9 pull-right">
         <div class="contentBody">
@@ -44,68 +41,15 @@
                 @ViewBag.BodyHeaderText
             </div>
             <div class="row">
-                <div class="col-sm-8 mid-padding">
-                    @RenderBody()
-                </div>
-                <div class="col-sm-4">
-                    <div class="row formWrapper overquestionsForm">
-                        <br />
-                        <h1 class="contentH1 text-center">
-                            <span class="glyphicon glyphicon-comment blueGoldBorder"></span>&nbsp; Ask a Question
-                        </h1>
-                        <form id="programsQuestionsForm" name="programsQuestionsForm" method="post" class="questionsForm" action="/home/askquestionprogram">
-                            <input type="hidden" name="ORGID" value="240" />
-                            <input type="hidden" name="MailListID" value="240001" />
-                            <div class="input-group spacer-top">
-                                <label class="pull-left">First Name: <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control pull-right" name="FirstName">
-                            </div>
-                            <div class="input-group spacer-top">
-                                <label class="pull-left">Email: <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control pull-right" name="Email">
-                            </div>
-                            <div class="input-group spacer-top">
-                                <label class="pull-left">Location: <span class="text-danger">*</span></label>
-                                <select class="form-control pull-right" name="CampusID">
-                                    <option value="0">Select</option>
-                                    <option value="24004">Brampton-NATS</option>
-                                    <option value="24001">London-NATS</option>
-                                    <option value="240">Toronto</option>
-                                </select>
-                            </div>
-                            <div class="input-group spacer-top">
-                                <label class="pull-left">Program: <span class="text-danger">*</span></label>
-                                <select class="form-control pull-right" name="ProgramID">
-                                    <option class="0 24004 24001 240" value="0">Select</option>
-                                    <option class="0 24004 24001" value="39064">Cabinetmaking</option>
-                                    <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
-                                    <option class="0 24004 24001" value="39061">Electrical Technology</option>
-                                    <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
-                                    <option class="0 24004 24001" value="39062">HVAC Technician</option>
-                                    <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
-                                    <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
-                                    <option class="0 24004 24001" value="39063">Welding Technology</option>
-                                </select>
-                            </div>
-                            <div class="input-group spacer-top">
-                                <label class="pull-left">Comments: </label>
-                                <textarea class="form-control pull-right" name="Comment2"></textarea>
-                            </div>
-                            <div class="small-text spacer-top text-center grayColor">
-                                Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
-                            </div>
-                            <div class="text-center">
-                                <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
-                            </div>
-                        </form>
-                    </div>
-                    
-                </div>
+                @RenderBody()
             </div>
         </div>
     </div>
+
     <div class="clearfix"></div>
+    <br />
 </div>
+
 
 <script>
     $(document).ready(function () {

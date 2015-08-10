@@ -6,6 +6,7 @@
     <meta name="description" content="@ViewBag.PageDescription" />
 
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/0dadfbd7-4931-4174-ae59-acc837e29491.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto|Oswald' rel='stylesheet' type='text/css' />
 
     <title>@ViewBag.Title North American Trade Schools</title>
     @Styles.Render("~/Content/css")
@@ -53,7 +54,7 @@
                     <div class="header-1 ">
                     <span class="blueColor">
                         <span class="glyphicon glyphicon-earphone"></span></span> 
-                    <span class="blueColor numbersize">1(866) 962-7685</span>
+                    <span class="blueColor numbersize">1(866) 763-2159</span>
                     </div>
 
 
@@ -62,10 +63,10 @@
                     </div>
 
                     <div class="header-3 psocialMediaList ">
-                        <a href="https://www.facebook.com/MedixCollege?ref=hl"><span class="socicon mBlueColour f30">b</span></a>&nbsp;&nbsp;
-                        <a href="https://plus.google.com/+MedixcollegeCa/posts"><span class="socicon mBlueColour f30">c</span></a>&nbsp;&nbsp;
-                        <a href="https://www.youtube.com/user/medixcollegelondon"><span class="socicon mBlueColour f30">r</span></a>&nbsp;&nbsp;
-                        <a href="https://twitter.com/medix_college"><span class="socicon mBlueColour f30">a</span></a>
+                        <a href="https://www.facebook.com/NATSLondon"><span class="socicon mBlueColour f30">b</span></a>&nbsp;&nbsp;
+                        <a href="https://plus.google.com/+TradescollegeCaLondon/about"><span class="socicon mBlueColour f30">c</span></a>&nbsp;&nbsp;
+                        <a href="https://www.youtube.com/user/NATSLondon"><span class="socicon mBlueColour f30">r</span></a>&nbsp;&nbsp;
+                        <a href="https://twitter.com/london_nats"><span class="socicon mBlueColour f30">a</span></a>
                     </div>
 
                 </div>
@@ -107,7 +108,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PROGRAMS <span class="glyphicon glyphicon-triangle-bottom GLPsize goldColour"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
-                            <li>@Html.ActionLink("HVAC Technicians", "HVACTechnician", "Programs")</li>
+                            <li>@Html.ActionLink("HVAC Technician", "HVACTechnician", "Programs")</li>
                             <li>@Html.ActionLink("Welding", "Welding", "Programs")</li>
                             <li>@Html.ActionLink("Solar Energy Technician", "SolarEnergyTechnician", "Programs")</li>
                             <li>@Html.ActionLink("Cabinetmaking", "Cabinetmaking", "Programs")</li>
@@ -132,7 +133,7 @@
                             <li>@Html.ActionLink("Admissions Home", "Index", "Admissions")</li>
                             <li>@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
                             <li>@Html.ActionLink("OSAP", "OSAP", "Admissions")</li>
-                            <li>@Html.ActionLink("Second Career", "SecondCareer", "Admissions")</li>
+                            <li>@Html.ActionLink("Second Careers", "SecondCareers", "Admissions")</li>
                             <li>@Html.ActionLink("Out of Province Options", "OutOfProvinceStudents", "Admissions")</li>
                             <li>@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</li>
                             <li>@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</li>
@@ -191,7 +192,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PROGRAMS <span class="glyphicon glyphicon-triangle-bottom GLPsize goldColour"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li>@Html.ActionLink("All Programs", "AllPrograms", "Programs")</li>
-                                <li>@Html.ActionLink("HVAC Technicians", "HVACTechnician", "Programs")</li>
+                                <li>@Html.ActionLink("HVAC Technician", "HVACTechnician", "Programs")</li>
                                 <li>@Html.ActionLink("Welding", "Welding", "Programs")</li>
                                 <li>@Html.ActionLink("Solar Energy Technician", "SolarEnergyTechnician", "Programs")</li>
                                 <li>@Html.ActionLink("Cabinetmaking", "Cabinetmaking", "Programs")</li>
@@ -216,7 +217,7 @@
                                 <li>@Html.ActionLink("Admissions Home", "Index", "Admissions")</li>
                                 <li>@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
                                 <li>@Html.ActionLink("OSAP", "OSAP", "Admissions")</li>
-                                <li>@Html.ActionLink("Second Career", "SecondCareer", "Admissions")</li>
+                                <li>@Html.ActionLink("Second Careers", "SecondCareers", "Admissions")</li>
                                 <li>@Html.ActionLink("Out of Province Options", "OutOfProvinceStudents", "Admissions")</li>
                                 <li>@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</li>
                                 <li>@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</li>
@@ -265,23 +266,23 @@
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formfirstname">First Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlastname">Last Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formemail">Email: <span class="text-danger">*</span></label>
                             <input type="email" class="form-control pull-right" name="Email" for="formemail" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlocation">Location: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="CampusID" id="applyNowCampusList">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>
@@ -290,7 +291,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="ProgramID" id="applyNowProgramList">
                                 <option class="0 24004 24001 240" value="0">Select</option>
                                 <option class="0 24004 24001" value="39064">Cabinetmaking</option>
@@ -304,7 +305,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">How did you hear about us?: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaGroupID" id="applyNowMediaGroupList">
                                 <option value="0">Select</option>
                                 <option value="91063">HIGH SCHOOL</option>
@@ -322,7 +323,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Specify: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Specify: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaID" id="applyNowMediaList">
                                 <option class="0" value="0">Select</option>
                                 <option class="0 91063" value="14699">High School</option>
@@ -498,11 +499,11 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <label class="pull-left contentpw" for="formtexta">Comments: </label>
                             <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
                         </div>
                         <div class="small-text spacer-top text-center">
-                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                            <p class="contentp-white contentpw">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
                         </div>
                         <div class="text-center">
                             <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
@@ -519,23 +520,23 @@
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formfirstname">First Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlastname">Last Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formemail">Email: <span class="text-danger">*</span></label>
                             <input type="email" class="form-control pull-right" name="Email" for="formemail" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlocation">Location: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="CampusID" id="requestCatalogueCampusList">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>
@@ -544,7 +545,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="ProgramID" id="requestCatalogueProgramList">
                                 <option class="0 24004 24001 240" value="0">Select</option>
                                 <option class="0 24004 24001" value="39064">Cabinetmaking</option>
@@ -558,7 +559,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">How did you hear about us?: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaGroupID" id="applyNowMediaGroupList">
                                 <option value="0">Select</option>
                                 <option value="91063">HIGH SCHOOL</option>
@@ -576,7 +577,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Specify: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Specify: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaID" id="applyNowMediaList">
                                 <option class="0" value="0">Select</option>
                                 <option class="0 91063" value="14699">High School</option>
@@ -752,11 +753,11 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <label class="pull-left contentpw" for="formtexta">Comments: </label>
                             <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
                         </div>
                         <div class="small-text spacer-top text-center">
-                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                            <p class="contentp-white contentpw">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
                         </div>
                         <div class="text-center">
                             <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
@@ -773,15 +774,15 @@
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formfirstname">First Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formemail">Email: <span class="text-danger">*</span></label>
                             <input type="email" class="form-control pull-right" name="Email" for="formemail" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlocation">Location: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="CampusID" id="askQuestionCampusList">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>
@@ -790,7 +791,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="ProgramID" id="askQuestionProgramList">
                                 <option class="0 24004 24001 240" value="0">Select</option>
                                 <option class="0 24004 24001" value="39064">Cabinetmaking</option>
@@ -804,11 +805,11 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <label class="pull-left contentpw" for="formtexta">Comments: </label>
                             <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
                         </div>
                         <div class="small-text spacer-top text-center">
-                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                            <p class="contentp-white contentpw">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
                         </div>
                         <div class="text-center">
                             <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
@@ -825,23 +826,23 @@
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formfirstname">First Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formfirstname">First Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="FirstName" id="formfirstname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlastname">Last Name: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlastname">Last Name: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Lastname" id="formlastname" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formtelephone">Telephone: <span class="text-danger">*</span></label>
                             <input type="text" class="form-control pull-right" name="Telephone" for="formtelephone" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formemail">Email: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formemail">Email: <span class="text-danger">*</span></label>
                             <input type="email" class="form-control pull-right" name="Email" for="formemail" />
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formlocation">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw" for="formlocation">Location: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="CampusID" id="tourCampusCampusList">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>
@@ -850,7 +851,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Program: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="ProgramID" id="tourCampusProgramList">
                                 <option class="0 24004 24001 240" value="0">Select</option>
                                 <option class="0 24004 24001" value="39064">Cabinetmaking</option>
@@ -864,7 +865,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">How did you hear about us?: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">How did you hear about us?: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaGroupID" id="applyNowMediaGroupList">
                                 <option value="0">Select</option>
                                 <option value="91063">HIGH SCHOOL</option>
@@ -882,7 +883,7 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left">Specify: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentpw">Specify: <span class="text-danger">*</span></label>
                             <select class="form-control pull-right" name="MediaID" id="applyNowMediaList">
                                 <option class="0" value="0">Select</option>
                                 <option class="0 91063" value="14699">High School</option>
@@ -1058,11 +1059,11 @@
                             </select>
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left" for="formtexta">Comments: </label>
+                            <label class="pull-left contentpw" for="formtexta">Comments: </label>
                             <textarea class="form-control pull-right" name="Comment2" id="formtexta"></textarea>
                         </div>
                         <div class="small-text spacer-top text-center">
-                            <p class="contentp-white">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
+                            <p class="contentp-white contentpw">Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.</p>
                         </div>
                         <div class="text-center">
                             <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
@@ -1131,9 +1132,7 @@
                         <ul>
                             <li>@Html.ActionLink("Site Map", "SiteMap", "Home")</li>
                             <li>@Html.ActionLink("Privacy Policy", "PrivacyPolicy", "Home")</li>
-                            <li>@Html.ActionLink("Accessibility Policy", "AccessibilityPolicy", "Home")</li>
-                            <li>@Html.ActionLink("Careers at Medix", "CareersAtMedix", "DiscoverMedix")</li>
-                            <li>@Html.ActionLink("Hire a Medix Grad", "HireAMedixGrad", "Home")</li>
+                            <li>@Html.ActionLink("Careers at NATS", "CareersAtNATS", "DiscoverNATS")</li>
                             <li>@Html.ActionLink("Virtual Tours", "VirtualTours", "Home")</li>
                             <li><a href="javascript: void(0)" onclick="popup('http://careercollegegroup.canpromo.com/Products.htm?CD=553')">Online Store</a></li>
                             <li>@Html.ActionLink("Social Media", "SocialMedia", "Home")</li>

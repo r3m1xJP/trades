@@ -2,9 +2,180 @@
     Layout = "~/Views/Training/_TrainingLayout.cshtml";
 }
 
-<h1 class="contentPageH1">Corporate Training</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="contentp">@Html.ActionLink("All Training", "AllTraining", "Training")</li>
-    <li class="active contentp">Corporate Training</li>
-</ol>
+@{
+    ViewBag.Title = "Corporate Training Programs";
+    ViewBag.PageDescription = "Learn more about corporate training programs and classes at North American Trade Schools.";
+}
+
+
+<div class="col-sm-12 no-padding botMARG">
+    <h1 class="contentPageH1">Corporate Training</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="contentp">@Html.ActionLink("All Training", "AllTraining", "Training")</li>
+        <li class="active contentp">Corporate Training</li>
+    </ol><img class="img-responsive" width="100%" src="~/Content/images/corporate-training.jpg" alt="two welders working together on a project" />
+
+</div>
+
+<div class="col-sm-8 mid-padding">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p class="contentp">
+                North American Trade schools offers specialized training services for corporate clients seeking training for employees who want to upgrade their welding skills or become Canadian Welding Bureau qualified. Training programs can be customized for each company’s specific needs or goals. Programs can be tailored to each specific skill sets required.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h2 class="contentH2">  The training program(s) can be custom designed to help your employees:</h2>
+            <p class="contentp">
+                Obtain CWB qualification tickets<hr class="hrp" />
+                Become more proficient at their jobs<hr class="hrp" />
+                Gain confidence<hr class="hrp" />
+                Learn specific job functions<hr class="hrp" />
+                Understand Health & Safety practices   
+            </p>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Instructors at North American Trade Schools are highly qualified, certified and experience welders. They offer extensive experience in the welding field which will help enhance the learning experience.
+            <br /><br />
+            North American Trade Schools is has working relationships with the Canadian Welding Bureau (CWB) and the Technical Standards & Safety Authority (TSSA).
+            <br /><br />
+            <h2 class="contentH2">      North American Trade Schools offers programs in different welding types:
+</h2>
+            <p class="contentp">
+             Arc Welding (SMAW)<hr class="hrp" />
+                Flux-Cored Welding (FCAW)<hr class="hrp" />
+                Gas Metal Arc Welding (GMAW)<hr class="hrp" />
+           Tungsten Inert Gas Welding (TIG)
+            </p>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <h2 class="contentH2">
+                Programs will include instruction in:
+            </h2>
+            <p class="contentp">
+              Welding Processes<hr class="hrp" />
+             	Codes and Standards<hr class="hrp" />
+             	Non-destructive Testing (NDT)<hr class="hrp" />
+              Quality Control and Assurance<hr class="hrp" />
+                Robotics and Automation<hr class="hrp" />
+            Strength of Materials<hr class="hrp" />
+               Fracture, Fatigue and Failure Analysis<hr class="hrp" />
+              Blueprint Reading<hr class="hrp" />
+                Welding and Cutting<hr class="hrp" />
+               Welding Skills<hr class="hrp" />
+             Welding Theory
+            </p>
+        </div>
+    </div>
+
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <h2 class="contentH2">
+                Why invest in corporate training?
+            </h2>
+            <p class="contentp">
+                Improve work quality and productivity<br />
+                a.	The skills they're developing and can immediately be applied to their work. Employees that learn industrial specific techniques and skills increase their production and quality of work by applying their new found knowledge.
+                <hr class="hrp" />
+                •	Strengthen employee capacity to use new technology<br />
+                a.	Not all employees are guaranteed to have the necessary skills and technical knowledge that is required. By completing training programs, employers will know what types of skillsets their employees have. As new technologies and machines are introduced and upgraded, so should employee skills.
+                <hr class="hrp" />
+                •	Increase employee engagement and satisfaction<br />
+                a.	Most employees appreciate the opportunity to learn new skills and develop professionally. Providing development opportunities is another way to reward loyal employees and stimulate engagement and motivation.
+                <hr class="hrp" />
+                •	Reduce turnover and costs<br />
+                a.	Employees who get professional development are more likely to stay at current positions because they feel valued and part of a growing team. Retaining current employees reduces HR costs.
+                <hr class="hrp" /><br />
+                If you have any questions regarding our Corporate Training Programs, please contract Ryan Alary at ralary@natradeschools.ca, call 519 963-0680 or fill out the form below.
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
+
+
+
+</div>
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpblue" />
+            <div class="row formWrapper overquestionsForm">
+
+
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor contentp">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+

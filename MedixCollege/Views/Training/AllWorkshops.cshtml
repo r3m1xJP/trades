@@ -2,25 +2,100 @@
     Layout = "~/Views/Training/_TrainingLayout.cshtml";
 }
 
-<h1 class="contentPageH1">All Workshops</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="active contentp">All Workshops</li>
-</ol>
+@{
+    ViewBag.Title = "Workshop and other training programs";
+    ViewBag.PageDescription = "Learn more about Workshop training options and certificate training at North American Trade Schools.";
+}
 
-<p class="contentp">
-    With part-time programs offered, plus a range of online courses, it's now easier than ever to develop
+<div class="col-sm-12 no-padding botMARG">
+    <h1 class="contentPageH1">All Workshops</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="active contentp">All Workshops</li>
+    </ol>
+    <img class="img-responsive" width="100%" src="~/Content/images/training-workshops.jpg" alt="hvac units in a lab setting" />
 
-    new skills and interests without disrupting your home, work or family commitments.
+</div>
 
-<br /><br />
+<div class="col-sm-8 mid-padding">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p class="contentp">
 
-    If you've ever wanted to develop additional skills and interests, but never had the time, Medix College's
+                North American Trade Schools will begin to offer specialized programs in different areas of the skilled trades geared towards certification.
+                <br /><br />
+                Training programs will include in the future will include Gas Technician 2 and Gas Technician 3.
 
-    part-time programs are for you! Look through our Part-Time Programs for affordable courses that will fit
+            </p>
+        </div>
+    </div>
 
-    right into your busy lifestyle, enhance your career and help you live life to the fullest.
-</p>
 
 
-<br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
+
+
+</div>
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpblue" />
+            <div class="row formWrapper overquestionsForm">
+
+
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor contentp">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,72 +1,120 @@
 ﻿@{
     Layout = "~/Views/Admissions/_AdmissionsLayout.cshtml";
 }
+<div class="col-sm-12 no-padding botMARG">
+    <h1 class="contentPageH1">FINANCIAL OPTIONS</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="contentp">@Html.ActionLink("Admissions", "Index", "Admissions")</li>
+        <li class="contentp">@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
+        <li class="active contentp">Financing Options</li>
+    </ol>
+    <img class="img-responsive" width="100%" src="~/Content/images/finance-options.jpg" alt="employees working on accounting stuff" />
 
-<h1 class="contentPageH1">FINANCIAL OPTIONS</h1>
-<ol class="breadcrumb">
-    <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
-    <li class="contentp">@Html.ActionLink("Admissions", "Index", "Admissions")</li>
-    <li class="contentp">@Html.ActionLink("Financial Options", "FinancialOptions", "Admissions")</li>
-    <li class="active contentp">Financing Options</li>
-</ol>
+</div>
 
-<p class="contentp">
-    A post­secondary education is a big investment. Fortunately, we at Medix have a dedicated
+<div class="col-sm-8 mid-padding">
 
-    team to assist students with financing their education. There are many payment options
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <p class="contentp">
+                A post­secondary education is a big investment. Fortunately, we at North American Trade Schools have a dedicated
 
-    available to Medix students. A brief description of some financing options available is outlined
+                team to assist students with financing their education. There are many payment options
 
-    below.
-</p>
-<br />
-<table class="table table-bordered">
-    <tr>
-        <td width="100%" class="active">
-            <h1 class="contentH1">FINANCIAL OPTIONS INCLUDE:</h1>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Ontario Student Assistance Program (OSAP)", "OSAP", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Second Careers", "SecondCareers", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Out of Province", "OutOfProvinceStudents", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("RESP", "RegisteredEducationSavingsPlans", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Employment Ontario", "EmploymentOntario", "Admissions")</p>
-        </td>
-    </tr>
-    <tr>
-        <td width="100%">
-            <p class="contentH3-blue"><span class="glyphicon glyphicon-share-alt glpgray"></span>&nbsp;@Html.ActionLink("Monthly Payment Plan", "Index", "Admissions")</p>
-        </td>
-    </tr>
+                available to North American Trade Schools students. A brief description of some financing options available is outlined
+
+                below.
+            </p>
+        </div>
+    </div>
 
 
-</table>
-<br />
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h1 class="contentH1">FINANCIAL OPTIONS INCLUDE:</h1><hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Ontario Student Assistance Program (OSAP)", "OSAP", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Second Careers", "SecondCareers", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Out of Province", "OutOfProvinceStudents", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Student Lines of Credit", "StudentLinesOfCredit", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Lifelong Learning Plan", "LifelongLearningPlan", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("RESP", "RegisteredEducationSavingsPlans", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Employment Ontario", "EmploymentOntario", "Admissions")</p>
+            <hr class="hrp" />
+            <p class="contentp">@Html.ActionLink("Monthly Payment Plan", "Index", "Admissions")</p>
+
+        </div>
+    </div>
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</button>
+    <br />
+</div>
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default">
+
+        <div class="panel-body">
+            <h1 class="contentH1 text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpblue" />
+            <div class="row formWrapper overquestionsForm">
+
+
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentp">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center grayColor contentp">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

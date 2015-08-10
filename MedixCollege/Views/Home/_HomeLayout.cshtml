@@ -5,7 +5,7 @@
 @{
     ViewBag.Title = "Home";
 }
-
+<br />
 <div class="container">
     <div class="heroWrapper">
         @ViewBag.HeroText
@@ -18,14 +18,19 @@
             <span class="icon-bar"></span>
         </button>
         <ul class="leftMenu list-unstyled collapse" id="side-menu-home">
-            <li class="item contentH1-white">@Html.ActionLink("Medix Home", "Index", "Home")</li>
+            <li class="item header">@Html.ActionLink("NATS HOME", "Index", "Home")</li>
+            <li class="item side-menu-h2">@Html.ActionLink("Home", "Index", "Home")</li>
             <li class="item side-menu-h2">@Html.ActionLink("News Directory", "NewsDirectory", "Home")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Course Start Dates", "CourseStartDates", "Home")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Referral Program", "ReferralProgram", "Home")</li>
             <li class="item side-menu-h2">@Html.ActionLink("Hire a Grad", "HireAGrad", "Home")</li>
+           
+            <li class="item btn btn-brand btn-block spacer-top" id="askQuestion">Ask a Question</li>
+            <li class="item btn btn-brand btn-block" id="requestCatalogue">Request Catalogue</li>
         </ul>
         <br />
     </div>
+
     <div class="col-sm-9 pull-right">
         <div class="contentBody">
             <div class="row bodyHeaderWrapper">
@@ -38,3 +43,26 @@
     </div>
     <div class="clearfix"></div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#applyOnline').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#applyNowWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+
+        $('#requestCatalogue').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#requestCatalogueWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+
+        $('#askQuestion').click(function () {
+            $('.popup-form-wrapper').hide();
+            $('#askQuestionWrapper').show();
+            $('.form-overlay').slideDown()
+        });
+    });
+</script>
