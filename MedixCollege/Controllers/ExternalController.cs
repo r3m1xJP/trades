@@ -336,7 +336,7 @@ namespace MedixCollege.Controllers
                             message.IsBodyHtml = false;
 
                             mailClient.EnableSsl = true;
-                            //mailClient.Send(message);
+                            mailClient.Send(message);
                         }
                     }
                     catch (Exception ex)

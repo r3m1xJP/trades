@@ -1,11 +1,104 @@
-﻿@model List<TradesCollege.Models.LeadsDTO>
+﻿@model PagedList.IPagedList<TradesCollege.Models.LeadsDTO>
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Leads";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
-<div class="container">
-    <table class="table table-bordered">
+<style>
+    .blockOverlay {
+        background-color: white;
+        z-index: 9999999999;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+</style>
+<div id="leadsWrapper" class="container blockOverlay">
+    <div class="row">
+        <form>
+            <input type="hidden" value="@ViewBag.PageValid" id="pageValid" name="pageValid" />
+            <div class="col-sm-2">
+                <label class="form-control">Date Filter:</label>
+                <select name="dateTimeFilter" class="form-control" onchange="this.form.submit();">
+                    <option selected="@(@ViewBag.DateTimeFilterText == "All")" value="All">All</option>
+                    <option selected="@(@ViewBag.DateTimeFilterText == "Today")" value="Today">Today</option>
+                    <option selected="@(@ViewBag.DateTimeFilterText == "Yesterday")" value="Yesterday">Yesterday</option>
+                    <option selected="@(@ViewBag.DateTimeFilterText == "LastWeek")" value="LastWeek">Last Week</option>
+                    <option selected="@(@ViewBag.DateTimeFilterText == "LastMonth")" value="LastMonth">Last Month</option>
+                    <option selected="@(@ViewBag.DateTimeFilterText == "LastYear")" value="LastYear">Last Year</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="form-control">Campus Filter:</label>
+                <select name="campusFilter" class="form-control" onchange="this.form.submit();">
+                    <option selected="@(@ViewBag.CampusFilterText == "All")" value="All">All</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "Brampton")" value="Brampton">Brampton</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "Brantford")" value="Brantford">Brantford</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "Kitchener")" value="Kitchener">Kitchener</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "London")" value="London">London</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "Scarborough")" value="Scarborough">Scarborough</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "Toronto")" value="Toronto">Toronto</option>
+                    <option selected="@(@ViewBag.CampusFilterText == "MedixOnline")" value="MedixOnline">Medix Online</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="form-control">Program Filter:</label>
+                <select name="programFilter" class="form-control" onchange="this.form.submit();">
+                    <option selected="@(@ViewBag.ProgramFilter == "All")" value="All">All</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "38882")" value="38882">Anatomy &amp; Physiology</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "39877")" value="39877">Child and Youth Care with Addictions Support Worker</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "632")" value="632">Community Service Worker</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "39478")" value="39478">CPR &amp; First Aid</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "818")" value="818">Dental Level 2</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "38883")" value="38883">Dental Office Procedures (abel dent)</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "634")" value="634">Developmental Service Worker</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "38526")" value="38526">Early Childhood Assistant</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "642")" value="642">ECG</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "37255")" value="37255">Fitness &amp; Health Promotion</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "39162")" value="39162">Intramuscular Injection</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "627")" value="627">Intra-Oral Dental Assistant </option>
+                    <option selected="@(@ViewBag.ProgramFilter == "629")" value="629">Massage Therapy</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "633")" value="633">Medical Laboratory Assistant / Technician</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "630")" value="630">Medical Office Administrator</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "1170")" value="1170">Medical Terminology</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "38887")" value="38887">Medical Transcription</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "39415")" value="39415">Mental Health &amp; Addictions</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "1169")" value="1169">OHIP Billing</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "631")" value="631">Personal Support Worker</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "628")" value="628">Pharmacy Assistant</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "636")" value="636">Phlebotomy</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "1167")" value="1167">Principles of Nutrition</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "643")" value="643">PSW Upgrading</option>
+                    <option selected="@(@ViewBag.ProgramFilter == "1171")" value="1171">Thought Patterns</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+                <label class="form-control">Media Source Filter:</label>
+                <select name="mediaSourceFilter" class="form-control" onchange="this.form.submit();">
+                    <option selected="@(@ViewBag.MediaSourceFilter == "All")" value="All">All</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "91063")" value="91063">HIGH SCHOOL</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90080")" value="90080">INTERNET</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90081")" value="90081">NEWSPAPER</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "91092")" value="91092">OUTREACH</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90213")" value="90213">RADIO</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90083")" value="90083">REFERRAL</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "91044")" value="91044">SIGNS</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "91241")" value="91241">SUBWAY</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90082")" value="90082">TELEVISION</option>
+                    <option selected="@(@ViewBag.MediaSourceFilter == "90825")" value="90825">TRADE SHOWS</option>
+                </select>
+            </div>
+            <div class="col-sm-1">
+                <input type="hidden" name="clearFilter" id="clearFilter" value="false" />
+                <button class="btn btn-brand" id="clearFilterButton">Clear Filter</button>
+            </div>
+        </form>
+    </div>
+    <table class="table table-bordered spacer-top">
         <tr>
             <th>Date</th>
             <th>First Name</th>
@@ -27,9 +120,52 @@
                 <td>@lead.Email</td>
                 <td>@lead.Location</td>
                 <td>@lead.Program</td>
-        <td>@lead.HearAbout</td>
-        <td>@lead.Comments</td>
-    </tr>
+                <td>@lead.HearAbout</td>
+                <td>@lead.Comments</td>
+            </tr>
         }
     </table>
+    <div class="center-block text-center">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+                                new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter, pageValid = true }))
+    </div>
 </div>
+<script>
+    $(function () {
+        function CheckLogin() {
+            var username = prompt("Username:");
+            var password = prompt("Password:");
+
+            if (username && password) {
+                $.ajax({
+                    dataType: "json",
+                    url: "/Leads/CheckLogin",
+                    data: { username: username, password: password },
+                    success: function (data) {
+                        if (data.valid === true) {
+                            $('#pageValid').val("true");
+                            $('#leadsWrapper').removeClass("blockOverlay");
+                        } else {
+                            window.location.href = "/home";
+                        }
+                    },
+                    error: function () {
+                        window.location.href = "/home";
+                    }
+                });
+            }
+        }
+
+        if ($('#pageValid').val() === "false") {
+            CheckLogin();
+        } else {
+            $('#leadsWrapper').removeClass("blockOverlay");
+        }
+
+        $('#clearFilterButton').click(function () {
+            $('#clearFilter').val(true);
+        });
+    });
+</script>

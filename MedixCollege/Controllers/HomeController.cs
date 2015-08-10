@@ -8,6 +8,7 @@ using System.Net.Mail;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using TradesCollege.Models;
 
 namespace MedixCollege.Controllers
 {
@@ -349,6 +350,23 @@ namespace MedixCollege.Controllers
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
 
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
+
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
                             fc["MediaGroupID"] = mediaGroup ?? fc["MedaGroupID"];
@@ -443,6 +461,23 @@ namespace MedixCollege.Controllers
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
+
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
 
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
@@ -539,6 +574,23 @@ namespace MedixCollege.Controllers
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
 
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
+
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
                             fc["MediaGroupID"] = mediaGroup ?? fc["MediaGroupID"];
@@ -633,6 +685,23 @@ namespace MedixCollege.Controllers
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
+
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
 
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
@@ -729,6 +798,23 @@ namespace MedixCollege.Controllers
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
 
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
+
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
                             fc["MediaGroupID"] = mediaGroup ?? fc["MediaGroupID"];
@@ -823,6 +909,23 @@ namespace MedixCollege.Controllers
                             var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
                             var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                             var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
+
+                            var lead = new LeadsDTO
+                            {
+                                Date = DateTime.Now,
+                                FirstName = fc["FirstName"],
+                                LastName = fc["LastName"],
+                                Email = fc["Email"],
+                                Telephone = fc["Telephone"] != null ? Convert.ToInt64(fc["Telephone"]) : 0,
+                                Location = campus,
+                                Program = program,
+                                HearAbout = mediaGroup + " - " + mediaSource,
+                                Comments = fc["Comment2"]
+                            };
+
+                            var leads = new Leads();
+
+                            leads.Insert(lead);
 
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
