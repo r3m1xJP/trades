@@ -137,7 +137,7 @@ namespace MedixCollege.Controllers
 
         public JsonResult CheckLogin(string username, string password)
         {
-            if (username == "ralary15" && password == "bluejays1")
+            if (username == "ralary" && password == "packers")
             {
                 return Json(new { valid = true }, JsonRequestBehavior.AllowGet);
             }
