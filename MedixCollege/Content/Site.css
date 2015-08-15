@@ -376,7 +376,7 @@ footer {
 
 .whiteBG-GrayStrokeNews {
     background-color: white;
-    border: solid 1px lightgray;
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -1623,6 +1623,24 @@ blockquote p {
     margin: 0px;
 }
 
+.course {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+
+.courseG {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: #555;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+}
+
     .contentH2 a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #B20000;
@@ -1755,6 +1773,19 @@ blockquote p {
     color: white;
         font-weight: 400;
 }
+
+.contentpw a{
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+        font-weight: 400;
+}
+
+.contentpw a:hover{
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: white;
+        font-weight: 400;
+}
+
 
 .contentpheight {
         font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;

@@ -142,6 +142,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="career-services-main.jpg" />
+    <Content Include="Content\150808-Hired-NATS-Brampton.jpg" />
+    <Content Include="Content\150815-Hired-NATS-London.jpg" />
     <Content Include="Content\bigplay.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
