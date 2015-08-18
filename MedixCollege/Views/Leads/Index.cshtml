@@ -19,6 +19,18 @@
 </style>
 <div id="leadsWrapper" class="container blockOverlay">
     <div class="row">
+        <div>
+            @if (ViewBag.LeadsType == "Newcastle")
+            {
+                <img class="center-block" src="@Url.Content("/Content/images/NewcastleLogo.JPG")" />
+            }
+            else
+            {
+                <img class="center-block" src="@Url.Content("/Content/images/BaltimoreLogo.jpg")" />
+            }
+        </div>
+    </div>
+    <div class="row spacer-top">
         <form>
             <input type="hidden" value="@ViewBag.PageValid" id="pageValid" name="pageValid" />
             <div class="col-sm-2">

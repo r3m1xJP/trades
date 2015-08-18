@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedixCollege.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -283,7 +284,18 @@ namespace MedixCollege.Controllers
                         Comments = fc["Comment2"]
                     };
 
-                    var leads = new Leads();
+                    LeadsType leadsType = LeadsType.Leads;
+
+                    if (campus == "Baltimore")
+                    {
+                        leadsType = LeadsType.LeadsBaltimore;
+                    }
+                    else
+                    {
+                        leadsType = LeadsType.LeadsNewCastle;
+                    }
+
+                    var leads = new Leads(leadsType);
 
                     leads.Insert(lead);
 
@@ -336,7 +348,7 @@ namespace MedixCollege.Controllers
                             message.IsBodyHtml = false;
 
                             mailClient.EnableSsl = true;
-                            mailClient.Send(message);
+                            //mailClient.Send(message);
                         }
                     }
                     catch (Exception ex)

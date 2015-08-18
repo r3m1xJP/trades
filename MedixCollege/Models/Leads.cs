@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MedixCollege.Helpers;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -13,10 +14,11 @@ namespace TradesCollege.Models
         public LeadsDTO LeadsDTO { get; set; }
         private bool _connectionOpen;
         private MySqlConnection _connection;
+        private LeadsType _currentLeadsType;
 
-        public Leads()
+        public Leads(LeadsType type = LeadsType.Leads)
         {
-
+            _currentLeadsType = type;
         }
 
         public IList<LeadsDTO> Get(int count = 10)
@@ -28,7 +30,7 @@ namespace TradesCollege.Models
             {
                 var cmd = new MySqlCommand();
                 cmd.Connection = _connection;
-                cmd.CommandText = string.Format("SELECT * FROM Leads ORDER BY Id DESC LIMIT {0}", count);
+                cmd.CommandText = string.Format("SELECT * FROM {1} ORDER BY Id DESC LIMIT {0}", count, _currentLeadsType);
 
                 var reader = cmd.ExecuteReader();
 
@@ -117,10 +119,10 @@ namespace TradesCollege.Models
             {
                 var cmd = new MySqlCommand();
                 cmd.Connection = _connection;
-                cmd.CommandText = string.Format("INSERT INTO Leads VALUES (" +
+                cmd.CommandText = string.Format("INSERT INTO {10} VALUES (" +
                 "{0},'{1}','{2}','{3}',{4},'{5}','{6}','{7}','{8}','{9}')", 
                 0, lead.Date.ToString("yyyy-MM-dd HH:mm:ss"), lead.FirstName, lead.LastName, lead.Telephone, lead.Email, 
-                lead.Location, lead.Program, lead.HearAbout, lead.Comments);
+                lead.Location, lead.Program, lead.HearAbout, lead.Comments, _currentLeadsType);
 
                 cmd.ExecuteNonQuery();
 
