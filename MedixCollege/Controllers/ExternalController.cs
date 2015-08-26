@@ -258,6 +258,8 @@ namespace MedixCollege.Controllers
         {
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
+            LeadsType leadsType = LeadsType.Leads;
+
             using (var client = new HttpClient())
             {
                 var response = await client.PostAsync("http://www1.campuslogin.com/Contacts/Web/ImportContactData.aspx", formData);
@@ -283,8 +285,6 @@ namespace MedixCollege.Controllers
                         HearAbout = mediaSource,
                         Comments = fc["Comment2"]
                     };
-
-                    LeadsType leadsType = LeadsType.Leads;
 
                     if (campus == "Baltimore")
                     {
@@ -318,6 +318,15 @@ namespace MedixCollege.Controllers
                             //}
 
                             message.Bcc.Add(new MailAddress("toppyv@careercollegegroup.com"));
+
+                            if (leadsType == LeadsType.LeadsBaltimore)
+                            {
+                                message.Bcc.Add(new MailAddress("mdaly@natradeschools.edu"));
+                            }
+                            else if (leadsType == LeadsType.LeadsNewCastle)
+                            {
+                                message.Bcc.Add(new MailAddress("jblazak@ncstrades.edu"));
+                            }
 
                             message.Subject = "New Lead - External";
 
@@ -366,7 +375,23 @@ namespace MedixCollege.Controllers
                 }
             }
 
-            return View("ThankYou");
+            //if (leadsType == LeadsType.LeadsBaltimore)
+            //{
+            //    return Redirect("http://www.natradeschools.edu/thanks");
+            //}
+            //else if (leadsType == LeadsType.LeadsNewCastle)
+            //{
+            //    return Redirect("http://www.ncstrades.edu/thanks");
+            //}
+
+            return RedirectToAction("ThankYou");
+        }
+
+        public async Task<ActionResult> ThankYou()
+        {
+            ViewBag.Success = true;
+
+            return View();
         }
     }
 }

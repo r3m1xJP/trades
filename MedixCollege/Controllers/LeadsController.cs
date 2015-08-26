@@ -309,7 +309,7 @@ namespace MedixCollege.Controllers
                 valid = true;
             }
 
-            if (username == "newcastle15" && password == "ravens1")
+            if (username == "baltimore15" && password == "ravens1")
             {
                 valid = true;
             }
