@@ -14,6 +14,24 @@ namespace MedixCollege
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "ThankYou",
+                url: "ThankYou",
+                defaults: new { controller = "External", action = "ThankYou" }
+            );
+
+            routes.MapRoute(
+                name: "BaltimoreThankYou",
+                url: "Baltimore/ThankYou",
+                defaults: new { controller = "Home", action = "BaltimoreThankYou" }
+            );
+
+            routes.MapRoute(
+                name: "NewcastleThankYou",
+                url: "Newcastle/ThankYou",
+                defaults: new { controller = "Home", action = "NewcastleThankYou" }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }

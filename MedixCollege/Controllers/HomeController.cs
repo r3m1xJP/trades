@@ -227,6 +227,16 @@ namespace MedixCollege.Controllers
             return View();
         }
 
+        public ActionResult BaltimoreThankYou()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleThankYou()
+        {
+            return View();
+        }
+
         public ActionResult Search()
         {
             return View();

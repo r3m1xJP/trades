@@ -254,7 +254,7 @@ namespace MedixCollege.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> ExternalPost(FormCollection fc)
+        public ActionResult ExternalPost(FormCollection fc)
         {
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
@@ -262,7 +262,7 @@ namespace MedixCollege.Controllers
 
             using (var client = new HttpClient())
             {
-                var response = await client.PostAsync("http://www1.campuslogin.com/Contacts/Web/ImportContactData.aspx", formData);
+                var response = client.PostAsync("http://www1.campuslogin.com/Contacts/Web/ImportContactData.aspx", formData).Result;
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -375,19 +375,10 @@ namespace MedixCollege.Controllers
                 }
             }
 
-            //if (leadsType == LeadsType.LeadsBaltimore)
-            //{
-            //    return Redirect("http://www.natradeschools.edu/thanks");
-            //}
-            //else if (leadsType == LeadsType.LeadsNewCastle)
-            //{
-            //    return Redirect("http://www.ncstrades.edu/thanks");
-            //}
-
-            return RedirectToAction("ThankYou");
+            return RedirectToRoute("ThankYou");
         }
 
-        public async Task<ActionResult> ThankYou()
+        public ActionResult ThankYou()
         {
             ViewBag.Success = true;
 

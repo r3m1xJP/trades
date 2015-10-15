@@ -136,6 +136,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AjaxAwareRedirectResult.cs" />
     <Compile Include="Helpers\LeadsType.cs" />
     <Compile Include="Models\Leads.cs" />
     <Compile Include="Models\NewsArticle.cs" />
@@ -479,6 +480,8 @@
     <Content Include="Views\External\ReferAFriend.cshtml" />
     <Content Include="Views\External\RequestInformation.cshtml" />
     <Content Include="Views\External\ThankYou.cshtml" />
+    <Content Include="Views\Home\NewcastleThankYou.cshtml" />
+    <Content Include="Views\Home\BaltimoreThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
