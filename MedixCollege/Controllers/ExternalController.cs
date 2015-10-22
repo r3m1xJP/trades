@@ -218,6 +218,11 @@ namespace MedixCollege.Controllers
             mediaSources.Add(14708, "webmechanix");
         }
 
+        public ActionResult BaltimoreContactUsTest()
+        {
+            return View();
+        }
+
         public ActionResult ContactUs()
         {
             return View();
@@ -308,7 +313,7 @@ namespace MedixCollege.Controllers
 
                             var message = new MailMessage();
 
-                            message.From = new MailAddress("ccgactiveleads@gmail.com", "MedixCollege.net");
+                            message.From = new MailAddress("ccgactiveleads@gmail.com", "NorthAmericanTradeSchools");
 
                             message.To.Add(new MailAddress("activeleads@medixcollege.ca"));
 

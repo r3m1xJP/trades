@@ -482,6 +482,7 @@
     <Content Include="Views\External\ThankYou.cshtml" />
     <Content Include="Views\Home\NewcastleThankYou.cshtml" />
     <Content Include="Views\Home\BaltimoreThankYou.cshtml" />
+    <Content Include="Views\External\BaltimoreContactUsTest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
