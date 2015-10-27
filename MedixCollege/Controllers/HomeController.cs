@@ -316,6 +316,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> ApplyNow(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())

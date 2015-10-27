@@ -261,6 +261,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public ActionResult ExternalPost(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return RedirectToRoute("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             LeadsType leadsType = LeadsType.Leads;
