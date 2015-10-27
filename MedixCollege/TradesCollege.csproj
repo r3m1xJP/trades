@@ -169,6 +169,12 @@
     <Content Include="Content\fonts\socicon-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-bold-webfont.svg" />
     <Content Include="Content\fonts\texgyreheros-regular-webfont.svg" />
+    <Content Include="Content\images\150117-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150208-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150222-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150314-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150328-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\150404-Hired-NATS-London.jpg" />
     <Content Include="Content\images\150419-Hired-NATS-Brampton.jpg" />
     <Content Include="Content\images\150419-Hired-NATS-London.jpg" />
     <Content Include="Content\images\150517-Hired-NATS-London.jpg" />
@@ -176,6 +182,10 @@
     <Content Include="Content\images\150616-Hired-NATS-London.jpg" />
     <Content Include="Content\images\150620-Hired-NATS-Brampton.jpg" />
     <Content Include="Content\images\150620-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\151003-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\151010-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\151017-Hired-NATS-London.jpg" />
+    <Content Include="Content\images\151024-Hired-NATS-London.jpg" />
     <Content Include="Content\images\admissions-home.jpg" />
     <Content Include="Content\images\BaltimoreLogo.jpg" />
     <Content Include="Content\images\banner-cabinetmaking.jpg" />
