@@ -2,7 +2,7 @@
     ViewBag.Title = "";
 }
 
-<div class="hidden-xs hidden-sm">
+<div class="hidden-xs">
     <ul class="rslides">
         <li>
             <img src="~/Content/images/heroBanner/main-program.jpg" />
@@ -41,6 +41,13 @@
     </ul>
 </div>
 
+<br class="visible-xs" />
+
+<div class="videoWrapperProgram visible-xs visible-sm">
+    <iframe width="560"
+            height="315" src="https://www.youtube.com/embed/l9dR97qTGlE" frameborder="0"
+            allowfullscreen></iframe>
+</div>
 
 
 
@@ -58,19 +65,19 @@
                 <i class="fa fa-search goldColour"></i>
                 <label class="contentH3-white">FIND PROGRAMS</label>
             </div>
-            <div class="linkOptions linkOptionsRC home col-md-3" id="requestCatalogue">
+            <div class="linkOptions linkOptionsRC home col-md-3 hidden-xs" id="requestCatalogue">
                 <i class="fa fa-book blueColour"></i>
                 <label class="contentH3-red">REQUEST CATALOGUE</label>
             </div>
-            <div class="linkOptions linkOptionsAQ home col-md-3" id="askQuestion">
+            <div class="linkOptions linkOptionsAQ home col-md-3 hidden-xs" id="askQuestion">
                 <i class="fa fa-comment blueColour"></i>
                 <label class="contentH3-red">ASK A QUESTION</label>
             </div>
-            <div class="linkOptions linkOptionsTC home col-md-3" id="tourCampus">
+            <div class="linkOptions linkOptionsTC home col-md-3 hidden-xs" id="tourCampus">
                 <i class="fa fa-home blueColour"></i>
                 <label class="contentH3-red">TOUR A CAMPUS</label>
             </div>
-            <div class="linkOptions linkOptionsAN home col-md-3" id="apply">
+            <div class="linkOptions linkOptionsAN home col-md-3 hidden-xs" id="apply">
                 <i class="fa fa-bookmark blueColour"></i>
                 <label class="contentH3-red">APPLY NOW</label>
             </div>
@@ -79,11 +86,68 @@
     </div>
 </div>
 
-<div class="videoWrapperProgram visible-xs visible-sm">
-    <iframe width="560"
-            height="315" src="https://www.youtube.com/embed/l9dR97qTGlE" frameborder="0"
-            allowfullscreen></iframe>
+<div class="panel-body hidden-lg hidden-md hidden-sm">
+    <h1 class="contentH1 text-center">
+        <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+    </h1><hr class="hrpblue" />
+    <div class="row formWrapper overquestionsForm">
+
+
+        <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+            <input type="hidden" name="ORGID" value="240" />
+            <input type="hidden" name="MailListID" value="240001" />
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control pull-right" name="FirstName">
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                <input type="email" class="form-control pull-right" name="Email">
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control pull-right" name="Telephone">
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="CampusID">
+                    <option value="0">Select</option>
+                    <option value="24004">Brampton-NATS</option>
+                    <option value="24001">London-NATS</option>
+                    <option value="240">Toronto</option>
+                </select>
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="ProgramID">
+                    <option class="0 24004 24001 240" value="0">Select</option>
+                    <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                    <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                    <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                    <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                    <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                    <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                    <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                    <option class="0 24004 24001" value="39063">Welding Technology</option>
+                </select>
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Comments: </label>
+                <textarea class="form-control pull-right" name="Comment2"></textarea>
+            </div>
+            <div class="small-text spacer-top text-center grayColor contentp">
+                Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+            </div>
+            <div class="text-center">
+                <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+            </div>
+        </form>
+
+    </div>
 </div>
+
+
+
 
 <div class="container-fluid containervideoItem">
     <div class="container">
