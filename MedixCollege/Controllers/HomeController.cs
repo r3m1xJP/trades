@@ -437,6 +437,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> TourCampus(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -549,6 +558,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestionProgram(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -661,6 +679,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestionCertificate(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -773,6 +800,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> RequestCatalogue(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -885,6 +921,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestion(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -997,6 +1042,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> ReferralProgram(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -1021,6 +1075,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> HireAGrad(FormCollection fc)
         {
+            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())

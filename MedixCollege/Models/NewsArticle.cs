@@ -68,7 +68,7 @@ namespace MedixCollege.Models
             _connection.Close();
         }
 
-        public IList<NewsArticleDTO> Get(int count = 5)
+        public IList<NewsArticleDTO> Get()
         {
             GetConnection();
             IList<NewsArticleDTO> newsArticles = new List<NewsArticleDTO>();
@@ -77,7 +77,7 @@ namespace MedixCollege.Models
             {
                 var cmd = new MySqlCommand();
                 cmd.Connection = _connection;
-                cmd.CommandText = string.Format("SELECT * FROM NewsArticle ORDER BY Id DESC LIMIT {0}", count);
+                cmd.CommandText = string.Format("SELECT * FROM NewsArticle ORDER BY Id DESC");
 
                 var reader = cmd.ExecuteReader();
 
