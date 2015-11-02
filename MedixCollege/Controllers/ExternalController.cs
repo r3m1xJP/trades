@@ -258,6 +258,130 @@ namespace MedixCollege.Controllers
             return View();
         }
 
+        public ActionResult BaltimoreContactUs()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreThanksContact()
+        {
+            ViewBag.ReferAFriend = false;
+
+            return View();
+        }
+
+        public ActionResult BaltimoreQuickContact()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreThanks()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreContactUsMobile()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreContactThankYou()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreRequestInformation()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreReferAFriend()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreMultiStep()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreThanksMultiStep()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimorePPC()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimorePPCThanks()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleContactUs()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleThanksContact()
+        {
+            ViewBag.ReferAFriend = false;
+
+            return View();
+        }
+
+        public ActionResult NewcastleQuickContact()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleThanks()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleContactUsMobile()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleContactThankYou()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleRequestInformation()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleReferAFriend()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleMultiStep()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastleThanksMultiStep()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastlePPC()
+        {
+            return View();
+        }
+
+        public ActionResult NewcastlePPCThanks()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult ExternalPost(FormCollection fc)
         {

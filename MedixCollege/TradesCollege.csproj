@@ -495,6 +495,29 @@
     <Content Include="Views\Home\NewcastleThankYou.cshtml" />
     <Content Include="Views\Home\BaltimoreThankYou.cshtml" />
     <Content Include="Views\External\BaltimoreContactUsTest.cshtml" />
+    <Content Include="Views\External\BaltimoreContactUs.cshtml" />
+    <Content Include="Views\External\BaltimoreQuickContact.cshtml" />
+    <Content Include="Views\External\BaltimoreContactUsMobile.cshtml" />
+    <Content Include="Views\External\BaltimoreRequestInformation.cshtml" />
+    <Content Include="Views\External\BaltimoreReferAFriend.cshtml" />
+    <Content Include="Views\External\BaltimoreMultiStep.cshtml" />
+    <Content Include="Views\External\BaltimoreThanksContact.cshtml" />
+    <Content Include="Views\External\BaltimoreThanks.cshtml" />
+    <Content Include="Views\External\BaltimoreContactThankYou.cshtml" />
+    <Content Include="Views\External\BaltimorePPCThanks.cshtml" />
+    <Content Include="Views\External\BaltimoreThanksMultiStep.cshtml" />
+    <Content Include="Views\External\NewcastleContactUs.cshtml" />
+    <Content Include="Views\External\NewcastleThanksContact.cshtml" />
+    <Content Include="Views\External\NewcastleQuickContact.cshtml" />
+    <Content Include="Views\External\NewcastleThanks.cshtml" />
+    <Content Include="Views\External\NewcastleContactUsMobile.cshtml" />
+    <Content Include="Views\External\NewcastleContactThankYou.cshtml" />
+    <Content Include="Views\External\NewcastleRequestInformation.cshtml" />
+    <Content Include="Views\External\NewcastleReferAFriend.cshtml" />
+    <Content Include="Views\External\NewcastleMultiStep.cshtml" />
+    <Content Include="Views\External\NewcastleThanksMultiStep.cshtml" />
+    <Content Include="Views\External\NewcastlePPC.cshtml" />
+    <Content Include="Views\External\NewcastlePPCThanks.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
