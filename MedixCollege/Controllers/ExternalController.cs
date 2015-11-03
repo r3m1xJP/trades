@@ -385,7 +385,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public ActionResult ExternalPost(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 

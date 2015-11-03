@@ -316,7 +316,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> ApplyNow(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -437,7 +437,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> TourCampus(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -558,7 +558,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestionProgram(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -679,7 +679,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestionCertificate(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -800,7 +800,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> RequestCatalogue(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -921,7 +921,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> AskQuestion(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -1042,7 +1042,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> ReferralProgram(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
@@ -1075,7 +1075,7 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> HireAGrad(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comments2"].Contains("http://"))
+            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;
 
