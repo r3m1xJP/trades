@@ -146,6 +146,8 @@
     <Content Include="career-services-main.jpg" />
     <Content Include="Content\150808-Hired-NATS-Brampton.jpg" />
     <Content Include="Content\150815-Hired-NATS-London.jpg" />
+    <Content Include="Content\banner-homereno-1.jpg" />
+    <Content Include="Content\banner-welding-2.jpg" />
     <Content Include="Content\bigplay.svg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -239,6 +241,9 @@
     <Content Include="Content\images\graduates\taylorsheating.jpg" />
     <Content Include="Content\images\graduates\tigercat.jpg" />
     <Content Include="Content\images\graduates\titan.jpg" />
+    <Content Include="Content\images\heroBanner\banner-electrical-maintenance-1.jpg" />
+    <Content Include="Content\images\heroBanner\banner-homereno-1.jpg" />
+    <Content Include="Content\images\heroBanner\banner-welding-2.jpg" />
     <Content Include="Content\images\heroBanner\IMG1.jpg" />
     <Content Include="Content\images\heroBanner\IMG2.jpg" />
     <Content Include="Content\images\heroBanner\IMG3.jpg" />
