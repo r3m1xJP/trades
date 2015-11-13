@@ -222,7 +222,7 @@ namespace MedixCollege.Controllers
         {
             var newsArticle = new NewsArticle();
 
-            ViewBag.NewsArticles = newsArticle.Get().ToList();
+            ViewBag.NewsArticles = newsArticle.Get().OrderByDescending(x => x.Id).Take(5).ToList();
 
             return View();
         }
