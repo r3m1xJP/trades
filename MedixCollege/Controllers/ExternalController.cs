@@ -386,7 +386,7 @@ namespace MedixCollege.Controllers
         {
             PostData(fc);
 
-            return View("BalitmoreContactUsThankYou");
+            return View("BaltimoreContactUsThankYou");
         }
 
         public ActionResult BaltimoreContactUsMobilePost(FormCollection fc)
