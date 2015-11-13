@@ -431,6 +431,11 @@ namespace MedixCollege.Controllers
             return View("BaltimoreRequestInformationThankYou");
         }
 
+        public ActionResult BaltimoreRequestInformationThankYou()
+        {
+            return View();
+        }
+
         public bool PostData(FormCollection fc)
         {
             if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
