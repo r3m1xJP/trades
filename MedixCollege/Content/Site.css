@@ -2142,3 +2142,14 @@ margin-bottom:9px;
 
 .liSM {list-style-type: none;}
 
+.thankyoucenter {
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align:middle;
+}
+
+IMG.displayed {
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align:middle;
+}
