@@ -438,13 +438,16 @@ namespace MedixCollege.Controllers
 
         public bool PostData(FormCollection fc)
         {
-            if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
+            if (fc["Comment2"] != null)
             {
-                ViewBag.Success = false;
+                if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
+                {
+                    ViewBag.Success = false;
 
-                ViewBag.ErrorMessage = "Error submitting your request!";
+                    ViewBag.ErrorMessage = "Error submitting your request!";
 
-                return false;
+                    return false;
+                }
             }
 
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
@@ -565,7 +568,7 @@ namespace MedixCollege.Controllers
                     ViewBag.Success = false;
 
                     ViewBag.ErrorMessage = "There was an error with your request. Please try again.";
-                    
+
                     return false;
                 }
             }
