@@ -192,6 +192,9 @@
     <Content Include="Content\images\151017-Hired-NATS-London.jpg" />
     <Content Include="Content\images\151024-Hired-NATS-London.jpg" />
     <Content Include="Content\images\151118-Congrats-NATS-NABCEP.jpg" />
+    <Content Include="Content\images\151127-food-drive.jpg" />
+    <Content Include="Content\images\151128-Hires-NATS-Brampton.jpg" />
+    <Content Include="Content\images\151128-Hires-NATS-London.jpg" />
     <Content Include="Content\images\admissions-home.jpg" />
     <Content Include="Content\images\BaltimoreLogo.jpg" />
     <Content Include="Content\images\banner-cabinetmaking.jpg" />
@@ -212,7 +215,9 @@
     <Content Include="Content\images\banner_solar.jpg" />
     <Content Include="Content\images\button-next.png" />
     <Content Include="Content\images\button-previous.png" />
+    <Content Include="Content\images\cabinetmakingproject-djmixingtable-jordang.jpg" />
     <Content Include="Content\images\cabinetmakingproject-foyerbench-ryans.jpg" />
+    <Content Include="Content\images\cabinetmakingproject-pokertable-terrib.jpg" />
     <Content Include="Content\images\campus-brampton.jpg" />
     <Content Include="Content\images\campus-london.jpg" />
     <Content Include="Content\images\career-services-mainpage.jpg" />
@@ -266,6 +271,8 @@
     <Content Include="Content\images\medixCollegeHeader.gif" />
     <Content Include="Content\images\MedixOnlineLogo.PNG" />
     <Content Include="Content\images\nats-logo-main.png" />
+    <Content Include="Content\images\nats-nhit-new.jpg" />
+    <Content Include="Content\images\natsbaltimorelogo.jpg" />
     <Content Include="Content\images\NATSIMG1.gif" />
     <Content Include="Content\images\NATSIMG2.gif" />
     <Content Include="Content\images\NATSLogo.png" />
@@ -284,6 +291,8 @@
     <Content Include="Content\images\youtube.gif" />
     <Content Include="Content\mediaelementplayer.min.css" />
     <Content Include="Content\themes.gif" />
+    <Content Include="Content\images\151205-Hires-NATS-Brampton.jpg" />
+    <Content Include="Content\images\151205-Hires-NATS-London.jpg" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
