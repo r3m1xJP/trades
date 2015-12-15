@@ -204,6 +204,7 @@
     <Content Include="Content\images\Banner-Discover-Medix-Index.jpg" />
     <Content Include="Content\images\banner-electrical.jpg" />
     <Content Include="Content\images\banner-engine-repair.jpg" />
+    <Content Include="Content\images\banner-happy-holidays.jpg" />
     <Content Include="Content\images\banner-homereno.jpg" />
     <Content Include="Content\images\banner-hvac.jpg" />
     <Content Include="Content\images\banner-maintenance.jpg" />
@@ -215,9 +216,11 @@
     <Content Include="Content\images\banner_solar.jpg" />
     <Content Include="Content\images\button-next.png" />
     <Content Include="Content\images\button-previous.png" />
+    <Content Include="Content\images\cabinetmakingproject-chess.jpg" />
     <Content Include="Content\images\cabinetmakingproject-djmixingtable-jordang.jpg" />
     <Content Include="Content\images\cabinetmakingproject-foyerbench-ryans.jpg" />
     <Content Include="Content\images\cabinetmakingproject-pokertable-terrib.jpg" />
+    <Content Include="Content\images\cabinetmakingproject-tv-richardd.jpg" />
     <Content Include="Content\images\campus-brampton.jpg" />
     <Content Include="Content\images\campus-london.jpg" />
     <Content Include="Content\images\career-services-mainpage.jpg" />
