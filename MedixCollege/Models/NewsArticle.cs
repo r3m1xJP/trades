@@ -21,109 +21,92 @@ namespace MedixCollege.Models
 
         public NewsArticle(int id)
         {
-            GetConnection();
             NewsArticleDTO = new NewsArticleDTO();
             NewsArticleDTO.Id = id;
 
             try
             {
-                var cmd = new MySqlCommand();
-                cmd.Connection = _connection;
-                cmd.CommandText = string.Format("SELECT * FROM NewsArticle WHERE Id = {0}", id);
-
-                var reader = cmd.ExecuteReader();
-
-                try
+                using (var connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MySQLConnection"].ConnectionString))
                 {
-                    reader.Read();
+                    connection.Open();
 
-                    if (reader.IsDBNull(1) == false)
-                        NewsArticleDTO.Date = reader.GetDateTime(1);
-                    else
-                        NewsArticleDTO.Date = DateTime.Now;
+                    using (var command = new MySqlCommand(string.Format("SELECT * FROM NewsArticle WHERE Id = {0}", id), connection))
+                    {
+                        var reader = command.ExecuteReader();
+                        reader.Read();
 
-                    if (reader.IsDBNull(2) == false)
-                        NewsArticleDTO.Title = reader.GetString(2);
-                    else
-                        NewsArticleDTO.Title = null;
+                        if (reader.IsDBNull(1) == false)
+                            NewsArticleDTO.Date = reader.GetDateTime(1);
+                        else
+                            NewsArticleDTO.Date = DateTime.Now;
 
-                    if (reader.IsDBNull(3) == false)
-                        NewsArticleDTO.Body = reader.GetString(3);
-                    else
-                        NewsArticleDTO.Body = null;
+                        if (reader.IsDBNull(2) == false)
+                            NewsArticleDTO.Title = reader.GetString(2);
+                        else
+                            NewsArticleDTO.Title = null;
 
-                    reader.Close();
-                }
-                catch (MySqlException e)
-                {
-                    //TODO: log error
-                    reader.Close();
+                        if (reader.IsDBNull(3) == false)
+                            NewsArticleDTO.Body = reader.GetString(3);
+                        else
+                            NewsArticleDTO.Body = null;
+
+                        reader.Close();
+                    }
                 }
             }
             catch (MySqlException e)
             {
                 //TODO: log error
             }
-
-            _connection.Close();
         }
 
         public IList<NewsArticleDTO> Get()
         {
-            GetConnection();
             IList<NewsArticleDTO> newsArticles = new List<NewsArticleDTO>();
 
             try
             {
-                var cmd = new MySqlCommand();
-                cmd.Connection = _connection;
-                cmd.CommandText = string.Format("SELECT * FROM NewsArticle ORDER BY Id DESC");
-
-                var reader = cmd.ExecuteReader();
-
-                try
+                using (var connection = new MySqlConnection(ConfigurationManager.ConnectionStrings["MySQLConnection"].ConnectionString))
                 {
-                    while (reader.Read())
+                    connection.Open();
+
+                    using (var command = new MySqlCommand(string.Format("SELECT * FROM NewsArticle ORDER BY Id DESC"), connection))
                     {
-                        var newsArticle = new NewsArticleDTO();
+                        var reader = command.ExecuteReader();
 
-                        if (reader.IsDBNull(0) == false)
-                            newsArticle.Id = reader.GetInt32(0);
-                        else
-                            newsArticle.Date = DateTime.Now;
+                        while (reader.Read())
+                        {
+                            var newsArticle = new NewsArticleDTO();
 
-                        if (reader.IsDBNull(1) == false)
-                            newsArticle.Date = reader.GetDateTime(1);
-                        else
-                            newsArticle.Date = DateTime.Now;
+                            if (reader.IsDBNull(0) == false)
+                                newsArticle.Id = reader.GetInt32(0);
+                            else
+                                newsArticle.Date = DateTime.Now;
 
-                        if (reader.IsDBNull(2) == false)
-                            newsArticle.Title = reader.GetString(2);
-                        else
-                            newsArticle.Title = null;
+                            if (reader.IsDBNull(1) == false)
+                                newsArticle.Date = reader.GetDateTime(1);
+                            else
+                                newsArticle.Date = DateTime.Now;
 
-                        if (reader.IsDBNull(3) == false)
-                            newsArticle.Body = reader.GetString(3);
-                        else
-                            newsArticle.Body = null;
+                            if (reader.IsDBNull(2) == false)
+                                newsArticle.Title = reader.GetString(2);
+                            else
+                                newsArticle.Title = null;
 
-                        newsArticles.Add(newsArticle);
+                            if (reader.IsDBNull(3) == false)
+                                newsArticle.Body = reader.GetString(3);
+                            else
+                                newsArticle.Body = null;
+
+                            newsArticles.Add(newsArticle);
+                        }
                     }
-
-                    reader.Close();
-                }
-                catch (MySqlException e)
-                {
-                    //TODO: log error
-                    reader.Close();
                 }
             }
             catch (MySqlException e)
             {
                 //TODO: log error
             }
-
-            _connection.Close();
 
             return newsArticles;
         }
