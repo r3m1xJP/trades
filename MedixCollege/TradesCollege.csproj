@@ -545,6 +545,8 @@
     <Content Include="Views\External\BaltimoreQuickContactThankYou.cshtml" />
     <Content Include="Views\External\BalitmoreReferAFriendThankYou.cshtml" />
     <Content Include="Views\External\BaltimoreRequestInformationThankYou.cshtml" />
+    <Content Include="Views\External\FacebookPPC.cshtml" />
+    <Content Include="Views\External\FacebookPPCThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

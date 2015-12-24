@@ -436,7 +436,19 @@ namespace MedixCollege.Controllers
             return View();
         }
 
-        public bool PostData(FormCollection fc)
+        public ActionResult FacebookPPC()
+        {
+            return View();
+        }
+
+        public ActionResult FacebookPPCPost(FormCollection fc)
+        {
+            PostData(fc, "New Lead - 2016 FB PPC”");
+
+            return View("FacebookPPCThankYou");
+        }
+
+        public bool PostData(FormCollection fc, string emailSubject = "New Lead - External")
         {
             if (fc["Comment2"] != null)
             {
@@ -522,7 +534,7 @@ namespace MedixCollege.Controllers
                                 message.Bcc.Add(new MailAddress("jblazak@ncstrades.edu"));
                             }
 
-                            message.Subject = "New Lead - External";
+                            message.Subject = emailSubject;
 
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
