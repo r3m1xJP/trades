@@ -14,3 +14,4 @@
 /// <reference path="bootstrap.min.js" />
 /// <reference path="responsiveslides.min.js" />
 /// <reference path="bootstrap.youtubepopup.min.js" />
+/// <reference path="parsley.min.js" />

@@ -137,6 +137,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\AjaxAwareRedirectResult.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
     <Compile Include="Helpers\LeadsType.cs" />
     <Compile Include="Models\Leads.cs" />
     <Compile Include="Models\NewsArticle.cs" />
@@ -424,6 +425,7 @@
     <Content Include="Scripts\mediaelement-and-player.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\parsley.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\responsiveslides.min.js" />
