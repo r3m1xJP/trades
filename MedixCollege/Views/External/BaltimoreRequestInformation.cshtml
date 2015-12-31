@@ -5,25 +5,49 @@
 
 <h2>BaltimoreRequestInformation</h2>
 
-<form id="requestInformationForm" name="requestInformationForm" method="post" action="http://www.northamericantradeschools.ca/external/BaltimoreRequestInformationPost" target="dummyframe">
+<style>
+    input.parsley-error, select.parsley-error, textarea.parsley-error {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+    }
+
+    .bs-callout-warning {
+        background-color: #fcf8f2;
+        border-color: #f0ad4e;
+    }
+
+    .bs-callout {
+        margin: 20px 0;
+        padding: 20px;
+        border-left: 3px solid #eee;
+    }
+
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+</style>
+<script src="~/Scripts/parsley.min.js"></script>
+
+<form id="requestInformationForm" name="requestInformationForm" method="post" action="http://www.northamericantradeschools.ca/external/BaltimoreRequestInformationPost" target="_self">
     <input type="hidden" name="ORGID" value="240" />
     <input type="hidden" name="MailListID" value="240001" />
     <input type="hidden" name="CampusID" value="24002" />
     <div class="">
         <label class="" for="formfirstname">First Name: <span class="">*</span></label>
-        <input type="text" class="" name="FirstName" id="formfirstname" />
+        <input type="text" class="" name="FirstName" id="formfirstname" required="" />
     </div>
     <div class="">
         <label class="" for="formlastname">Last Name: <span class="">*</span></label>
-        <input type="text" class="" name="Lastname" id="formlastname" />
+        <input type="text" class="" name="Lastname" id="formlastname" required="" />
     </div>
     <div class="">
         <label class="" for="formtelephone">Phone: <span class="">*</span></label>
-        <input type="text" class="" name="Telephone" for="formtelephone" />
+        <input type="text" class="" name="Telephone" for="formtelephone" required="" />
     </div>
     <div class="">
         <label class="" for="formemail">Email: <span class="">*</span></label>
-        <input type="email" class="" name="Email" for="formemail" />
+        <input type="email" class="" name="Email" for="formemail" required="" />
     </div>
     <div class="">
         <label class="">Program: <span class="">*</span></label>
@@ -262,3 +286,14 @@
     </div>
 </form>
 
+<script type="text/javascript">
+    $(function () {
+        $('#contactUsForm').parsley().on('field:validated', function () {
+            var ok = $('.parsley-error').length === 0;
+            $('.bs-callout-warning').toggleClass('hidden', ok);
+        })
+        .on('form:submit', function () {
+            return false; // Don't submit form for this demo
+        });
+    });
+</script>

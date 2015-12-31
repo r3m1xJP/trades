@@ -1,9 +1,6 @@
-﻿
-@{
-    ViewBag.Title = "BaltimoreContactUsMobile";
+﻿@{
+    ViewBag.Title = "BaltimoreContactUs";
 }
-
-<h2>BaltimoreContactUsMobile</h2>
 
 <style>
     input.parsley-error, select.parsley-error, textarea.parsley-error {
@@ -13,23 +10,24 @@
     }
 
     .bs-callout-warning {
-        background-color: #fcf8f2;
-        border-color: #f0ad4e;
-    }
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+}
 
     .bs-callout {
-        margin: 20px 0;
-        padding: 20px;
-        border-left: 3px solid #eee;
-    }
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+}
 
     .bs-callout-warning h4 {
-        color: #f0ad4e;
-    }
+    color: #f0ad4e;
+}
 </style>
 <script src="~/Scripts/parsley.min.js"></script>
 
-<form id="contactUsMobilForm" name="contactUsMobilForm" method="post" action=" http://www.northamericantradeschools.ca/external/BaltimoreContactUsMobilePost" target="_self">
+
+<form id="ppcNoDropDownForm" name="ppcNoDropDownForm" method="post" action="http://www.northamericantradeschools.ca/external/BaltimorePPCNoDropDownPost" target="_self">
     <input type="hidden" name="ORGID" value="240" />
     <input type="hidden" name="MailListID" value="240001" />
     <input type="hidden" name="CampusID" value="24002" />
@@ -50,25 +48,9 @@
         <input type="text" class="" name="Telephone" for="formtelephone" required="" />
     </div>
     <div class="">
-        <label class="">Program: <span class="">*</span></label>
-        <select class="" name="ProgramID" id="programsList">
-            <option class="" value="0">Select</option>
-            <option class="" value="39119">Building Construction Technology</option>
-            <option class="" value="39120">Commercial Truck Driving</option>
-            <option class="" value="39121">Diesel Technician</option>
-            <option class="" value="39061">Electrical Technology</option>
-            <option class="" value="30123">HRVAC Technology</option>
-            <option class="" value="39125">Industrial Maintenance</option>
-            <option class="" value="39129">Combination Welding</option>
-            <option class="" value="40235">Motorcycle and Power Equipment Technology</option>
-        </select>
-    </div>
-    <div class="">
-        <input id="contactUsMobileSubmit" type="submit" value="Contact Us Today >" class="" />
+        <input id="ppcNoDropDownSubmit" type="submit" value="Contact Us Now >>" class="" />
     </div>
 </form>
-
-
 
 <script type="text/javascript">
     $(function () {
@@ -81,3 +63,5 @@
         });
     });
 </script>
+
+

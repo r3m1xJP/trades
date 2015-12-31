@@ -545,10 +545,12 @@
     <Content Include="Views\External\BaltimoreContactUsMobileThankYou.cshtml" />
     <Content Include="Views\External\BaltimorePPCNoDropDownThankYou.cshtml" />
     <Content Include="Views\External\BaltimoreQuickContactThankYou.cshtml" />
-    <Content Include="Views\External\BalitmoreReferAFriendThankYou.cshtml" />
+    <Content Include="Views\External\BaltimoreReferAFriendThankYou.cshtml" />
     <Content Include="Views\External\BaltimoreRequestInformationThankYou.cshtml" />
     <Content Include="Views\External\FacebookPPC.cshtml" />
     <Content Include="Views\External\FacebookPPCThankYou.cshtml" />
+    <Content Include="Views\External\BaltimorePPC.cshtml" />
+    <Content Include="Views\External\BaltimorePPCNoDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
