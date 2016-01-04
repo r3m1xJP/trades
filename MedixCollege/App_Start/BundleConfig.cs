@@ -28,7 +28,8 @@ namespace MedixCollege
                       "~/Scripts/jquery.smoothdivscroll-1.3-min.js",
                       "~/Scripts/jquery.flexisel.js",
                       "~/Scripts/responsiveslides.min.js",
-                      "~/Scripts/bootstrap.youtubepopup.min.js"));
+                      "~/Scripts/bootstrap.youtubepopup.min.js",
+                      "~/Scripts/parsley.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",

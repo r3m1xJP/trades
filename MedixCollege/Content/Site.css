@@ -12,23 +12,23 @@ a {
     font-weight: 400;
 }
 
-header {font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
+header {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Arial, Helvetica, sans-serif;
     background-color: white;
     padding-top: 15px;
 }
 
 
 .container-fluid {
-padding-left:0px;
-padding-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     width: 100%;
-
-                font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-                font-weight: 400;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -52,10 +52,9 @@ textarea {
 }
 
 .lightBG {
-background-color: white;
-padding: 5px;
+    background-color: white;
+    padding: 5px;
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-
 }
 
 .blueColor {
@@ -68,12 +67,12 @@ padding: 5px;
 }
 
     .btn a {
-    color: #555;
+        color: #555;
     }
 
-       .btn a:hover {
-    color: #222222;
-    }
+        .btn a:hover {
+            color: #222222;
+        }
 
 .btn-brand {
     background-color: #B20000;
@@ -311,7 +310,7 @@ footer {
     background-color: #B20000;
     overflow: auto;
     padding: 10px;
-        border-top: solid 3px #EDAA0F;
+    border-top: solid 3px #EDAA0F;
 }
 
 .footer-banner-logo {
@@ -354,7 +353,6 @@ footer {
 
 .1blueGoldBorder {
     color: #B20000;
-
 }
 
 .CgoldBlueBorder {
@@ -376,7 +374,6 @@ footer {
 
 .whiteBG-GrayStrokeNews {
     background-color: white;
-
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -597,7 +594,6 @@ footer {
     color: #B20000 !important;
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     width: 100%;
-
 }
 
     .leftMenu li a:hover {
@@ -622,22 +618,21 @@ footer {
         background-color: #B20000;
         font-size: 18px;
         padding-left: 0px;
-            padding-left: 10px;
-    border-bottom: solid 3px #EDAA0F;
+        padding-left: 10px;
+        border-bottom: solid 3px #EDAA0F;
     }
 
 .formHeaderSIDE {
     width: 100%;
-            color: white !important;
-        background-color: #B20000;
-        font-size: 18px;
-        padding-top: 10px;
-            padding-bottom: 10px;
+    color: white !important;
+    background-color: #B20000;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: solid 3px #EDAA0F;
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-                position: relative;
-        top:0px;
-
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 0px;
 }
 
 .leftMenu li.header a {
@@ -645,7 +640,6 @@ footer {
     background-color: #B20000;
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     width: 100%;
-
 }
 
 
@@ -718,32 +712,30 @@ footer {
 }
 
 .botMARG {
- margin-bottom:28px;
-
+    margin-bottom: 28px;
 }
 
 @media screen and (max-width: 480px) {
-.botMARG {
- margin-bottom:15px;
-
+    .botMARG {
+        margin-bottom: 15px;
+    }
 }
-}
 
-    .mid-padding {
+.mid-padding {
     padding-left: 0px;
     padding-right: 25px;
 }
 
 @media screen and (max-width: 480px) {
     .mid-padding {
-    padding-left: 5px;
-    padding-right: 5px;
-}
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
 
 .link-unstyled a {
     text-decoration: none;
-            color: #B20000;
+    color: #B20000;
 }
 
     .link-unstyled a:hover {
@@ -837,7 +829,7 @@ footer {
         font-size: 1em;
         border-top: 1px solid rgba(255,255,255, 0.2);
         border-bottom: 1px solid rgba(255,255,255, 0.2);
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     }
 
     .promoContent .videoButtons {
@@ -950,7 +942,6 @@ video {
 .graduatesHiredWrapper {
     margin-top: 0px;
     padding: 15px;
-
     background-color: white;
 }
 
@@ -985,7 +976,7 @@ video {
 
 .socialWrapper div.facebook {
     border-right: 5px solid white;
-    padding-left:0px;
+    padding-left: 0px;
 }
 
 .socialWrapper div.newsUpdates {
@@ -1159,7 +1150,6 @@ iframe.twitter-timeline {
 .nbs-flexisel-container {
     position: relative;
     max-width: 100%;
-
 }
 
 .nbs-flexisel-ul {
@@ -1175,7 +1165,7 @@ iframe.twitter-timeline {
     overflow: hidden;
     float: left;
     width: 100%;
-    max-height:225px;
+    max-height: 225px;
     background-color: white;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1188,7 +1178,6 @@ iframe.twitter-timeline {
     cursor: pointer;
     position: relative;
     line-height: 0px;
-
 }
 
     .nbs-flexisel-item img {
@@ -1264,20 +1253,17 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
     display: block;
     padding-left: 0px;
     padding-top: 0px;
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
 }
 
     .breadcrumb li {
         font-size: 14px;
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     }
 
     .breadcrumb a {
         color: #B20000;
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     }
 
         .breadcrumb a:hover {
@@ -1301,7 +1287,6 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 .overquestionsForm {
-
     background-color: white;
 }
 
@@ -1486,7 +1471,7 @@ blockquote p {
 
 .contentH1-main2 {
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-       color: #B20000;
+    color: #B20000;
     font-size: 22px;
     line-height: 30px;
 }
@@ -1512,19 +1497,19 @@ blockquote p {
     line-height: 26px;
 }
 
-.contentH1-mainW a{
+.contentH1-mainW a {
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
     font-size: 22px;
     line-height: 30px;
 }
 
-.contentH1-mainW a:hover{
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: #EDAA0F;
-    font-size: 22px;
-    line-height: 30px;
-}
+    .contentH1-mainW a:hover {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+        color: #EDAA0F;
+        font-size: 22px;
+        line-height: 30px;
+    }
 
 .contentH1-small {
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
@@ -1551,24 +1536,24 @@ blockquote p {
     border-bottom-color: #B20000;
 }
 
-.contentH1-whiteCAMPUS a {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 17px;
-    line-height: 17px;
-    border-bottom: solid;
-    border-bottom-color: #B20000;
-}
+    .contentH1-whiteCAMPUS a {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 17px;
+        line-height: 17px;
+        border-bottom: solid;
+        border-bottom-color: #B20000;
+    }
 
-.contentH1-whiteCAMPUS a:hover {
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: #EDAA0F;
-    font-size: 17px;
-    line-height: 17px;
-    border-bottom: solid;
-    border-bottom-color: #B20000;
-    text-decoration: underline;
-}
+        .contentH1-whiteCAMPUS a:hover {
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+            color: #EDAA0F;
+            font-size: 17px;
+            line-height: 17px;
+            border-bottom: solid;
+            border-bottom-color: #B20000;
+            text-decoration: underline;
+        }
 
 .grayBGwrap {
     background-color: lightgray;
@@ -1641,21 +1626,21 @@ blockquote p {
     margin: 0px;
 }
 
-    .contentH2 a {
+.contentH2 a {
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: #B20000;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+    .contentH2 a:hover {
         font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
         color: #B20000;
         font-size: 16px;
         line-height: 18px;
         text-decoration: none;
     }
-
-        .contentH2 a:hover {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-            color: #B20000;
-            font-size: 16px;
-            line-height: 18px;
-            text-decoration: none;
-        }
 
 .contentH3 {
     font-family: "HelveticaNeueW01-47LtCn_692686", Arial, Helvetica, sans-serif;
@@ -1681,7 +1666,7 @@ blockquote p {
 }
 
 .contentH3-red {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 16px;
     line-height: 18px;
@@ -1689,7 +1674,7 @@ blockquote p {
 }
 
 .contentH3-red1 {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 30px;
     line-height: 30px;
@@ -1697,17 +1682,17 @@ blockquote p {
 }
 
 @media only screen and (max-device-width: 480px) {
-.contentH3-red1 {
-            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: #B20000;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
-}
+    .contentH3-red1 {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+        color: #B20000;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 400;
+    }
 }
 
 .centeralign {
- text-align: center;
+    text-align: center;
 }
 
 
@@ -1720,28 +1705,28 @@ blockquote p {
 }
 
 .contentH4-dark {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #B20000;
     font-size: 14px;
     line-height: 18px;
 }
 
 .contentH3-blue {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-        color: #B20000;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    color: #B20000;
     font-size: 16px;
     line-height: 18px;
 }
 
     .contentH3-blue a {
         font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-            color: #B20000;
+        color: #B20000;
         font-size: 16px;
         line-height: 18px;
     }
 
         .contentH3-blue a:hover {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
             color: #B20000;
             font-size: 16px;
             line-height: 18px;
@@ -1765,45 +1750,45 @@ blockquote p {
 .contentp {
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
-        font-weight: 400;
+    font-weight: 400;
 }
 
 .contentpw {
     font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
-        font-weight: 400;
+    font-weight: 400;
 }
 
-.contentpw a{
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: white;
+    .contentpw a {
+        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+        color: white;
         font-weight: 400;
-}
+    }
 
-.contentpw a:hover{
-    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
-    color: white;
-        font-weight: 400;
-}
+        .contentpw a:hover {
+            font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: 400;
+        }
 
 
 .contentpheight {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
-    line-height:2em;
+    line-height: 2em;
 }
 
 .bottomb {
-        border-bottom: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
 }
 
 .contentp-light {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .contentp a {
-        font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
+    font-family: "HelveticaNeueW01-67MdCn_692710", Roboto, Arial, Helvetica, sans-serif;
     color: #222222;
 }
 
@@ -1945,122 +1930,124 @@ display: none;
 
 .divpadding {
     padding-top: 20px;
-        padding-bottom: 30px;
-
+    padding-bottom: 30px;
 }
 
-background-color: #B20000;
-color:white;
-font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
+background-color: #B20000; color:white; font-family: "Helvetica W01 Roman", Arial, Helvetica, sans-serif;
 }
 
 .buttonCampus {
-    margin:10px 5px 5px 10px;
+    margin: 10px 5px 5px 10px;
     color: #B20000;
     background-color: white;
     border-radius: 3px;
     width: 160px;
-    max-width:160px;
+    max-width: 160px;
     border-radius: 0px;
-font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
 }
 
     .buttonCampus a {
-    color: #B20000;
-    border-radius: 2px;
+        color: #B20000;
+        border-radius: 2px;
     }
 
-        .buttonCampus a:hover{
+        .buttonCampus a:hover {
             color: #B20000;
+        }
+
+    .buttonCampus:hover {
+        color: #B20000;
+        border-bottom: solid 5px #EDAA0F;
     }
 
-                .buttonCampus:hover{
-            color: #B20000;
-            border-bottom: solid 5px #EDAA0F;
-    }
 
-
-        .buttonHire{
-    margin:10px 5px 5px 10px;
+.buttonHire {
+    margin: 10px 5px 5px 10px;
     color: #B20000;
     background-color: white;
     border-radius: 3px;
     width: 300px;
     max-width: 300px;
     border-radius: 0px;
-font-family:'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeueW01-47LtCn_692686', Arial, Helvetica, sans-serif;
 }
 
-            .buttonHire a {
-            color: #B20000;
+    .buttonHire a {
+        color: #B20000;
     }
 
-        .buttonHire a:hover{
+        .buttonHire a:hover {
             color: #B20000;
-    }
+        }
 
-                        .buttonHire:hover{
-            color: #B20000;
-            border-bottom: solid 5px #EDAA0F;
+    .buttonHire:hover {
+        color: #B20000;
+        border-bottom: solid 5px #EDAA0F;
     }
 
 .hrp {
-    margin-top:5px;
+    margin-top: 5px;
     margin-bottom: 5px;
-    height:1px;
+    height: 1px;
 }
+
 .hrpw3 {
-    margin-top:8px;
+    margin-top: 8px;
     margin-bottom: 8px;
-    height:3px;
-    background-color:white;
+    height: 3px;
+    background-color: white;
 }
 
 .hrpblue {
-    margin-top:8px;
+    margin-top: 8px;
     margin-bottom: 8px;
     background-color: #B20000;
-    height:1px;
+    height: 1px;
 }
+
 .hrpblue2 {
-    margin-top:8px;
+    margin-top: 8px;
     margin-bottom: 8px;
     background-color: #B20000;
-    height:3px;
+    height: 3px;
 }
 
 .mobile-icon {
- font-size:.75em;
- color:#B20000;
+    font-size: .75em;
+    color: #B20000;
 }
 
-.ul-none
-{
-list-style-type: none;
+.ul-none {
+    list-style-type: none;
 }
 
 
 .header-1 {
-            position: absolute; 
-        top: 0px;
-        right: 0%;
+    position: absolute;
+    top: 0px;
+    right: 0%;
 }
+
 .header-2 {
-        position: absolute; 
-        top: 33%;
-        right: 0%;
+    position: absolute;
+    top: 33%;
+    right: 0%;
 }
+
 .header-3 {
-        position: absolute; 
-        bottom: 10px;
-        right: 0%;
+    position: absolute;
+    bottom: 10px;
+    right: 0%;
 }
-.header-3-container { position:relative; 
-                      height:150px;
+
+.header-3-container {
+    position: relative;
+    height: 150px;
 }
 
 .numbersize {
-    font-size:1.5em;
+    font-size: 1.5em;
 }
 
 
@@ -2069,44 +2056,43 @@ list-style-type: none;
 
 .programtableheader {
     background-color: #0F3F6F;
-    color:white;
-    font-size:1.2em;
+    color: white;
+    font-size: 1.2em;
     border-bottom: 2px solid #EDAA0F;
 }
 
-.programtableheader a {
-    background-color: #0F3F6F;
-    color:white;
-    font-size:1.2em;
-}
+    .programtableheader a {
+        background-color: #0F3F6F;
+        color: white;
+        font-size: 1.2em;
+    }
 
-.programtableheader a:hover {
-    background-color: #0F3F6F;
-    color:#EDAA0F;
-    font-size:1.2em;
-    text-decoration:none;
-}
+        .programtableheader a:hover {
+            background-color: #0F3F6F;
+            color: #EDAA0F;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
 
 .panelBG {
-background-color:#f8f8f8;
-
+    background-color: #f8f8f8;
 }
 
 .newsTable a {
 }
 
-.newsTable li table a:hover{
+.newsTable li table a:hover {
     text-decoration: underline;
 }
 
-.mainBLUEmoreNews a{
-color:#0F3F6F;
+.mainBLUEmoreNews a {
+    color: #0F3F6F;
 }
 
-.mainBLUEmoreNews a:hover {
-color:#0F3F6F;
-text-decoration:underline;
-}
+    .mainBLUEmoreNews a:hover {
+        color: #0F3F6F;
+        text-decoration: underline;
+    }
 
 .hrpNEWS {
     margin-top: 1px;
@@ -2116,40 +2102,64 @@ text-decoration:underline;
 }
 
 .imgPADDINGnews {
-margin-top:9px;
-margin-bottom:9px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .newsMARGINtop {
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 
 .btn-danger {
- background-color:#B20000;
- color:white;
+    background-color: #B20000;
+    color: white;
 }
 
-.redBTN a{
- background-color:#B20000;
- color:white;
+.redBTN a {
+    background-color: #B20000;
+    color: white;
 }
 
-.redBTN a:hover {
- background-color:#ff5151;
- color:white;
-}
+    .redBTN a:hover {
+        background-color: #ff5151;
+        color: white;
+    }
 
-.liSM {list-style-type: none;}
+.liSM {
+    list-style-type: none;
+}
 
 .thankyoucenter {
-  margin-left: auto;
-  margin-right: auto;
-  vertical-align:middle;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
 }
 
 IMG.displayed {
     margin-left: auto;
     margin-right: auto;
-    vertical-align:middle;
+    vertical-align: middle;
+}
+
+/* Parsley */
+input.parsley-error, select.parsley-error, textarea.parsley-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border: 1px solid #EED3D7;
+}
+
+.bs-callout-warning {
+    background-color: #fcf8f2;
+    border-color: #f0ad4e;
+}
+
+.bs-callout {
+    margin: 20px 0;
+    padding: 20px;
+    border-left: 3px solid #eee;
+}
+
+.bs-callout-warning h4 {
+    color: #f0ad4e;
 }
