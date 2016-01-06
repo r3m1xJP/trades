@@ -221,7 +221,7 @@
                     </div>
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
-                        <select class="form-control pull-right" name="CampusID">
+                        <select class="form-control pull-right" name="CampusID" id="hvacCampusList">
                             <option value="0">Select</option>
                             <option value="24004">Brampton-NATS</option>
                             <option value="24001">London-NATS</option>
@@ -230,12 +230,12 @@
                     </div>
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
-                        <select class="form-control pull-right" name="ProgramID">
-                            <option class="0 24004 24001 240" value="0">Select</option>
-                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                        <select class="form-control pull-right" name="ProgramID" id="hvacProgramsList">
+                            <option class="0 24001 240" value="0">Select</option>
+                            <option class="0 24001" value="39064">Cabinetmaking</option>
                             <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
-                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
-                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24001" value="39060">Home Renovation Technician</option>
                             <option class="0 24004 24001" value="39062">HVAC Technician</option>
                             <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
                             <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
@@ -378,6 +378,18 @@
                 $('.popup-form-wrapper').hide();
                 $('#askQuestionWrapper').show();
                 $('.form-overlay').slideDown()
+            });
+
+            $('#hvacCampusList').change(function () {
+                var campusId = $('#hvacCampusList option:selected').val();
+
+                $.each($("#hvacProgramsList option"), function (index, value) {
+                    if ($(value).hasClass(campusId) !== true) {
+                        $(value).hide();
+                    } else {
+                        $(value).show();
+                    }
+                });
             });
         });
     </script>
