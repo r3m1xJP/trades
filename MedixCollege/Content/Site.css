@@ -273,7 +273,7 @@ footer {
     border-top: solid 1px lightgray;
     background-color: #f4f4f4;
     color: #222222 !important;
-    margin-top: 5px !important;
+
 }
 
     footer ul {
@@ -323,6 +323,10 @@ footer {
 
 .goldColour {
     color: #EDAA0F;
+}
+
+.navBlueColour {
+    color: #1f2c3c;
 }
 
 .mBlueColour {
@@ -800,8 +804,19 @@ footer {
 
 .containervideoItem {
     background-color: #B20000;
-    border-bottom: solid 3px #EDAA0F;
-    border-top: solid 3px #EDAA0F;
+
+}
+
+.containervideoItem2 {
+    background-color: #686868;
+}
+
+.containervideoItem3 {
+    background-color: #1f2c3c;
+    padding-bottom:12px;
+    text-align:center;
+    align-content:center;
+
 }
 
 
@@ -937,6 +952,10 @@ video {
     padding: 0px 0px 0px 5px;
 }
 
+.videoItem3 {
+    height: 375px;
+    padding: 0px 5px 0px 0px;
+}
 
 
 .graduatesHiredWrapper {
