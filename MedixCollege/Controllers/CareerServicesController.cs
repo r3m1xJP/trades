@@ -26,7 +26,7 @@ namespace MedixCollege.Controllers
         }
 
         // GET: MedixAdvantage
-        public ActionResult MedixAdvantage()
+        public ActionResult NATSAdvantage()
         {
             return View();
         }

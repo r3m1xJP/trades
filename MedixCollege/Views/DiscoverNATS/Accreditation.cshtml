@@ -64,32 +64,32 @@
     </div>
 
     <div class="col-sm-4 pull-right no-padding">
-        <div class="panel panel-default">
+        <div class="panel panel-default bluePANEL">
 
             <div class="panel-body">
                 <h1 class="contentH1 text-center">
                     <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
-                </h1><hr class="hrpblue" />
+                </h1><hr class="hrp11" />
                 <div class="row formWrapper overquestionsForm">
 
 
-                    <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" data-parsley-validate="" class="questionsForm" method="post" action="/home/askquestion">
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control pull-right" name="FirstName">
+                            <input type="text" class="form-control pull-right" name="FirstName" required="">
                         </div>
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control pull-right" name="Email">
+                            <input type="email" class="form-control pull-right" name="Email" required="">
                         </div>
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control pull-right" name="Telephone">
+                            <input type="text" class="form-control pull-right" name="Telephone" required="">
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentp">Location: <span class="text-danger" required="">*</span></label>
                             <select class="form-control pull-right" name="CampusID">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>

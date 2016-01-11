@@ -27,8 +27,7 @@
                 The HVAC Technician program at North American Trade Schools at the London and Brampton campuses provides technical training for individuals looking for a rewarding career working within the HVAC (heating, ventilation, and air conditioning) industry.
                 <br /><br />
                 Students will have the opportunity to write their G3 Gas technician exam after completing the first module. After completing the program, students will then be able to write their G2 Gas technician exam.
-                <br /><br />
-                There are employment opportunities for graduates of the HVAC Technician graduates in London, Thamesford, Lucan, Strathroy, St. Thomas, Ingersoll, Stratford, Kitchener-Waterloo, Brampton, Toronto, Mississauga, Scarborough, Milton, Burlington, Oakville, Hamilton and other cities across southern Ontario.
+               
             </p>
         </div>
     </div>
@@ -195,33 +194,33 @@
 </div>
 
 <div class="col-sm-4 pull-right no-padding">
-    <div class="panel panel-default">
+    <div class="panel panel-default bluePANEL">
 
         <div class="panel-body">
             <h1 class="contentH1 text-center">
                 <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
-            </h1><hr class="hrpblue" />
+            </h1><hr class="hrp11" />
             <div class="row formWrapper overquestionsForm">
 
 
-                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" data-parsley-validate="" class="questionsForm" method="post" action="/home/askquestion">
                     <input type="hidden" name="ORGID" value="240" />
                     <input type="hidden" name="MailListID" value="240001" />
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control pull-right" name="FirstName">
+                        <input type="text" class="form-control pull-right" name="FirstName" required="">
                     </div>
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control pull-right" name="Email">
+                        <input type="email" class="form-control pull-right" name="Email" required="">
                     </div>
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control pull-right" name="Telephone">
+                        <input type="text" class="form-control pull-right" name="Telephone" required="">
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
-                        <select class="form-control pull-right" name="CampusID" id="hvacCampusList">
+                        <label class="pull-left contentp">Location: <span class="text-danger" required="">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
                             <option value="0">Select</option>
                             <option value="24004">Brampton-NATS</option>
                             <option value="24001">London-NATS</option>
@@ -230,12 +229,12 @@
                     </div>
                     <div class="input-group spacer-top">
                         <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
-                        <select class="form-control pull-right" name="ProgramID" id="hvacProgramsList">
-                            <option class="0 24001 240" value="0">Select</option>
-                            <option class="0 24001" value="39064">Cabinetmaking</option>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
                             <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
-                            <option class="0 24001" value="39061">Electrical Technology</option>
-                            <option class="0 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
                             <option class="0 24004 24001" value="39062">HVAC Technician</option>
                             <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
                             <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
@@ -314,7 +313,6 @@
         </div>
     </div>
 
-    <br />
 
     <div class="panel-group">
         <div class="panel panel-default">

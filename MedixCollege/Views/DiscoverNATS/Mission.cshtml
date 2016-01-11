@@ -4,77 +4,76 @@
 @{
     ViewBag.Title = "Mission";
 }
-<div class="col-sm-12">
+<div class="col-sm-12 no-padding botMARG">
     <h1 class="contentPageH1">NATS MISSION</h1>
     <ol class="breadcrumb">
         <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
         <li class="contentp">@Html.ActionLink("About NATS", "Index", "DiscoverNATS")</li>
         <li class="active contentp">Mission</li>
-    </ol>
+    </ol>    <img class="img-responsive" width="100%" src="/Content/images/admissions-home.jpg" alt="construction managers working on a project" />
+
 </div>
 
 <div class="col-sm-8 mid-padding">
 
-    <div class="panel panel-default">
+    <div class="col-sm-12 EXpadding">
 
-        <div class="panel-body">
-            <h1 class="contentH1">OUR MISSION</h1><hr class="hrp" />
-            To service with excellence the needs of our students and our community by matching skills.
-            <br /><br />
-            To teach relevant programs; to nurture and support each student from acceptance through graduation in preparation for successful employment.
-            <br /><br />
-            Our training programs are practical, intense and result oriented. We provide you with the skills you need to find employment in today’s workforce.
-        </div>
+        <br class="hidden-lg hidden-md hidden-sm" />
+        <h1 class="contentH1">OUR MISSION</h1><hr class="hrp11" />
+        To service with excellence the needs of our students and our community by matching skills.
+        <br /><br />
+        To teach relevant programs; to nurture and support each student from acceptance through graduation in preparation for successful employment.
+        <br /><br />
+        Our training programs are practical, intense and result oriented. We provide you with the skills you need to find employment in today’s workforce.
+
+        <br /><br /><br />
+
+        <h1 class="contentH1">OUR PHILOSOPHY</h1><hr class="hrp11" />
+        The purpose of North American Trade Schools (N.A.T.S.) is to provide, in a private career school setting, post secondary education.
+        <br /><br />
+        In January, the school was accredited by the Accrediting Commission of the National Association of Trade and Technical Schools, (NATTS), Washington, D.C.
+        <br /><br />
+        Our business statement says it all: “Real people; Real training; Real jobs.” Our graduates are not only prepared to work in the building trades, welding technology, electrical and HVAC industry, they are also exposed to the knowledge, skills, tools and proper attitude to be employment ready. Our philosophy is that personal and job site safety training is as an important part of our program.
+        <br /><br />
+        We require 100% student commitment and dedication in order to be successful in our programs. An extremely rewarding future awaits the individual who is ready to make this commitment.
+
+        <br /><br /><br />
+        <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+        <br />
+        <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
+
+        <br class="hidden-lg hidden-md hidden-sm"/>
+        <br class="hidden-lg hidden-md hidden-sm" />
     </div>
-
-    <div class="panel panel-default">
-
-        <div class="panel-body">
-            <h1 class="contentH1">OUR PHILOSOPHY</h1><hr class="hrp" />
-            The purpose of North American Trade Schools (N.A.T.S.) is to provide, in a private career school setting, post secondary education.
-            <br /><br />
-            In January, the school was accredited by the Accrediting Commission of the National Association of Trade and Technical Schools, (NATTS), Washington, D.C.
-            <br /><br />
-            Our business statement says it all: “Real people; Real training; Real jobs.” Our graduates are not only prepared to work in the building trades, welding technology, electrical and HVAC industry, they are also exposed to the knowledge, skills, tools and proper attitude to be employment ready. Our philosophy is that personal and job site safety training is as an important part of our program.
-            <br /><br />
-            We require 100% student commitment and dedication in order to be successful in our programs. An extremely rewarding future awaits the individual who is ready to make this commitment.
-        </div>
     </div>
-
-    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
-    <br />
-    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</li></button>
-
-
-</div>
 
     <div class="col-sm-4 pull-right no-padding">
-        <div class="panel panel-default">
+        <div class="panel panel-default bluePANEL">
 
             <div class="panel-body">
                 <h1 class="contentH1 text-center">
                     <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
-                </h1><hr class="hrpblue" />
+                </h1><hr class="hrp11" />
                 <div class="row formWrapper overquestionsForm">
 
 
-                    <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+                    <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" data-parsley-validate="" class="questionsForm" method="post" action="/home/askquestion">
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control pull-right" name="FirstName">
+                            <input type="text" class="form-control pull-right" name="FirstName" required="">
                         </div>
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
-                            <input type="email" class="form-control pull-right" name="Email">
+                            <input type="email" class="form-control pull-right" name="Email" required="">
                         </div>
                         <div class="input-group spacer-top">
                             <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control pull-right" name="Telephone">
+                            <input type="text" class="form-control pull-right" name="Telephone" required="">
                         </div>
                         <div class="input-group spacer-top">
-                            <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                            <label class="pull-left contentp">Location: <span class="text-danger" required="">*</span></label>
                             <select class="form-control pull-right" name="CampusID">
                                 <option value="0">Select</option>
                                 <option value="24004">Brampton-NATS</option>
@@ -112,3 +111,27 @@
             </div>
         </div>
     </div>
+
+<style>
+    input.parsley-error, select.parsley-error, textarea.parsley-error {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+    }
+
+    .bs-callout-warning {
+        background-color: #fcf8f2;
+        border-color: #f0ad4e;
+    }
+
+    .bs-callout {
+        margin: 20px 0;
+        padding: 20px;
+        border-left: 3px solid #eee;
+    }
+
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+</style>
+<script src="~/Scripts/parsley.min.js"></script>
