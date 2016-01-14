@@ -458,7 +458,7 @@
     <Content Include="Views\Training\_TrainingLayout.cshtml" />
     <Content Include="Views\Programs\_ProgramsLayout.cshtml" />
     <Content Include="Views\DiscoverNATS\History.cshtml" />
-    <Content Include="Views\CareerServices\MedixAdvantage.cshtml" />
+    <Content Include="Views\CareerServices\NATSAdvantage.cshtml" />
     <Content Include="Views\Programs\ConstructionAndMaintenanceElectrician.cshtml" />
     <Content Include="Views\Programs\HVACTechnician.cshtml" />
     <Content Include="Views\Programs\SolarEnergyTechnician.cshtml" />
@@ -481,12 +481,9 @@
     <Content Include="Views\Admissions\FinancialOptions.cshtml" />
     <Content Include="Views\Campuses\_CampusesLayout.cshtml" />
     <Content Include="Views\Campuses\Brampton.cshtml" />
-    <Content Include="Views\Campuses\Brantford.cshtml" />
-    <Content Include="Views\Campuses\Kitchener.cshtml" />
     <Content Include="Views\Campuses\London.cshtml" />
     <Content Include="Views\Campuses\Index.cshtml" />
     <Content Include="Views\Campuses\Toronto.cshtml" />
-    <Content Include="Views\Campuses\Scarborough.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
     <Content Include="Views\Home\NewsDirectory.cshtml" />
