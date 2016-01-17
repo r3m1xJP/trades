@@ -730,8 +730,8 @@ footer {
 
 @media screen and (max-width: 480px) {
     .mid-padding {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -739,6 +739,13 @@ footer {
 .EXpadding {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+.EXpadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 }
 
 .link-unstyled a {
@@ -1311,6 +1318,10 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 
 .overquestionsForm {
     background-color: white;
+}
+
+.overquestionsForm2 {
+    background-color: #1f2c3c;
 }
 
 .input-group {
@@ -2022,11 +2033,25 @@ background-color: #B20000; color:white; font-family: "Helvetica W01 Roman", Aria
     background-color: #1f2c3c;
 }
 
+.hrp111 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 2px;
+    background-color: #b20000;
+}
+
 .hrpw3 {
     margin-top: 8px;
     margin-bottom: 8px;
     height: 3px;
     background-color: white;
+}
+
+.hrpw4 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 3px;
+    background-color: #b20000;
 }
 
 .hrpblue {
@@ -2200,3 +2225,16 @@ border: 1px solid #1f2c3c;
 -moz-box-shadow: 10px 10px 3px -8px rgba(179,179,179,1);
 box-shadow: 10px 10px 3px -8px rgba(179,179,179,1);
 }
+
+.bluePANEL2 {
+border: 1px solid #1f2c3c;
+background-color: #1f2c3c;
+-webkit-box-shadow: 10px 10px 3px -8px rgba(179,179,179,1);
+-moz-box-shadow: 10px 10px 3px -8px rgba(179,179,179,1);
+box-shadow: 10px 10px 3px -8px rgba(179,179,179,1);
+}
+
+.btnBLUE {
+border: solid 1px #1f2c3c;
+}
+
