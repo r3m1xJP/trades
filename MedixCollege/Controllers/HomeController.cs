@@ -325,6 +325,19 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -442,6 +455,19 @@ namespace MedixCollege.Controllers
                 ViewBag.Success = false;
 
                 ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
             }
@@ -567,6 +593,19 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -684,6 +723,19 @@ namespace MedixCollege.Controllers
                 ViewBag.Success = false;
 
                 ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
             }
@@ -809,6 +861,19 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -926,6 +991,19 @@ namespace MedixCollege.Controllers
                 ViewBag.Success = false;
 
                 ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
             }
@@ -1051,6 +1129,19 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
+
+                return View("ThankYou");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -1080,6 +1171,19 @@ namespace MedixCollege.Controllers
                 ViewBag.Success = false;
 
                 ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
             }

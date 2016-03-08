@@ -462,6 +462,22 @@ namespace MedixCollege.Controllers
                 }
             }
 
+            if (fc["Telephone"] != null)
+            {
+                int phoneNumber = 0;
+
+                int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+                if (phoneNumber == 0)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
+
+                    return false;
+                }
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             LeadsType leadsType = LeadsType.Leads;
@@ -596,6 +612,19 @@ namespace MedixCollege.Controllers
                 ViewBag.Success = false;
 
                 ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return RedirectToRoute("ThankYou");
+            }
+
+            int phoneNumber = 0;
+
+            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+
+            if (phoneNumber == 0)
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return RedirectToRoute("ThankYou");
             }
