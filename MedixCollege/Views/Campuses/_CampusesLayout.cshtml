@@ -66,4 +66,11 @@
             $('.form-overlay').slideDown()
         });
     });
+
+    $(window).bind("pageshow", function () {
+        var forms = $("form");
+        forms.each(function (i) {
+            forms[i].reset();
+        });
+    });
 </script>
