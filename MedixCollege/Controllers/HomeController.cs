@@ -325,9 +325,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -459,9 +459,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -593,9 +593,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -727,9 +727,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -861,9 +861,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -995,9 +995,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -1129,9 +1129,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -1175,9 +1175,9 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
-            int phoneNumber = 0;
+            double phoneNumber = 0;
 
-            int.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
