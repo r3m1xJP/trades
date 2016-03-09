@@ -53,6 +53,11 @@ namespace MedixCollege.Controllers
             return View();
         }
 
+        public ActionResult PartnerSchools()
+        {
+            return View();
+        }
+
         public ActionResult CareersAtNATS()
         {
             return View();
