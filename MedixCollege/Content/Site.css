@@ -129,9 +129,10 @@ textarea {
 
 .nav li.dropdown {
     text-align: center;
-    font-size: 14px;
+    font-size: 17px;
     background-color: #B20000;
     padding: 0px !important;
+    height:54px;
 }
 
 .navbar-nav > li a {
@@ -139,7 +140,7 @@ textarea {
 }
 
 .nav > li > a {
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
 
 /*.navbar-nav {
