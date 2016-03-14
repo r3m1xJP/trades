@@ -544,6 +544,7 @@ namespace MedixCollege.Controllers
                             if (leadsType == LeadsType.LeadsBaltimore)
                             {
                                 message.Bcc.Add(new MailAddress("mdaly@natradeschools.edu"));
+                                message.Bcc.Add(new MailAddress("craver@natradeschools.edu"));
                             }
                             else if (leadsType == LeadsType.LeadsNewCastle)
                             {
@@ -695,6 +696,7 @@ namespace MedixCollege.Controllers
                             if (leadsType == LeadsType.LeadsBaltimore)
                             {
                                 message.Bcc.Add(new MailAddress("mdaly@natradeschools.edu"));
+                                message.Bcc.Add(new MailAddress("craver@natradeschools.edu"));
                             }
                             else if (leadsType == LeadsType.LeadsNewCastle)
                             {
