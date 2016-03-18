@@ -44,32 +44,30 @@
     <br />
 </div>
 <div class="col-sm-4 pull-right no-padding">
-    <div class="panel panel-default">
+    <div class="panel panel-default bluePANEL2">
 
         <div class="panel-body">
-            <h1 class="contentH1 text-center">
+            <h1 class="contentH1whitemain text-center">
                 <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
-            </h1><hr class="hrpblue" />
-            <div class="row formWrapper overquestionsForm">
-
-
-                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" class="questionsForm" method="post" action="/home/askquestion">
+            </h1><hr class="hrpw3" />
+            <div class="row formWrapper overquestionsForm2">
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" data-parsley-validate="" class="questionsForm" method="post" action="/home/askquestion">
                     <input type="hidden" name="ORGID" value="240" />
                     <input type="hidden" name="MailListID" value="240001" />
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">First Name: <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control pull-right" name="FirstName">
+                        <label class="pull-left contentpw">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName" required="">
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control pull-right" name="Email">
+                        <label class="pull-left contentpw">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email" required="">
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control pull-right" name="Telephone">
+                        <label class="pull-left contentpw">Telephone: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="Telephone" required="">
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                        <label class="pull-left contentpw">Location: <span class="text-danger" required="">*</span></label>
                         <select class="form-control pull-right" name="CampusID">
                             <option value="0">Select</option>
                             <option value="24004">Brampton-NATS</option>
@@ -78,7 +76,7 @@
                         </select>
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                        <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
                         <select class="form-control pull-right" name="ProgramID">
                             <option class="0 24004 24001 240" value="0">Select</option>
                             <option class="0 24004 24001" value="39064">Cabinetmaking</option>
@@ -92,10 +90,10 @@
                         </select>
                     </div>
                     <div class="input-group spacer-top">
-                        <label class="pull-left contentp">Comments: </label>
+                        <label class="pull-left contentpw">Comments: </label>
                         <textarea class="form-control pull-right" name="Comment2"></textarea>
                     </div>
-                    <div class="small-text spacer-top text-center grayColor contentp">
+                    <div class="small-text spacer-top text-center contentpw">
                         Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
                     </div>
                     <div class="text-center">
