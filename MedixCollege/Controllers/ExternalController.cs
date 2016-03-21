@@ -295,6 +295,11 @@ namespace MedixCollege.Controllers
             return View();
         }
 
+        public ActionResult BaltimoreRequestInformationv2()
+        {
+            return View();
+        }
+
         public ActionResult BaltimoreReferAFriend()
         {
             return View();
@@ -432,6 +437,18 @@ namespace MedixCollege.Controllers
         }
 
         public ActionResult BaltimoreRequestInformationThankYou()
+        {
+            return View();
+        }
+
+        public ActionResult BaltimoreRequestInformationv2Post(FormCollection fc)
+        {
+            PostData(fc);
+
+            return View("BaltimoreRequestInformationThankYouv2");
+        }
+
+        public ActionResult BaltimoreRequestInformationThankYouv2()
         {
             return View();
         }

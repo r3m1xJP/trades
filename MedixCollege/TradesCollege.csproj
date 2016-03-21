@@ -569,6 +569,8 @@
     <Content Include="Views\External\BaltimorePPCNoDropDown.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\DiscoverNATS\PartnerSchools.cshtml" />
+    <Content Include="Views\External\BaltimoreRequestInformationv2.cshtml" />
+    <Content Include="Views\External\BaltimoreRequestInformationThankYouv2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
