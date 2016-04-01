@@ -479,11 +479,11 @@ namespace MedixCollege.Controllers
                 }
             }
 
+            Int64 phoneNumber = 0;
+
             if (fc["Telephone"] != null)
             {
-                double phoneNumber = 0;
-
-                double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+                Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
                 if (phoneNumber == 0)
                 {
@@ -518,7 +518,7 @@ namespace MedixCollege.Controllers
                         FirstName = fc["FirstName"],
                         LastName = fc["LastName"],
                         Email = fc["Email"],
-                        Telephone = fc["Telephone"] != null ? Convert.ToInt64(Helpers.Helpers.GetNumbers(fc["Telephone"])) : 0,
+                        Telephone = phoneNumber,
                         Location = campus,
                         Program = program,
                         HearAbout = mediaSource,
@@ -634,9 +634,9 @@ namespace MedixCollege.Controllers
                 return RedirectToRoute("ThankYou");
             }
 
-            double phoneNumber = 0;
+            Int64 phoneNumber = 0;
 
-            double.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
+            Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
 
             if (phoneNumber == 0)
             {
@@ -670,7 +670,7 @@ namespace MedixCollege.Controllers
                         FirstName = fc["FirstName"],
                         LastName = fc["LastName"],
                         Email = fc["Email"],
-                        Telephone = fc["Telephone"] != null ? Convert.ToInt64(Helpers.Helpers.GetNumbers(fc["Telephone"])) : 0,
+                        Telephone = phoneNumber,
                         Location = campus,
                         Program = program,
                         HearAbout = mediaSource,
