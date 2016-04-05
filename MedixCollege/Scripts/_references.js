@@ -15,3 +15,4 @@
 /// <reference path="responsiveslides.min.js" />
 /// <reference path="bootstrap.youtubepopup.min.js" />
 /// <reference path="parsley.min.js" />
+/// <reference path="jquery.blockui.js" />
