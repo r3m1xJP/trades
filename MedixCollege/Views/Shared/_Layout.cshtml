@@ -1195,7 +1195,7 @@
         });
 
         $('.popup-form-button').on("click", function (e) {
-            $.blockUI({ overlayCSS: { backgroundColor: '#0F3F6F' } });
+            $.blockUI({ overlayCSS: { backgroundColor: '#0F3F6F' }, message: 'Your Information Has Been Submitted, Please Wait While We Redirect You' });
 
             setTimeout($.unblockUI, 8000);
         });
