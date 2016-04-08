@@ -47,19 +47,19 @@
 
             <div class="col-sm-4">
                 @*@if (ViewBag.MedixOnline != null && ViewBag.MedixOnline)
-    {
-        <a href="/home"><img src="~/Content/images/nats-logo-main.png" class="mainLogo img-responsive" alt="North American Trade Schools Logo" /></a>
-    }
-    else
-    {
-        <a href="/home"><img src="~/Content/images/nats-logo-main.png" class="mainLogo img-responsive" alt="North American Trade Schools Logo" /></a>
-    }*@
+                    {
+                        <a href="/home"><img src="~/Content/images/nats-logo-main.png" class="mainLogo img-responsive" alt="North American Trade Schools Logo" /></a>
+                    }
+                    else
+                    {
+                        <a href="/home"><img src="~/Content/images/nats-logo-main.png" class="mainLogo img-responsive" alt="North American Trade Schools Logo" /></a>
+                    }*@
                 <a href="/home"><img src="~/Content/images/nats-logo-main.png" class="mainLogo img-responsive" alt="Trades College Logo" /></a>
             </div>
 
             <div class="col-sm-8 hidden-xs">
 
-                
+
 
                 <div class="header-3-container">
 
@@ -70,9 +70,10 @@
                         <div style="display:inline-block"><span style="font-size:14px;margin-right:8px">Is Trade Training Right For You? <span style="color:#000000">Find Out</span></span><a href="https://natradeschools.virtualadmissions.com/?lead_src=w-header" style="background-color:#f7881d;padding:6px 16px;font-size:14px;color:#ffffff;border-radius:5px;margin-right:10px" target="_blank">Take The Free Quiz</a></div>
 
 
-                    <span class="blueColor">
-                        <span class="glyphicon glyphicon-earphone"></span></span> 
-                    <span class="blueColor numbersize">1(888) 763-2159</span>
+                        <span class="blueColor">
+                            <span class="glyphicon glyphicon-earphone"></span>
+                        </span>
+                        <span class="blueColor numbersize">1(888) 763-2159</span>
                     </div>
 
 
@@ -1115,12 +1116,15 @@
                     <div class="col-md-3">
                         <h2 class="contentH3-blue">NATS PROVIDES</h2><hr class="hrp11" />
                         <ul>
-                        <li>Career preparation so you can be job-ready in less than one year</li><hr class="hrp" />
-                        <li>Small class sizes and individual attention</li><hr class="hrp" />
-                        <li>Professional instructors with career experience in your chosen field of study</li><hr class="hrp" />
-                        <li>Employment preparation and placement assistance is available to all graduates of full-time registered programs</li>
+                            <li>Career preparation so you can be job-ready in less than one year</li>
                             <hr class="hrp" />
-                        <li>Financial Assistance may be available to those who qualify</li>
+                            <li>Small class sizes and individual attention</li>
+                            <hr class="hrp" />
+                            <li>Professional instructors with career experience in your chosen field of study</li>
+                            <hr class="hrp" />
+                            <li>Employment preparation and placement assistance is available to all graduates of full-time registered programs</li>
+                            <hr class="hrp" />
+                            <li>Financial Assistance may be available to those who qualify</li>
                         </ul>
 
 
@@ -1145,23 +1149,27 @@
 
                     <div class="col-md-3">
                         <h2 class="contentH3-blue">BRAMPTON CAMPUS</h2><hr class="hrp11" />
-                        <p class="contentp">499 Main Street S. Unit 60.<br />
-                        Brampton ON<br />
-                        L6Y 1N7<br />
-                        (905) 487-1163</p>
+                        <p class="contentp">
+                            499 Main Street S. Unit 60.<br />
+                            Brampton ON<br />
+                            L6Y 1N7<br />
+                            (905) 487-1163
+                        </p>
 
                         <h2 class="contentH3-blue">LONDON CAMPUS</h2><hr class="hrp11" />
-                        <p class="contentp">847 Highbury Ave N. Bldg. 4<br />
-                        London, ON<br />
-                        N5Y 5B8<br />
-                        (519) 963-0680</p>
+                        <p class="contentp">
+                            847 Highbury Ave N. Bldg. 4<br />
+                            London, ON<br />
+                            N5Y 5B8<br />
+                            (519) 963-0680
+                        </p>
                     </div>
 
 
 
-                        <div class="col-md-3">
+                    <div class="col-md-3">
 
-                      
+
                         <h2 class="contentH3-blue">QUICK LINKS</h2><hr class="hrp11" />
                         <ul>
                             <li>@Html.ActionLink("Site Map", "SiteMap", "Home")</li>
@@ -1172,15 +1180,16 @@
                             <li>@Html.ActionLink("Social Media", "SocialMedia", "Home")</li>
                         </ul>
                     </div>
-                
-            </div>
-            <br />
-        </div> <!-- /.bottom-nav -->
 
-        <div class="footer-banner">
+                </div>
+                <br />
+            </div> <!-- /.bottom-nav -->
 
-            <div class="container">
-                <img class="center-block" src="~/Content/images/CCGLogo.png" alt="The Career College Group logo." />
+            <div class="footer-banner">
+
+                <div class="container">
+                    <img class="center-block" src="~/Content/images/CCGLogo.png" alt="The Career College Group logo." />
+                </div>
             </div>
         </div>
     </footer> <!-- /footer -->
@@ -1198,9 +1207,10 @@
 
             var form = $(this).parents('form:first');
             if ($(form).parsley().validate()) {
-            $.blockUI({ overlayCSS: { backgroundColor: '#b2000' }, message: 'Your Information Has Been Submitted, Please Wait While We Redirect You' });
-  
-            setTimeout($.unblockUI, 8000);
+                $.blockUI({ overlayCSS: { backgroundColor: '#b2000' }, message: 'Your Information Has Been Submitted, Please Wait While We Redirect You' });
+
+                setTimeout($.unblockUI, 8000);
+            }
         });
 
         $('#applyNowCampusList, requestCatalogueCampusList, askQuestionCampusList, tourCampusCampusList').change(function () {
