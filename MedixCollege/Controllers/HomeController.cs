@@ -363,7 +363,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
@@ -497,7 +497,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
@@ -631,7 +631,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
@@ -765,7 +765,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
@@ -899,7 +899,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
@@ -1033,7 +1033,7 @@ namespace MedixCollege.Controllers
 
                             if (fc["CampusID"].ToString() == "24004")
                             {
-                                message.To.Add(new MailAddress("cbrandt@medixcollege.ca"));
+                                message.To.Add(new MailAddress("dgabrielli@medixcollege.ca"));
                             }
 
                             if (fc["CampusID"].ToString() == "24001")
