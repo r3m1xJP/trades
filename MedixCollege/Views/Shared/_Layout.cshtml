@@ -102,7 +102,7 @@
             <div class="navbar-collapse collapse mobile">
                 <ul class="nav navbar-nav pull-left visible-xs">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HOME <span class="glyphicon glyphicon-triangle-bottom GLPsize goldColour"></span></a>
+                        @*<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">HOME <span class="glyphicon glyphicon-triangle-bottom GLPsize goldColour"></span></a>*@
                         <ul class="dropdown-menu" role="menu">
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>
                             <li>@Html.ActionLink("News Directory", "NewsDirectory", "Home")</li>
@@ -284,6 +284,7 @@
                 </div>
                 <div class="popup-form col-lg-6 col-lg-offset-3">
                     <form id="applyNowForm" name="applyNowForm" data-parsley-validate="" method="post" action="/home/applynow">
+                        <p class="hidden">Leave this empty: <input type="text" name="url" /></p>
                         <input type="hidden" name="ORGID" value="240" />
                         <input type="hidden" name="MailListID" value="240001" />
                         <div class="input-group spacer-top">

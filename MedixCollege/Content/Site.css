@@ -135,6 +135,10 @@ textarea {
     height:54px;
 }
 
+.mobile .nav li.dropdown {
+    text-align: left !important;
+}
+
 .navbar-nav > li a {
     line-height: 20px;
 }

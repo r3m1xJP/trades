@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -227,6 +228,11 @@ namespace MedixCollege.Controllers
             return View();
         }
 
+        public ActionResult CampusPrograms()
+        {
+            return View();
+        }
+
         public ActionResult BaltimoreThankYou()
         {
             return View();
@@ -316,6 +322,15 @@ namespace MedixCollege.Controllers
         [HttpPost]
         public async Task<ActionResult> ApplyNow(FormCollection fc)
         {
+            if (!string.IsNullOrEmpty(fc["url"]))
+            {
+                ViewBag.Success = false;
+
+                ViewBag.ErrorMessage = "Error submitting your request!";
+
+                return View("ThankYou");
+            }
+
             if (fc["Comment2"].Contains("www.") || fc["Comment2"].Contains("http://"))
             {
                 ViewBag.Success = false;

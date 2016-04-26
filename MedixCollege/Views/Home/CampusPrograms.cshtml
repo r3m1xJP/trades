@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "CampusPrograms";
+    Layout = null;
+}
+
+@Scripts.Render("~/bundles/jquery")
+
+<div id="askQuestionWrapper">
+    <div class="spacer-top text-center">
+        <label class="popup-form-header">Ask a Question</label>
+    </div>
+    <div class="popup-form col-lg-6 col-lg-offset-3">
+        <form id="askQuestionForm" name="askQuestionForm" data-parsley-validate="" method="post" action="/home/askquestion">
+            <div class="input-group spacer-top">
+                <label class="pull-left contentpw" for="formlocation">Location: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="CampusID" id="askQuestionCampusList">
+                    <option value="0">Select</option>
+                    <option value="24004">Brampton-NATS</option>
+                    <option value="24001">London-NATS</option>
+                    <option value="240">Toronto</option>
+                </select>
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="ProgramID" id="askQuestionProgramList">
+                    <option class="0 24001 240" value="0">Select</option>
+                    <option class="0 24001" value="39064">Cabinetmaking</option>
+                    <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                    <option class="0 24001" value="39061">Electrical Technology</option>
+                    <option class="0 24001" value="39060">Home Renovation Technician</option>
+                    <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                    <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                    <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                    <option class="0 24004 24001" value="39063">Welding Technology</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#askQuestionCampusList').change(function () {
+            var campusId = $('#askQuestionCampusList option:selected').val();
+
+            $.each($("#askQuestionProgramList option"), function (index, value) {
+                if ($(value).hasClass(campusId) !== true) {
+                    $(value).hide();
+                } else {
+                    $(value).show();
+                }
+            });
+        });
+    });
+</script>
+
