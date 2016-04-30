@@ -1,0 +1,127 @@
+﻿@{
+    Layout = "~/Views/CareerServices/_CareerServicesLayout.cshtml";
+}
+
+@{
+    ViewBag.Title = "NATS Advantage";
+    ViewBag.PageDescription = "Medix Advantage";
+    ViewBag.HeaderTitle = "NATS Advantage";
+}
+
+
+<div class="col-sm-12 no-padding botMARG">
+    <h1 class="contentPageH1">CANADA JOB GRANT</h1>
+    <ol class="breadcrumb">
+        <li class="contentp">@Html.ActionLink("Home", "Index", "Home")</li>
+        <li class="active contentp">Canada Job Grant </li>
+    </ol>
+
+
+</div>
+
+<div class="col-sm-8 mid-padding">
+
+
+
+
+    <h1 class="contentH1">Key details for Employers and Employees:</h1><hr class="hrp" />
+    <p class="contentp">
+        The Canada Job Grant covers two-thirds of the cost of training up to a maximum of $10,000 that is contributed by the government.
+        <br /><br />
+        The training is intended for employed individuals acquiring new skills for their current job, or to prepare for another job with the same employer, and for unemployed individuals seeking a new job.
+        <br /><br />
+        The employer must have a job available at the end of the training for the individual being trained.!
+        <br /><br />
+        Training must not exceed one year in duration and must be provided by one of the following:
+        <ul>
+
+            <li>Colleges of applied arts and technology</li>
+            <li>Publicly-assisted universities</li>
+            <li>School boards</li>
+            <li>Private trainers operating in compliance with the Private Career Colleges Act, 2005</li>
+            <li>Union-based training centres</li>
+            <li>Product vendors</li>
+        </ul>
+    </p><br />
+    <h1 class="contentH1">Confirm Your Eligibility & Streamline the Application Process </h1><hr class="hrp" />
+    <p class="contentp">
+        The Canada Job Grant is issued through a wide variety of service providers across Canada (excl. Quebec), each with their own pool of funds. It’s critical that your business profile, timelines, budget, and project impacts are all aligned with your local service provider’s priorities for funding. For comprehensive funding application support services, please reach out to our trusted partner, Mentor Works Ltd. by calling 1-888-599-3111 ext.115 or emailing jeffd@mentorworks.ca to speak to Jeff Dumart, Business Development Analyst at Mentor Works.
+        <br /><br />
+        Click below to go to<br /><br />
+        <a href="http://www.esdc.gc.ca/en/job_grant/index.page " target="_blank"><img src="~/Content/images/canadajobgrant.jpg" class="img-responsive" /></a>
+    </p>
+
+
+
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO PROGRAM DIRECTORY", "AllPrograms", "Programs")</button>
+    <br />
+    <button type="button" class="btn btn-default btn-lg btn-block contentH2"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;@Html.ActionLink("GO TO CAMPUS DIRECTORY", "Index", "Campuses")</button>
+    <br />
+</div>
+
+
+
+
+<div class="col-sm-4 pull-right no-padding">
+    <div class="panel panel-default bluePANEL2">
+
+        <div class="panel-body">
+            <h1 class="contentH1whitemain text-center">
+                <span class="glyphicon glyphicon-comment 1blueGoldBorder"></span>&nbsp; Ask a Question
+            </h1><hr class="hrpw3" />
+            <div class="row formWrapper overquestionsForm2">
+                <form id="discoverMedixQuestionsForm" name="discoverMedixQuestionsForm" data-parsley-validate="" class="questionsForm" method="post" action="/home/askquestion">
+                    <input type="hidden" name="ORGID" value="240" />
+                    <input type="hidden" name="MailListID" value="240001" />
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">First Name: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="FirstName" required="">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">Email: <span class="text-danger">*</span></label>
+                        <input type="email" class="form-control pull-right" name="Email" required="">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">Telephone: <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control pull-right" name="Telephone" required="">
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">Location: <span class="text-danger" required="">*</span></label>
+                        <select class="form-control pull-right" name="CampusID">
+                            <option value="0">Select</option>
+                            <option value="24004">Brampton-NATS</option>
+                            <option value="24001">London-NATS</option>
+                            <option value="240">Toronto</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
+                        <select class="form-control pull-right" name="ProgramID">
+                            <option class="0 24004 24001 240" value="0">Select</option>
+                            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+                            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+                            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+                            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+                            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+                            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+                            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+                            <option class="0 24004 24001" value="39063">Welding Technology</option>
+                        </select>
+                    </div>
+                    <div class="input-group spacer-top">
+                        <label class="pull-left contentpw">Comments: </label>
+                        <textarea class="form-control pull-right" name="Comment2"></textarea>
+                    </div>
+                    <div class="small-text spacer-top text-center contentpw">
+                        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+                    </div>
+                    <div class="text-center">
+                        <input id="applyNowSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

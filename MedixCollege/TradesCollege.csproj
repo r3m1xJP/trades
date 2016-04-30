@@ -235,6 +235,7 @@
     <Content Include="Content\images\cabinetmakingproject-tv-richardd.jpg" />
     <Content Include="Content\images\campus-brampton.jpg" />
     <Content Include="Content\images\campus-london.jpg" />
+    <Content Include="Content\images\canadajobgrant.jpg" />
     <Content Include="Content\images\career-services-mainpage.jpg" />
     <Content Include="Content\images\CCGLogo.png" />
     <Content Include="Content\images\corporate-training.jpg" />
@@ -574,6 +575,8 @@
     <Content Include="Views\External\BaltimoreRequestInformationv2.cshtml" />
     <Content Include="Views\External\BaltimoreRequestInformationThankYouv2.cshtml" />
     <Content Include="Views\Home\CampusPrograms.cshtml" />
+    <Content Include="Views\CareerServices\CanadaJobGrant.cshtml" />
+    <Content Include="Views\CareerServices\KPIandDefault.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
