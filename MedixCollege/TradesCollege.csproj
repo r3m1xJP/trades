@@ -575,8 +575,8 @@
     <Content Include="Views\External\BaltimoreRequestInformationv2.cshtml" />
     <Content Include="Views\External\BaltimoreRequestInformationThankYouv2.cshtml" />
     <Content Include="Views\Home\CampusPrograms.cshtml" />
-    <Content Include="Views\CareerServices\CanadaJobGrant.cshtml" />
     <Content Include="Views\CareerServices\KPIandDefault.cshtml" />
+    <Content Include="Views\Admissions\CanadaJobGrant.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
