@@ -512,10 +512,6 @@
     <Content Include="Views\Home\CareersAtMedix.cshtml" />
     <Content Include="Views\Home\VirtualTours.cshtml" />
     <Content Include="Views\Home\SocialMedia.cshtml" />
-    <Content Include="Views\CareerServices\JobSearchTips.cshtml" />
-    <Content Include="Views\CareerServices\ResumeTips.cshtml" />
-    <Content Include="Views\CareerServices\InterviewTips.cshtml" />
-    <Content Include="Views\CareerServices\ProfessionalTips.cshtml" />
     <Content Include="Views\DiscoverNATS\CareersAtNATS.cshtml" />
     <Content Include="Views\Home\ReferralProgram.cshtml" />
     <Content Include="Views\Home\_HomeLayout.cshtml" />
