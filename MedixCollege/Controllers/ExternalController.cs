@@ -495,6 +495,25 @@ namespace MedixCollege.Controllers
                 }
             }
 
+            var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                if (campus == "Baltimore")
+                {
+                    fc.Add("MediaID", "14683");
+                }
+                else
+                {
+                    fc.Add("MediaID", "14698");
+                }
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             LeadsType leadsType = LeadsType.Leads;
@@ -507,7 +526,6 @@ namespace MedixCollege.Controllers
                 {
                     ViewBag.Success = true;
 
-                    var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                     var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
                     var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                     var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;
@@ -647,6 +665,25 @@ namespace MedixCollege.Controllers
                 return RedirectToRoute("ThankYou");
             }
 
+            var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                if (campus == "Baltimore")
+                {
+                    fc.Add("MediaID", "14683");
+                }
+                else
+                {
+                    fc.Add("MediaID", "14698");
+                }
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             LeadsType leadsType = LeadsType.Leads;
@@ -659,7 +696,6 @@ namespace MedixCollege.Controllers
                 {
                     ViewBag.Success = true;
 
-                    var campus = campuses.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["CampusID"])).Value;
                     var program = programs.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["ProgramID"])).Value;
                     var mediaGroup = mediaGroups.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaGroupID"])).Value;
                     var mediaSource = mediaSources.FirstOrDefault(x => x.Key == Convert.ToInt32(fc["MediaID"])).Value;

@@ -353,6 +353,16 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -485,6 +495,16 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
+            }
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
             }
 
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
@@ -621,6 +641,16 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -753,6 +783,16 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
+            }
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
             }
 
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
@@ -889,6 +929,16 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -1021,6 +1071,16 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
+            }
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
             }
 
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
@@ -1157,6 +1217,16 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
+            }
+
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
 
             using (var client = new HttpClient())
@@ -1201,6 +1271,16 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request! Invalid Phone Number!";
 
                 return View("ThankYou");
+            }
+
+            if (fc["MediaGroupID"] == null)
+            {
+                fc.Add("MediaGroupID", "90080");
+            }
+
+            if (fc["MediaID"] == null)
+            {
+                fc.Add("MediaID", "14170");
             }
 
             var formData = new FormUrlEncodedContent(fc.AllKeys.ToDictionary(k => k, v => fc[v]));
