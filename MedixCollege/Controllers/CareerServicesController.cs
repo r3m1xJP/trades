@@ -54,6 +54,16 @@ namespace MedixCollege.Controllers
         public ActionResult HireAGrad()
         {
             return View();
+        }
+
+        public ActionResult KPIandDefault()
+        {
+            return View();
+        }
+
+        public ActionResult CanadaJobGrant()
+        {
+            return View();
         } 
     }
 }
