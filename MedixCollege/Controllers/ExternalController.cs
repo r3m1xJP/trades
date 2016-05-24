@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -479,6 +480,32 @@ namespace MedixCollege.Controllers
                 }
             }
 
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return false;
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return false;
+                }
+            }
+
             Int64 phoneNumber = 0;
 
             if (fc["Telephone"] != null)
@@ -650,6 +677,32 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request!";
 
                 return RedirectToRoute("ThankYou");
+            }
+
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
             }
 
             Int64 phoneNumber = 0;

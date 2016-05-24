@@ -340,6 +340,32 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
             Int64 phoneNumber = 0;
 
             Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
@@ -482,6 +508,32 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request!";
 
                 return View("ThankYou");
+            }
+
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
             }
 
             Int64 phoneNumber = 0;
@@ -628,6 +680,32 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
             Int64 phoneNumber = 0;
 
             Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
@@ -770,6 +848,32 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request!";
 
                 return View("ThankYou");
+            }
+
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
             }
 
             Int64 phoneNumber = 0;
@@ -916,6 +1020,32 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
             Int64 phoneNumber = 0;
 
             Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
@@ -1058,6 +1188,32 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request!";
 
                 return View("ThankYou");
+            }
+
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
             }
 
             Int64 phoneNumber = 0;
@@ -1204,6 +1360,32 @@ namespace MedixCollege.Controllers
                 return View("ThankYou");
             }
 
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
             Int64 phoneNumber = 0;
 
             Int64.TryParse(Helpers.Helpers.GetNumbers(fc["Telephone"]), out phoneNumber);
@@ -1258,6 +1440,32 @@ namespace MedixCollege.Controllers
                 ViewBag.ErrorMessage = "Error submitting your request!";
 
                 return View("ThankYou");
+            }
+
+            var regex = new Regex(@"^[A-Za-z\d-]+$");
+
+            if (!string.IsNullOrEmpty(fc["FirstName"]))
+            {
+                if (!regex.Match(fc["FirstName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid First Name!";
+
+                    return View("ThankYou");
+                }
+            }
+
+            if (!string.IsNullOrEmpty(fc["LastName"]))
+            {
+                if (!regex.Match(fc["LastName"]).Success)
+                {
+                    ViewBag.Success = false;
+
+                    ViewBag.ErrorMessage = "Error submitting your request! Invalid Last Name!";
+
+                    return View("ThankYou");
+                }
             }
 
             Int64 phoneNumber = 0;
