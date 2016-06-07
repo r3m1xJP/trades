@@ -206,6 +206,7 @@
     <Content Include="Content\images\160312-Hires-NATS-London.jpg" />
     <Content Include="Content\images\160507-Hires-NATS-London.jpg" />
     <Content Include="Content\images\160514-Hires-NATS-Brampton.jpg" />
+    <Content Include="Content\images\160604-Hires-NATS-Brampton.jpg" />
     <Content Include="Content\images\admissions-home.jpg" />
     <Content Include="Content\images\BaltimoreLogo.jpg" />
     <Content Include="Content\images\banner-cabinetmaking.jpg" />
@@ -426,6 +427,7 @@
     <Content Include="Content\fonts\._socicon-webfont.ttf" />
     <Content Include="Content\fonts\._socicon-webfont.woff" />
     <Content Include="Content\fonts\._socicon-webfont.woff2" />
+    <Content Include="Content\images\Toronto Template.psd" />
     <None Include="Properties\PublishProfiles\demo.pubxml" />
     <None Include="Properties\PublishProfiles\ftp.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
