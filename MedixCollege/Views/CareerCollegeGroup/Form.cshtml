@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<form id="ccgForm" name="ccgForm" data-parsley-validate="" class="questionsForm" method="post" action="/external/CCGExternalPost">
+    <input type="hidden" name="ORGID" value="240" />
+    <input type="hidden" name="MailListID" value="240001" />
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">First Name: <span class="text-danger">*</span></label>
+        <input type="text" class="form-control pull-right" name="FirstName" required="">
+    </div>
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">Email: <span class="text-danger">*</span></label>
+        <input type="email" class="form-control pull-right" name="Email" required="">
+    </div>
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">Telephone: <span class="text-danger">*</span></label>
+        <input type="text" class="form-control pull-right" name="Telephone" required="">
+    </div>
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">Location: <span class="text-danger" required="">*</span></label>
+        <select class="form-control pull-right" name="CampusID">
+            <option value="0">Select</option>
+            <option value="24004">Brampton-NATS</option>
+            <option value="24001">London-NATS</option>
+            <option value="240">Toronto</option>
+        </select>
+    </div>
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">Program: <span class="text-danger">*</span></label>
+        <select class="form-control pull-right" name="ProgramID">
+            <option class="0 24004 24001 240" value="0">Select</option>
+            <option class="0 24004 24001" value="39064">Cabinetmaking</option>
+            <option class="0 24004" value="40332">Construction Maintenance Electrician Pre-Apprenticeship</option>
+            <option class="0 24004 24001" value="39061">Electrical Technology</option>
+            <option class="0 24004 24001" value="39060">Home Renovation Technician</option>
+            <option class="0 24004 24001" value="39062">HVAC Technician</option>
+            <option class="0 24001" value="40294">Motorcycle & Small Engine Repair</option>
+            <option class="0 24004 24001 240" value="39737">Solar Energy Technician</option>
+            <option class="0 24004 24001" value="39063">Welding Technology</option>
+        </select>
+    </div>
+    <div class="input-group spacer-top">
+        <label class="pull-left contentpw">Comments: </label>
+        <textarea class="form-control pull-right" name="Comment2"></textarea>
+    </div>
+    <div class="small-text spacer-top text-center contentpw">
+        Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+    </div>
+    <div class="text-center">
+        <input id="ccgSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block" />
+    </div>
+</form>

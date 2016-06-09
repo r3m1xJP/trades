@@ -126,6 +126,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdmissionsController.cs" />
     <Compile Include="Controllers\CampusesController.cs" />
+    <Compile Include="Controllers\CareerCollegeGroupController.cs" />
     <Compile Include="Controllers\CareerServicesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\ExternalController.cs" />
@@ -577,6 +578,8 @@
     <Content Include="Views\Home\CampusPrograms.cshtml" />
     <Content Include="Views\CareerServices\KPIandDefault.cshtml" />
     <Content Include="Views\Admissions\CanadaJobGrant.cshtml" />
+    <Content Include="Views\CareerCollegeGroup\Form.cshtml" />
+    <Content Include="Views\CareerCollegeGroup\ThankYou.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
