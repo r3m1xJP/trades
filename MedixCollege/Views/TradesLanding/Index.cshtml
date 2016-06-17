@@ -1,0 +1,87 @@
+﻿@{
+    Layout = null;
+}
+
+<div class="panel panel-default landingFormBG">
+
+    <div class="panel-body">
+        <form id="questionsForm" name="questionsForm" method="post" data-parsley-validate="" class="questionsForm" action="/TradesLanding/Post">
+            <input type="hidden" name="ORGID" value="240" />
+            <input type="hidden" name="MailListID" value="240001" />
+            <input type="hidden" name="form_variable" id="form_variable" value="" />
+            <h1 class="contentH1 text-center" id="form_variable_title">
+            </h1><h1 class="contentH1 text-center">
+                FILL OUT FORM, GET FREE INFO!
+            </h1><hr class="hrpblue" />
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Full Name: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control pull-right" name="FirstName" required="" />
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Telephone: <span class="text-danger">*</span></label>
+                <input type="text" class="form-control pull-right" name="Telephone" required="" />
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Email: <span class="text-danger">*</span></label>
+                <input type="email" class="form-control pull-right" name="Email" required="" />
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Location: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="CampusID" id="askQuestionCampusList">
+                    <option value="0">Select</option>
+                    <option value="246">Brampton</option>
+                    <option value="243">Brantford</option>
+                    <option value="242">Kitchener</option>
+                    <option value="244">London</option>
+                    <option value="241">Scarborough</option>
+                    <option value="240">Toronto</option>
+                </select>
+            </div>
+            <div class="input-group spacer-top">
+                <label class="pull-left contentp">Program: <span class="text-danger">*</span></label>
+                <select class="form-control pull-right" name="ProgramID" id="askQuestionCampusList">
+                    <option value="0">Select</option>
+                    <option value="39877">Child and Youth Care with Addictions Support Worker</option>
+                    <option value="632">Community Service Worker</option>
+                    <option value="634">Developmental Service Worker</option>
+                    <option value="38526">Early Childcare Assistant</option>
+                    <option value="37255">Fitness &amp; Health Promotion</option>
+                    <option value="627">Intra-Oral Dental Assistant </option>
+                    <option value="629">Massage Therapy</option>
+                    <option value="633">Medical Laboratory Assistant / Technician</option>
+                    <option value="630">Medical Office Administrator</option>
+                    <option value="631">Personal Support Worker</option>
+                    <option value="628">Pharmacy Assistant</option>
+                </select>
+            </div>
+            <div class="input-group spacer-top hidden">
+                <label class="pull-left contentp">Question: </label>
+                <textarea class="form-control pull-right" name="Comment2"></textarea>
+            </div>
+            <div class="small-text spacer-top text-center grayColor">
+                Please contact me with more information relating to the school and program(s). I understand I may cancel my consent at anytime.
+            </div>
+            <div class="text-center">
+                <input id="askQuestionSubmit" type="submit" value="Submit" class="btn popup-form-button spacer-top btn-block btn-landingFormButton" />
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    var form_variable = getParameterByName('form_variable');
+
+    document.getElementById('form_variable').value = form_variable;
+    document.getElementById('form_variable_title').innerHTML = form_variable;
+</script>

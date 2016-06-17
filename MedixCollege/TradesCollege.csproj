@@ -131,6 +131,7 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\ExternalController.cs" />
     <Compile Include="Controllers\LeadsController.cs" />
+    <Compile Include="Controllers\TradesLandingController.cs" />
     <Compile Include="Controllers\TrainingController.cs" />
     <Compile Include="Controllers\DiscoverNATSController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -580,6 +581,8 @@
     <Content Include="Views\Admissions\CanadaJobGrant.cshtml" />
     <Content Include="Views\CareerCollegeGroup\Form.cshtml" />
     <Content Include="Views\CareerCollegeGroup\ThankYou.cshtml" />
+    <Content Include="Views\TradesLanding\ThankYou.cshtml" />
+    <Content Include="Views\TradesLanding\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
