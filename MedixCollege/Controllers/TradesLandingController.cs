@@ -41,7 +41,6 @@ namespace MedixCollege.Controllers
 
             programs.Add(39064, "Cabinetmaking");
             programs.Add(40332, "Construction Maintenance Electrician Pre-Apprenticeship");
-            programs.Add(39061, "Electrical Technology");
             programs.Add(39060, "Home Renovation Technician");
             programs.Add(39062, "HVAC Technician");
             programs.Add(40294, "Motorcycle & Small Engine Repair");
