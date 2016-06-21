@@ -23,6 +23,12 @@ namespace MedixCollege.Controllers
         {
             campuses.Add(24002, "Baltimore");
             campuses.Add(24003, "Newcastle");
+            campuses.Add(246, "Brampton");
+            campuses.Add(243, "Brantford");
+            campuses.Add(242, "Kitchener");
+            campuses.Add(244, "London");
+            campuses.Add(241, "Scarborough");
+            campuses.Add(240, "Toronto");
 
             programs.Add(39119, "Building Construction Technology");
             programs.Add(39120, "Commercial Truck Driving");
@@ -279,18 +285,22 @@ namespace MedixCollege.Controllers
 
             if (fc["MediaGroupID"] == null)
             {
-                fc.Add("MediaGroupID", "90080");
+                fc.Add("MediaGroupID", "91051");
             }
 
             if (fc["MediaID"] == null)
             {
-                if (campus == "Baltimore")
+                if (campus == "Brampton")
                 {
-                    fc.Add("MediaID", "14683");
+                    fc.Add("MediaID", "18504");
+                }
+                else if (campus == "London")
+                {
+                    fc.Add("MediaID", "18505");
                 }
                 else
                 {
-                    fc.Add("MediaID", "14698");
+                    fc.Add("MediaID", "14960");
                 }
             }
 
