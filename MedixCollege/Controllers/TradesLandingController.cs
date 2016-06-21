@@ -39,6 +39,15 @@ namespace MedixCollege.Controllers
             programs.Add(39129, "Combination Welding");
             programs.Add(40235, "Motorcycle and Power Equipment Technology");
 
+            programs.Add(39064, "Cabinetmaking");
+            programs.Add(40332, "Construction Maintenance Electrician Pre-Apprenticeship");
+            programs.Add(39061, "Electrical Technology");
+            programs.Add(39060, "Home Renovation Technician");
+            programs.Add(39062, "HVAC Technician");
+            programs.Add(40294, "Motorcycle & Small Engine Repair");
+            programs.Add(39737, "Solar Energy Technician");
+            programs.Add(39063, "Welding Technology");
+
             mediaGroups.Add(91063, "HIGH SCHOOL");
             mediaGroups.Add(90080, "INTERNET");
             mediaGroups.Add(90081, "NEWSPAPER");
