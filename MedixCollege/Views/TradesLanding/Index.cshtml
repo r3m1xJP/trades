@@ -48,8 +48,8 @@
                     <option class="0 24004 24001" value="39063">Welding Technology</option>
                 </select>
             </div>
-            <div class="input-group spacer-top hidden">
-                <label class="pull-left contentp">Question: </label>
+            <div class="input-group spacer-top hidden-lg hidden-md hidden-sm hidden-xs">
+                <label class="pull-left contentpw">Comments: </label>
                 <textarea class="form-control pull-right" name="Comment2"></textarea>
             </div>
             <div class="small-text spacer-top text-center grayColor">
@@ -79,3 +79,27 @@
     document.getElementById('form_variable').value = form_variable;
     document.getElementById('form_variable_title').innerHTML = form_variable;
 </script>
+
+<style>
+    input.parsley-error, select.parsley-error, textarea.parsley-error {
+        color: #B94A48;
+        background-color: #F2DEDE;
+        border: 1px solid #EED3D7;
+    }
+
+    .bs-callout-warning {
+        background-color: #fcf8f2;
+        border-color: #f0ad4e;
+    }
+
+    .bs-callout {
+        margin: 20px 0;
+        padding: 20px;
+        border-left: 3px solid #eee;
+    }
+
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+</style>
+<script src="http://www.northamericantradeschools.ca/Scripts/parsley.min.js"></script>

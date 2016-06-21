@@ -29,6 +29,8 @@ namespace MedixCollege.Controllers
             campuses.Add(244, "London");
             campuses.Add(241, "Scarborough");
             campuses.Add(240, "Toronto");
+            campuses.Add(24004, "Brampton-NATS");
+            campuses.Add(24001, "London-NATS");
 
             programs.Add(39119, "Building Construction Technology");
             programs.Add(39120, "Commercial Truck Driving");
@@ -384,7 +386,7 @@ namespace MedixCollege.Controllers
                                 message.Bcc.Add(new MailAddress("jblazak@ncstrades.edu"));
                             }
 
-                            message.Subject = "New Lead - External";
+                            message.Subject = "New Lead - Adwords";
 
                             fc["CampusID"] = campus ?? fc["CampusID"];
                             fc["ProgramID"] = program ?? fc["ProgramID"];
