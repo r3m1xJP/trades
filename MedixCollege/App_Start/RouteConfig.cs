@@ -20,6 +20,12 @@ namespace MedixCollege
             );
 
             routes.MapRoute(
+                name: "ThankYouTradesLanding",
+                url: "TradesLanding/ThankYou",
+                defaults: new { controller = "TradesLanding", action = "ThankYou" }
+            );
+
+            routes.MapRoute(
                 name: "BaltimoreThankYou",
                 url: "Baltimore/ThankYou",
                 defaults: new { controller = "Home", action = "BaltimoreThankYou" }

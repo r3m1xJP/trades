@@ -433,7 +433,7 @@ namespace MedixCollege.Controllers
                 }
             }
 
-            return RedirectToRoute("ThankYou");
+            return RedirectToRoute("ThankYouTradesLanding");
         }
 
         public ActionResult ThankYou()
