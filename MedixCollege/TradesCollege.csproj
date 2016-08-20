@@ -209,6 +209,8 @@
     <Content Include="Content\images\160507-Hires-NATS-London.jpg" />
     <Content Include="Content\images\160514-Hires-NATS-Brampton.jpg" />
     <Content Include="Content\images\160604-Hires-NATS-Brampton.jpg" />
+    <Content Include="Content\images\160814-Hires-NATS-London.jpg" />
+    <Content Include="Content\images\160820-Hires-NATS-London.jpg" />
     <Content Include="Content\images\admissions-home.jpg" />
     <Content Include="Content\images\BaltimoreLogo.jpg" />
     <Content Include="Content\images\banner-cabinetmaking.jpg" />
@@ -246,6 +248,7 @@
     <Content Include="Content\images\corporate-training.jpg" />
     <Content Include="Content\images\facebook-ic.gif" />
     <Content Include="Content\images\facebook.gif" />
+    <Content Include="Content\images\160816-hvac-night-classes.jpg" />
     <Content Include="Content\images\finance-options.jpg" />
     <Content Include="Content\images\Fran-Women-Of-Excellence.jpg" />
     <Content Include="Content\images\googleplus-ic-jpg.jpg" />
@@ -604,7 +607,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>3288</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
